@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What is a clinical trial?",
+    "answer": "A clinical trial is a research study that involves human volunteers to evaluate medical, surgical, or behavioral interventions. They are the primary way researchers determine if a new treatment is safe and effective for people."
+  },
+  {
+    "id": 2,
+    "question": "How much compensation can I expect?",
+    "answer": "Compensation varies widely depending on the study length, complexity, and number of visits. Participants typically earn between $100 and $3,000 per study. Some longer or more intensive studies may offer higher compensation."
+  },
+  {
+    "id": 3,
+    "question": "Are clinical trials safe?",
+    "answer": "All clinical trials must follow strict ethical and safety guidelines. Each study is reviewed by an Institutional Review Board (IRB) to protect participant rights and welfare. You can withdraw from any study at any time."
+  },
+  {
+    "id": 4,
+    "question": "How do I find clinical trials near me?",
+    "answer": "Use StudyReward's search tool to browse trials by condition, state, or city. You can filter by phase, status, and compensation level to find studies that match your preferences."
+  },
+  {
+    "id": 5,
+    "question": "What are the eligibility requirements?",
+    "answer": "Each study has specific criteria including age, gender, medical history, and current health status. The requirements are designed to ensure participant safety and reliable study results."
+  },
+  {
+    "id": 6,
+    "question": "Do I need health insurance to participate?",
+    "answer": "No, you do not need health insurance to participate in most clinical trials. The study sponsor typically covers all costs related to the research, including tests and procedures."
+  },
+  {
+    "id": 7,
+    "question": "What is informed consent?",
+    "answer": "Informed consent is a process where you learn about the study's purpose, procedures, risks, and benefits before deciding to participate. You will receive a consent form and have the opportunity to ask questions."
+  },
+  {
+    "id": 8,
+    "question": "Can I leave a study after it starts?",
+    "answer": "Yes, participation in clinical trials is completely voluntary. You can withdraw at any time, for any reason, without penalty or loss of benefits you are entitled to."
+  }
+]

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Browse Clinical Trials by City | StudyReward</title>
-  <meta name="description" content="Find paid clinical trials in major cities across the United States. Search by city to discover local medical research studies.">
+  <meta name="description" content="Find paid clinical trials in major cities across the United States. Search by city or state to discover local medical research studies.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.studyreward.com/cities.html">
 
@@ -12,18 +12,18 @@
   <meta property="og:url" content="https://www.studyreward.com/cities.html">
   <meta property="og:title" content="Browse Clinical Trials by City | StudyReward">
   <meta property="og:description" content="Find paid clinical trials in cities across the United States.">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Browse Clinical Trials by City | StudyReward">
   <meta name="twitter:description" content="Find paid clinical trials in major US cities.">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Clinical Trials by City",
-    "description": "Browse paid clinical trials in cities across the United States."
-  }
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trials by City"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.studyreward.com/"},
+    {"@type":"ListItem","position":2,"name":"Cities","item":"https://www.studyreward.com/cities.html"}
+  ]}
   </script>
 
   <link rel="stylesheet" href="css/style.css">
@@ -32,30 +32,34 @@
 
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">SR</span>
-        StudyReward
-      </a>
-      <button class="mobile-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
+      <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="clinical-trials.html">Clinical Trials</a>
+        <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html" class="active">Cities</a>
         <a href="guides.html">Guides</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-nav">
+      <div class="mobile-search"><input type="text" placeholder="Search trials..."></div>
+      <a href="index.html">Home</a>
+      <a href="clinical-trials.html">Clinical Trials</a>
+      <a href="states.html">Browse by State</a>
+      <a href="cities.html" class="active">Browse by City</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <div class="breadcrumbs">
     <div class="container">
-      <a href="index.html">Home</a>
-      <span class="sep">/</span>
-      <span>Cities</span>
+      <a href="index.html">Home</a><span class="sep">/</span><span class="current">Cities</span>
     </div>
   </div>
 
@@ -68,11 +72,14 @@
 
   <section class="section">
     <div class="container">
-      <div class="filter-bar">
-        <input type="text" id="cities-search" placeholder="Search cities..." aria-label="Search cities">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px">
+        <input type="text" id="cities-search" placeholder="Search cities..." aria-label="Search cities" style="flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit">
+        <select id="filter-city-state" aria-label="Filter by state" style="padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit;background:#fff">
+          <option value="">All States</option>
+        </select>
       </div>
       <div class="cities-grid" id="cities-list">
-        <div class="loading">Loading cities...</div>
+        <div class="loading"><span class="spinner"></span>Loading cities...</div>
       </div>
     </div>
   </section>
@@ -81,11 +88,14 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <span class="logo-icon">SR</span>
-            StudyReward
-          </a>
+          <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Facebook">F</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -97,6 +107,15 @@
           </div>
         </div>
         <div>
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="clinical-trials.html?q=cardiology">Cardiology</a>
+            <a href="clinical-trials.html?q=neurology">Neurology</a>
+            <a href="clinical-trials.html?q=oncology">Oncology</a>
+            <a href="clinical-trials.html?q=mental">Mental Health</a>
+          </div>
+        </div>
+        <div>
           <h4>Company</h4>
           <div class="footer-links">
             <a href="about.html">About Us</a>
@@ -105,25 +124,18 @@
             <a href="terms-of-service.html">Terms of Service</a>
           </div>
         </div>
-        <div>
-          <h4>Contact</h4>
-          <div class="footer-links">
-            <a href="mailto:info@studyreward.com">info@studyreward.com</a>
-            <a href="tel:+18005550199">1-800-555-0199</a>
-          </div>
-        </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 StudyReward. All rights reserved.</span>
         <div class="footer-bottom-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
   <script src="js/main.js"></script>
 </body>

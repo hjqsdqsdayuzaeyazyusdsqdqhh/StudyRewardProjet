@@ -12,10 +12,19 @@
   <meta property="og:url" content="https://www.studyreward.com/about.html">
   <meta property="og:title" content="About Us | StudyReward">
   <meta property="og:description" content="Learn about StudyReward's mission to connect participants with paid clinical trials.">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Us | StudyReward">
   <meta name="twitter:description" content="Learn about StudyReward's mission.">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"AboutPage","name":"About StudyReward"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.studyreward.com/"},
+    {"@type":"ListItem","position":2,"name":"About","item":"https://www.studyreward.com/about.html"}
+  ]}
+  </script>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,30 +32,33 @@
 
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">SR</span>
-        StudyReward
-      </a>
-      <button class="mobile-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
+      <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="clinical-trials.html">Clinical Trials</a>
+        <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html">Cities</a>
         <a href="guides.html">Guides</a>
         <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="clinical-trials.html">Clinical Trials</a>
+      <a href="states.html">Browse by State</a>
+      <a href="cities.html">Browse by City</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <div class="breadcrumbs">
     <div class="container">
-      <a href="index.html">Home</a>
-      <span class="sep">/</span>
-      <span>About</span>
+      <a href="index.html">Home</a><span class="sep">/</span><span class="current">About</span>
     </div>
   </div>
 
@@ -66,29 +78,40 @@
           <p>Our comprehensive database includes trials from leading research institutions, pharmaceutical companies, and medical centers. We make it easy to search, filter, and discover opportunities that match your health profile and location.</p>
           <p>Whether you are looking to earn extra income, contribute to scientific discovery, or access cutting-edge treatments, StudyReward is your trusted partner in the journey.</p>
         </div>
-        <div style="background: var(--gray-100); border-radius: var(--radius-lg); padding: 40px; display: flex; align-items: center; justify-content: center; min-height: 300px;">
-          <span style="font-size: 4rem;">🏥</span>
+        <div style="background:var(--gray-100);border-radius:var(--radius-lg);padding:40px;display:flex;align-items:center;justify-content:center;min-height:260px">
+          <span style="font-size:4rem">&#127973;</span>
         </div>
       </div>
 
-      <h2 class="section-title" style="text-align: center; margin-top: 60px;">Our Values</h2>
-      <p class="section-subtitle" style="text-align: center;">What drives us every day</p>
+      <h2 style="font-size:1.4rem;font-weight:700;color:var(--secondary);text-align:center;margin-top:50px">Our Values</h2>
+      <p style="color:var(--gray-500);text-align:center;margin-bottom:28px;font-size:.95rem">What drives us every day</p>
       <div class="values-grid">
         <div class="value-card">
-          <div class="value-icon">🔬</div>
+          <div class="value-icon">&#128300;</div>
           <h3>Transparency</h3>
           <p>We provide clear, accurate information about every clinical trial so you can make informed decisions.</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">🤝</div>
+          <div class="value-icon">&#129309;</div>
           <h3>Accessibility</h3>
           <p>We make it easy for everyone to find and participate in clinical research regardless of background.</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">⭐</div>
+          <div class="value-icon">&#11088;</div>
           <h3>Integrity</h3>
           <p>We uphold the highest standards of ethics and privacy in handling participant information.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>Join thousands of participants who have found meaningful clinical trial opportunities through StudyReward.</p>
+      <div class="btn-group">
+        <a href="clinical-trials.html" class="btn btn-primary">Browse Trials</a>
+        <a href="contact.html" class="btn btn-outline">Contact Us</a>
       </div>
     </div>
   </section>
@@ -97,11 +120,14 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <span class="logo-icon">SR</span>
-            StudyReward
-          </a>
+          <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Facebook">F</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -113,6 +139,15 @@
           </div>
         </div>
         <div>
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="clinical-trials.html?q=cardiology">Cardiology</a>
+            <a href="clinical-trials.html?q=neurology">Neurology</a>
+            <a href="clinical-trials.html?q=oncology">Oncology</a>
+            <a href="clinical-trials.html?q=mental">Mental Health</a>
+          </div>
+        </div>
+        <div>
           <h4>Company</h4>
           <div class="footer-links">
             <a href="about.html">About Us</a>
@@ -121,25 +156,18 @@
             <a href="terms-of-service.html">Terms of Service</a>
           </div>
         </div>
-        <div>
-          <h4>Contact</h4>
-          <div class="footer-links">
-            <a href="mailto:info@studyreward.com">info@studyreward.com</a>
-            <a href="tel:+18005550199">1-800-555-0199</a>
-          </div>
-        </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 StudyReward. All rights reserved.</span>
         <div class="footer-bottom-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Cardiovascular", "icon": "heart", "studyCount": 342, "description": "Studies related to heart disease, hypertension, and stroke prevention" },
+  { "id": 2, "name": "Neurology", "icon": "brain", "studyCount": 287, "description": "Alzheimer's, Parkinson's, multiple sclerosis, and other neurological conditions" },
+  { "id": 3, "name": "Oncology", "icon": "dna", "studyCount": 415, "description": "Cancer research including immunotherapy, chemotherapy, and prevention" },
+  { "id": 4, "name": "Endocrinology", "icon": "activity", "studyCount": 198, "description": "Diabetes, thyroid disorders, and metabolic syndrome studies" },
+  { "id": 5, "name": "Respiratory", "icon": "lungs", "studyCount": 176, "description": "Asthma, COPD, influenza, and other respiratory condition trials" },
+  { "id": 6, "name": "Mental Health", "icon": "smile", "studyCount": 234, "description": "Depression, anxiety, PTSD, and other mental health research" },
+  { "id": 7, "name": "Pediatrics", "icon": "baby", "studyCount": 145, "description": "Clinical trials focused on children's health and development" },
+  { "id": 8, "name": "Orthopedics", "icon": "bone", "studyCount": 121, "description": "Osteoarthritis, joint replacement, and musculoskeletal studies" },
+  { "id": 9, "name": "Dermatology", "icon": "eye", "studyCount": 98, "description": "Skin conditions including psoriasis, eczema, and melanoma" },
+  { "id": 10, "name": "Immunology", "icon": "shield", "studyCount": 167, "description": "Vaccines, autoimmune disorders, and allergy research" }
+]
