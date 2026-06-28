@@ -15,6 +15,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Clinical Trial Guides | StudyReward">
   <meta name="twitter:description" content="Comprehensive guides on clinical trials.">
+  <meta property="og:image" content="https://www.studyreward.com/og-image.svg">
+  <meta property="og:site_name" content="StudyReward">
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trial Guides"}
@@ -27,19 +29,23 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body data-page="guides">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
       <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main">
         <a href="index.html">Home</a>
         <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html">Cities</a>
-        <a href="guides.html" class="active">Guides</a>
+        <a href="guides.html" class="active" aria-current="page">Guides</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -51,7 +57,7 @@
       <a href="clinical-trials.html">Clinical Trials</a>
       <a href="states.html">Browse by State</a>
       <a href="cities.html">Browse by City</a>
-      <a href="guides.html" class="active">Guides</a>
+      <a href="guides.html" class="active" aria-current="page">Guides</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -63,7 +69,7 @@
     </div>
   </div>
 
-  <section class="page-header">
+  <section class="page-header" id="main-content">
     <div class="container">
       <h1>Guides &amp; Resources</h1>
       <p>Learn how clinical trials work, what to expect, and how to make informed decisions as a participant.</p>
@@ -78,6 +84,12 @@
           <div class="guides-grid" id="guides-featured"></div>
 
           <h2 class="section-title" style="margin-top:40px;margin-bottom:20px">All Guides</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px">
+            <input type="text" id="guides-search" placeholder="Search guides..." aria-label="Search guides" style="flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit">
+            <select id="guides-category-filter" aria-label="Filter by category" style="padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit;background:#fff">
+              <option value="">All Categories</option>
+            </select>
+          </div>
           <div class="guides-grid" id="guides-list">
             <div class="loading"><span class="spinner"></span>Loading guides...</div>
           </div>
@@ -102,12 +114,6 @@
         <div class="footer-brand">
           <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Facebook">F</a>
-            <a href="#" aria-label="LinkedIn">Li</a>
-            <a href="#" aria-label="Instagram">Ig</a>
-          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -143,12 +149,13 @@
           <a href="privacy-policy.html">Privacy</a>
           <a href="terms-of-service.html">Terms</a>
         </div>
+        <div class="footer-disclaimer">StudyReward is a clinical trial directory for informational purposes only. We do not conduct trials or guarantee compensation. Always consult a healthcare professional.</div>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

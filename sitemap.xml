@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.studyreward.com/</loc><changefreq>weekly</changefreq><priority>1.00</priority></url>
-  <url><loc>https://www.studyreward.com/clinical-trials.html</loc><changefreq>weekly</changefreq><priority>0.90</priority></url>
-  <url><loc>https://www.studyreward.com/states.html</loc><changefreq>monthly</changefreq><priority>0.80</priority></url>
-  <url><loc>https://www.studyreward.com/cities.html</loc><changefreq>monthly</changefreq><priority>0.80</priority></url>
-  <url><loc>https://www.studyreward.com/guides.html</loc><changefreq>weekly</changefreq><priority>0.70</priority></url>
-  <url><loc>https://www.studyreward.com/about.html</loc><changefreq>monthly</changefreq><priority>0.50</priority></url>
-  <url><loc>https://www.studyreward.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.50</priority></url>
-  <url><loc>https://www.studyreward.com/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.30</priority></url>
-  <url><loc>https://www.studyreward.com/terms-of-service.html</loc><changefreq>yearly</changefreq><priority>0.30</priority></url>
+  <url><loc>https://www.studyreward.com/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
+  <url><loc>https://www.studyreward.com/clinical-trials.html</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.studyreward.com/states.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.studyreward.com/cities.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.studyreward.com/guides.html</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://www.studyreward.com/about.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
+  <url><loc>https://www.studyreward.com/contact.html</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
+  <url><loc>https://www.studyreward.com/privacy-policy.html</loc><lastmod>2026-06-28</lastmod><changefreq>yearly</changefreq><priority>0.30</priority></url>
+  <url><loc>https://www.studyreward.com/terms-of-service.html</loc><lastmod>2026-06-28</lastmod><changefreq>yearly</changefreq><priority>0.30</priority></url>
+  <url><loc>https://www.studyreward.com/404.html</loc><lastmod>2026-06-28</lastmod><changefreq>yearly</changefreq><priority>0.10</priority></url>
 </urlset>

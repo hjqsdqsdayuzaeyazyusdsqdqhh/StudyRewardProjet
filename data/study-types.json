@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Interventional", "slug": "interventional", "description": "Participants receive specific interventions according to a research plan or protocol" },
+  { "id": 2, "name": "Observational", "slug": "observational", "description": "Researchers observe participants in their natural settings without assigning interventions" },
+  { "id": 3, "name": "Expanded Access", "slug": "expanded-access", "description": "Provides access to investigational treatments for patients with serious conditions outside of clinical trials" }
+]

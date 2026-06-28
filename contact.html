@@ -15,6 +15,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact Us | StudyReward">
   <meta name="twitter:description" content="Get in touch with the StudyReward team.">
+  <meta property="og:image" content="https://www.studyreward.com/og-image.svg">
+  <meta property="og:site_name" content="StudyReward">
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ContactPage","name":"Contact StudyReward"}
@@ -27,21 +29,25 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
       <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main">
         <a href="index.html">Home</a>
         <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html">Cities</a>
         <a href="guides.html">Guides</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
       </nav>
       <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -52,7 +58,7 @@
       <a href="cities.html">Browse by City</a>
       <a href="guides.html">Guides</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
     </div>
   </header>
 
@@ -62,7 +68,7 @@
     </div>
   </div>
 
-  <section class="page-header">
+  <section class="page-header" id="main-content">
     <div class="container">
       <h1>Contact Us</h1>
       <p>Have a question or need help? We would love to hear from you.</p>
@@ -107,10 +113,6 @@
             <div><div class="cd-label">Email</div><div class="cd-value">info@studyreward.com</div></div>
           </div>
           <div class="contact-detail">
-            <div class="cd-icon">&#128222;</div>
-            <div><div class="cd-label">Phone</div><div class="cd-value">1-800-555-0199</div></div>
-          </div>
-          <div class="contact-detail">
             <div class="cd-icon">&#128205;</div>
             <div><div class="cd-label">Address</div><div class="cd-value">123 Research Drive, Suite 200<br>Boston, MA 02110</div></div>
           </div>
@@ -125,12 +127,6 @@
         <div class="footer-brand">
           <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Facebook">F</a>
-            <a href="#" aria-label="LinkedIn">Li</a>
-            <a href="#" aria-label="Instagram">Ig</a>
-          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -166,12 +162,13 @@
           <a href="privacy-policy.html">Privacy</a>
           <a href="terms-of-service.html">Terms</a>
         </div>
+        <div class="footer-disclaimer">StudyReward is a clinical trial directory for informational purposes only. We do not conduct trials or guarantee compensation. Always consult a healthcare professional.</div>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

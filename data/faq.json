@@ -38,5 +38,40 @@
     "id": 8,
     "question": "Can I leave a study after it starts?",
     "answer": "Yes, participation in clinical trials is completely voluntary. You can withdraw at any time, for any reason, without penalty or loss of benefits you are entitled to."
+  },
+  {
+    "id": 9,
+    "question": "What are the different phases of clinical trials?",
+    "answer": "Clinical trials are conducted in phases. Phase I tests safety with a small group. Phase II evaluates effectiveness with more participants. Phase III compares the new treatment to standard treatments with large groups. Phase IV occurs after FDA approval to monitor long-term effects."
+  },
+  {
+    "id": 10,
+    "question": "How long do clinical trials typically last?",
+    "answer": "The duration varies by study type. Some trials require just a single visit lasting a few hours, while others may span several months or years with multiple follow-up visits. The expected time commitment is always explained during the informed consent process."
+  },
+  {
+    "id": 11,
+    "question": "Will I receive the actual treatment or a placebo?",
+    "answer": "Some studies use placebos, but you will be informed about this possibility during the consent process. Many trials compare a new treatment to standard care, meaning all participants receive some form of active treatment."
+  },
+  {
+    "id": 12,
+    "question": "What happens after a clinical trial ends?",
+    "answer": "After a study concludes, researchers analyze the data and publish results. Participants may be informed of the overall findings. If the treatment proves effective, it may be submitted for FDA approval to become more widely available."
+  },
+  {
+    "id": 13,
+    "question": "Can I participate in multiple clinical trials?",
+    "answer": "Generally, you can participate in multiple trials over time, but usually not at the same time. Each study requires your full commitment and participation in another trial could affect the results. Always disclose your participation history when applying."
+  },
+  {
+    "id": 14,
+    "question": "Are there studies for healthy volunteers?",
+    "answer": "Yes, many clinical trials accept healthy volunteers, particularly Phase I studies that focus on safety and dosage. These studies often pay well for shorter time commitments and do not require any specific medical condition."
+  },
+  {
+    "id": 15,
+    "question": "How are clinical trial participants protected?",
+    "answer": "Participant safety is the top priority. Every trial is reviewed by an Institutional Review Board (IRB), follows strict protocols, and must adhere to FDA regulations. Participants have the right to withdraw at any time and must give informed consent before starting."
   }
 ]

@@ -12,11 +12,12 @@
   <meta property="og:url" content="https://www.studyreward.com/">
   <meta property="og:title" content="StudyReward | Find Paid Clinical Trials Near You">
   <meta property="og:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition. Earn rewards while advancing medical research.">
-  <meta property="og:image" content="https://www.studyreward.com/og-image.png">
+  <meta property="og:image" content="https://www.studyreward.com/og-image.svg">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="StudyReward | Find Paid Clinical Trials Near You">
   <meta name="twitter:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition.">
+  <meta property="og:site_name" content="StudyReward">
 
   <script type="application/ld+json">
   {
@@ -24,14 +25,7 @@
     "@type": "Organization",
     "name": "StudyReward",
     "url": "https://www.studyreward.com",
-    "logo": "https://www.studyreward.com/logo.png",
-    "description": "Find paid clinical trials near you and earn rewards while advancing medical research.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-800-555-0199",
-      "contactType": "customer service"
-    },
-    "sameAs": ["https://twitter.com/studyreward","https://facebook.com/studyreward"]
+    "description": "Find paid clinical trials near you and earn rewards while advancing medical research."
   }
   </script>
 
@@ -49,8 +43,12 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body data-page="home">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header">
     <div class="container">
@@ -59,8 +57,8 @@
         <input type="text" placeholder="Search trials..." aria-label="Search clinical trials">
         <span class="hs-icon">&#128269;</span>
       </div>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
+      <nav class="nav" role="navigation" aria-label="Main">
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html">Cities</a>
@@ -72,7 +70,7 @@
     </div>
     <div class="mobile-nav">
       <div class="mobile-search"><input type="text" placeholder="Search trials..." aria-label="Search"></div>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html" class="active" aria-current="page">Home</a>
       <a href="clinical-trials.html">Clinical Trials</a>
       <a href="states.html">Browse by State</a>
       <a href="cities.html">Browse by City</a>
@@ -82,7 +80,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="main-content">
     <div class="container">
       <h1>Find Paid Clinical Trials Near You</h1>
       <p>Earn money while contributing to groundbreaking medical research. Browse thousands of clinical studies across the United States and find the perfect trial for you.</p>
@@ -111,12 +109,51 @@
     </div>
   </section>
 
+  <section class="section" style="background:var(--gray-100)">
+    <div class="container">
+      <div class="section-header" style="text-align:center;flex-direction:column;align-items:center">
+        <h2 class="section-title">How StudyReward Works</h2>
+        <p class="section-subtitle">Finding and joining paid clinical trials is easy with our simple process</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="how-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
+          </div>
+          <h3>1. Search Trials</h3>
+          <p>Browse our database of paid clinical trials by condition, location, or keyword to find studies that match your interests.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 10L4 7"/></svg>
+          </div>
+          <h3>2. Check Eligibility</h3>
+          <p>Review each study's requirements including age, health status, and other criteria to see if you qualify.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>3. Apply Online</h3>
+          <p>Submit your application directly through the study provider. The research team will contact you with next steps.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.7-8 11-4.5-1.3-8-6-8-11V5l8-3z"/></svg>
+          </div>
+          <h3>4. Earn Rewards</h3>
+          <p>Participate in the study and receive compensation for your time and contribution to medical research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="section-header">
         <div class="section-header-left">
-          <h2 class="section-title">Featured Clinical Trials</h2>
-          <p class="section-subtitle">Top-paying studies actively recruiting participants</p>
+          <h2 class="section-title">Top Paying Clinical Trials</h2>
+          <p class="section-subtitle">Highest-paying studies actively recruiting participants</p>
         </div>
         <a href="clinical-trials.html" class="btn-link">View All &rarr;</a>
       </div>
@@ -144,8 +181,8 @@
     <div class="container">
       <div class="section-header">
         <div class="section-header-left">
-          <h2 class="section-title">Browse by State</h2>
-          <p class="section-subtitle">Find clinical trials in your state</p>
+          <h2 class="section-title">Popular States</h2>
+          <p class="section-subtitle">States with the most active clinical trials</p>
         </div>
         <a href="states.html" class="btn-link">All States &rarr;</a>
       </div>
@@ -159,8 +196,8 @@
     <div class="container">
       <div class="section-header">
         <div class="section-header-left">
-          <h2 class="section-title">Browse by City</h2>
-          <p class="section-subtitle">Discover studies in major cities across the country</p>
+          <h2 class="section-title">Featured Cities</h2>
+          <p class="section-subtitle">Major cities with active clinical trial opportunities</p>
         </div>
         <a href="cities.html" class="btn-link">All Cities &rarr;</a>
       </div>
@@ -227,12 +264,6 @@
         <div class="footer-brand">
           <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States. Advance medical research while earning rewards for your participation.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Facebook">F</a>
-            <a href="#" aria-label="LinkedIn">Li</a>
-            <a href="#" aria-label="Instagram">Ig</a>
-          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -268,12 +299,13 @@
           <a href="privacy-policy.html">Privacy</a>
           <a href="terms-of-service.html">Terms</a>
         </div>
+        <div class="footer-disclaimer">StudyReward is a clinical trial directory for informational purposes only. We do not conduct trials or guarantee compensation. Always consult a healthcare professional.</div>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

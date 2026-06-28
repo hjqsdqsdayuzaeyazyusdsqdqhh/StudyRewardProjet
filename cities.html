@@ -15,6 +15,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Browse Clinical Trials by City | StudyReward">
   <meta name="twitter:description" content="Find paid clinical trials in major US cities.">
+  <meta property="og:image" content="https://www.studyreward.com/og-image.svg">
+  <meta property="og:site_name" content="StudyReward">
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trials by City"}
@@ -27,18 +29,22 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body data-page="cities">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
       <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main">
         <a href="index.html">Home</a>
         <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
-        <a href="cities.html" class="active">Cities</a>
+        <a href="cities.html" class="active" aria-current="page">Cities</a>
         <a href="guides.html">Guides</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -50,7 +56,7 @@
       <a href="index.html">Home</a>
       <a href="clinical-trials.html">Clinical Trials</a>
       <a href="states.html">Browse by State</a>
-      <a href="cities.html" class="active">Browse by City</a>
+      <a href="cities.html" class="active" aria-current="page">Browse by City</a>
       <a href="guides.html">Guides</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -63,7 +69,7 @@
     </div>
   </div>
 
-  <section class="page-header">
+  <section class="page-header" id="main-content">
     <div class="container">
       <h1>Browse by City</h1>
       <p>Discover clinical trial opportunities in cities across the United States.</p>
@@ -90,12 +96,6 @@
         <div class="footer-brand">
           <a href="index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
           <p>Helping you find paid clinical trials across the United States.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Facebook">F</a>
-            <a href="#" aria-label="LinkedIn">Li</a>
-            <a href="#" aria-label="Instagram">Ig</a>
-          </div>
         </div>
         <div>
           <h4>Quick Links</h4>
@@ -131,12 +131,13 @@
           <a href="privacy-policy.html">Privacy</a>
           <a href="terms-of-service.html">Terms</a>
         </div>
+        <div class="footer-disclaimer">StudyReward is a clinical trial directory for informational purposes only. We do not conduct trials or guarantee compensation. Always consult a healthcare professional.</div>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
