@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "How to Find Paid Clinical Trials Near You",
+    "category": "Getting Started",
+    "excerpt": "Learn the best strategies for locating clinical trials in your area that offer compensation for your time and participation.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-05-20",
+    "readTime": "8 min read",
+    "slug": "how-to-find-paid-clinical-trials"
+  },
+  {
+    "id": 2,
+    "title": "What to Expect During Your First Clinical Trial Visit",
+    "category": "Patient Experience",
+    "excerpt": "A step-by-step walkthrough of what happens during your first clinical trial appointment, from screening to follow-up.",
+    "author": "James Rodriguez",
+    "date": "2026-05-12",
+    "readTime": "6 min read",
+    "slug": "what-to-expect-first-clinical-trial-visit"
+  },
+  {
+    "id": 3,
+    "title": "Understanding Clinical Trial Phases: Phase 1 Through Phase 4",
+    "category": "Education",
+    "excerpt": "A comprehensive guide to the different phases of clinical trials and what each phase means for participants.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-05-05",
+    "readTime": "10 min read",
+    "slug": "understanding-clinical-trial-phases"
+  },
+  {
+    "id": 4,
+    "title": "Questions to Ask Before Joining a Clinical Study",
+    "category": "Patient Experience",
+    "excerpt": "The essential questions every participant should ask their research coordinator before enrolling in a study.",
+    "author": "Lisa Thompson",
+    "date": "2026-04-28",
+    "readTime": "5 min read",
+    "slug": "questions-to-ask-before-joining-clinical-study"
+  },
+  {
+    "id": 5,
+    "title": "How Clinical Trial Compensation Works",
+    "category": "Financial",
+    "excerpt": "Breaking down how study participants are compensated, including travel reimbursement, stipends, and bonuses.",
+    "author": "Michael Park",
+    "date": "2026-04-20",
+    "readTime": "7 min read",
+    "slug": "how-clinical-trial-compensation-works"
+  },
+  {
+    "id": 6,
+    "title": "Informed Consent: Your Rights as a Research Participant",
+    "category": "Legal",
+    "excerpt": "Understanding the informed consent process and your legal rights when participating in medical research.",
+    "author": "Attorney Rachel Green",
+    "date": "2026-04-15",
+    "readTime": "9 min read",
+    "slug": "informed-consent-rights-research-participant"
+  }
+]

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyReward | Find Paid Clinical Trials Near You</title>
+  <meta name="description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition. Earn rewards while advancing medical research with StudyReward.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.studyreward.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.studyreward.com/">
+  <meta property="og:title" content="StudyReward | Find Paid Clinical Trials Near You">
+  <meta property="og:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition. Earn rewards while advancing medical research.">
+  <meta property="og:image" content="https://www.studyreward.com/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StudyReward | Find Paid Clinical Trials Near You">
+  <meta name="twitter:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition.">
+
+  <!-- JSON-LD Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "StudyReward",
+    "url": "https://www.studyreward.com",
+    "logo": "https://www.studyreward.com/logo.png",
+    "description": "Find paid clinical trials near you and earn rewards while advancing medical research.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-0199",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://twitter.com/studyreward",
+      "https://facebook.com/studyreward"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">SR</span>
+        StudyReward
+      </a>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="clinical-trials.html">Clinical Trials</a>
+        <a href="states.html">States</a>
+        <a href="cities.html">Cities</a>
+        <a href="guides.html">Guides</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find Paid Clinical Trials Near You</h1>
+      <p>Earn money while contributing to groundbreaking medical research. Browse thousands of clinical studies across the United States and find the perfect trial for you.</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search by condition, location, or study name..." aria-label="Search clinical trials">
+        <button type="button">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2,847</div>
+          <div class="stat-label">Active Studies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50</div>
+          <div class="stat-label">States Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1,200+</div>
+          <div class="stat-label">Cities</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$2,500</div>
+          <div class="stat-label">Avg. Reward</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Studies -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Featured Studies</h2>
+          <p class="section-subtitle">Top-paying clinical trials actively recruiting participants</p>
+        </div>
+        <a href="clinical-trials.html" class="btn-link">View All Studies →</a>
+      </div>
+      <div class="studies-grid" id="featured-studies">
+        <div class="loading">Loading studies...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by State -->
+  <section class="section" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Browse by State</h2>
+          <p class="section-subtitle">Find clinical trials in your state</p>
+        </div>
+        <a href="states.html" class="btn-link">All States →</a>
+      </div>
+      <div class="states-grid" id="home-states">
+        <div class="loading">Loading states...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by City -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Browse by City</h2>
+          <p class="section-subtitle">Discover studies in major cities across the country</p>
+        </div>
+        <a href="cities.html" class="btn-link">All Cities →</a>
+      </div>
+      <div class="cities-grid" id="home-cities">
+        <div class="loading">Loading cities...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Guides -->
+  <section class="section" style="background: var(--gray-100);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Latest Guides</h2>
+          <p class="section-subtitle">Learn how clinical trials work and what to expect</p>
+        </div>
+        <a href="guides.html" class="btn-link">All Guides →</a>
+      </div>
+      <div class="guides-grid" id="home-guides">
+        <div class="loading">Loading guides...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Updated on New Studies</h2>
+      <p>Get notified when new paid clinical trials become available in your area.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">SR</span>
+            StudyReward
+          </a>
+          <p>Helping you find paid clinical trials across the United States. Advance medical research while earning rewards for your participation.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="clinical-trials.html">Clinical Trials</a>
+            <a href="states.html">Browse by State</a>
+            <a href="cities.html">Browse by City</a>
+            <a href="guides.html">Guides</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:info@studyreward.com">info@studyreward.com</a>
+            <a href="tel:+18005550199">1-800-555-0199</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 StudyReward. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
