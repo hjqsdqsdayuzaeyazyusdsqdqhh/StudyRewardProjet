@@ -1,0 +1,29 @@
+{
+  "name": "studyreward",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "import": "tsx scripts/import.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "lint": "eslint src/ api/ scripts/ --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "vercel-build": "prisma generate && prisma db push && tsc"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.30.0",
+    "@typescript-eslint/parser": "^8.30.0",
+    "eslint": "^9.25.0",
+    "prisma": "^6.6.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

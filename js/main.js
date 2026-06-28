@@ -155,7 +155,7 @@
     const doSearch = debounce(function () {
       const q = input.value.trim().toLowerCase();
       if (!q) { dropdown.classList.remove('open'); return; }
-      fetchJSON('data/studies.json').then(studies => {
+      fetchJSON('/api/studies?perPage=100').then(r => { const studies = r.data || r;
         const results = studies.filter(s =>
           s.title.toLowerCase().includes(q) ||
           s.category.toLowerCase().includes(q) ||
@@ -416,11 +416,11 @@
   // =============================================
   function loadHome() {
     Promise.all([
-      fetchJSON('data/studies.json'),
-      fetchJSON('data/states.json'),
-      fetchJSON('data/cities.json'),
+      fetchJSON('/api/studies?perPage=200').then(r => r.data || r),
+      fetchJSON('/api/states'),
+      fetchJSON('/api/cities'),
       fetchJSON('data/guides.json'),
-      fetchJSON('data/categories.json'),
+      fetchJSON('/api/categories'),
       fetchJSON('data/faq.json')
     ]).then(([studies, states, cities, guides, categories, faq]) => {
       renderStudiesHome(studies);
@@ -522,15 +522,14 @@
     let currentSort = params.sort || 'newest';
     let currentPerPage = Math.min(Math.max(params.perPage || 9, 6), 36);
 
-    fetchJSON('data/studies.json').then(allStudies => {
-      fetchJSON('data/states.json').then(states => {
-        fetchJSON('data/cities.json').then(cities => {
-          fetchJSON('data/categories.json').then(categories => {
-            resolveURLParams(params, states, cities, categories);
-            renderTrials(allStudies, states, cities, categories);
-          });
-        });
-      });
+    Promise.all([
+      fetchJSON('/api/studies?perPage=500').then(r => r.data || r),
+      fetchJSON('/api/states'),
+      fetchJSON('/api/cities'),
+      fetchJSON('/api/categories')
+    ]).then(([allStudies, states, cities, categories]) => {
+      resolveURLParams(params, states, cities, categories);
+      renderTrials(allStudies, states, cities, categories);
     }).catch(() => {
       container.innerHTML = errorHTML();
     });
@@ -800,8 +799,8 @@
     if (!container) return;
 
     Promise.all([
-      fetchJSON('data/states.json'),
-      fetchJSON('data/studies.json')
+      fetchJSON('/api/states'),
+      fetchJSON('/api/studies?perPage=500').then(r => r.data || r)
     ]).then(([states, studies]) => {
       const counts = computeCounts(studies).stateCounts;
 
@@ -853,9 +852,9 @@
     if (!container) return;
 
     Promise.all([
-      fetchJSON('data/cities.json'),
-      fetchJSON('data/states.json'),
-      fetchJSON('data/studies.json')
+      fetchJSON('/api/cities'),
+      fetchJSON('/api/states'),
+      fetchJSON('/api/studies?perPage=500').then(r => r.data || r)
     ]).then(([cities, states, studies]) => {
       const counts = computeCounts(studies).cityCounts;
 
