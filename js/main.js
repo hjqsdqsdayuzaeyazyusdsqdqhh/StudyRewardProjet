@@ -982,12 +982,12 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "StudyReward",
-        "url": "https://www.studyreward.com",
+        "url": "https://studyreward.online",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://www.studyreward.com/clinical-trials.html?q={search_term_string}"
+            "urlTemplate": "https://studyreward.online/clinical-trials.html?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
