@@ -113,7 +113,7 @@ states.forEach(st => {
     ]}) +
     '</script>';
 
-  const finalHtml = '<!DOCTYPE html>\n<html lang="en">\n<head>\n' + head + '\n' + jsonld +
+  const finalHtml = '<!DOCTYPE html>\n<html lang="en-US">\n<head>\n' + head + '\n' + jsonld +
     '\n</head>\n<body data-page="state" data-state="' + escapeHTML(name) + '" data-state-abbr="' + abbr + '">\n\n' +
     '  <a href="#main-content" class="skip-link">Skip to main content</a>\n\n' +
     '  <header class="header">\n    <div class="container">\n' +

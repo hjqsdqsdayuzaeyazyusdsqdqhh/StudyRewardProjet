@@ -36,12 +36,13 @@ cities.forEach(city => {
   const metaDesc = 'Find paid clinical trials recruiting in ' + escapeHTML(name) + ', ' + escapeHTML(state) + '. Browse medical studies, compensation opportunities and research programs in ' + escapeHTML(name) + '.';
   const canonical = 'https://studyreward.online/cities/' + slug;
 
-  const page = '<!DOCTYPE html>\n<html lang="en">\n<head>\n' +
+  const page = '<!DOCTYPE html>\n<html lang="en-US">\n<head>\n' +
     '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
     '<title>' + title + '</title>\n' +
     '<meta name="description" content="' + metaDesc + '">\n' +
     '<meta name="robots" content="index, follow">\n' +
     '<link rel="canonical" href="' + canonical + '">\n' +
+    '<link rel="alternate" hreflang="en" href="' + canonical + '">\n' +
     '<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">\n' +
     '<link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">\n\n' +
 
@@ -54,6 +55,12 @@ cities.forEach(city => {
     '<meta name="twitter:description" content="' + metaDesc + '">\n' +
     '<meta property="og:image" content="https://studyreward.online/og-image.svg">\n' +
     '<meta property="og:site_name" content="StudyReward">\n\n' +
+
+    '<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->\n' +
+    '<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>\n' +
+    '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'G-XXXXXXXXXX\');<\/script>\n\n' +
+    '<!-- Clarity (replace with your Clarity ID) -->\n' +
+    '<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src=\'https://www.clarity.ms/tag/\'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,\'clarity\',\'script\',\'YOUR_CLARITY_ID\');<\/script>\n\n' +
 
     '<script type="application/ld+json">' +
     JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trials in " + name + ", " + state,"description":metaDesc,"url":canonical}) +

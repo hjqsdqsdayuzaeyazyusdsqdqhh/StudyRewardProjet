@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clinical Trial Guides | StudyReward</title>
-  <meta name="description" content="Learn everything about clinical trials with our comprehensive guides. Understand trial phases, patient rights, compensation, and how to participate.">
+  <title>Clinical Trial Guides &amp; Resources | StudyReward</title>
+  <meta name="description" content="Learn everything about clinical trials with our comprehensive guides. Understand trial phases, patient rights, compensation, safety, and how to participate.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://studyreward.online/guides.html">
+  <link rel="canonical" href="https://studyreward.online/guides.html"
+  <link rel="alternate" hreflang="en" href="https://studyreward.online/guides.html">>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://studyreward.online/guides.html">
-  <meta property="og:title" content="Clinical Trial Guides | StudyReward">
-  <meta property="og:description" content="Comprehensive guides on clinical trials from participant rights to compensation.">
+  <meta property="og:title" content="Clinical Trial Guides &amp; Resources | StudyReward">
+  <meta property="og:description" content="Comprehensive guides on clinical trials from participant rights to compensation and safety.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Clinical Trial Guides | StudyReward">
-  <meta name="twitter:description" content="Comprehensive guides on clinical trials.">
+  <meta name="twitter:title" content="Clinical Trial Guides &amp; Resources | StudyReward">
+  <meta name="twitter:description" content="Comprehensive guides on clinical trials from participant rights to compensation and safety.">
   <meta property="og:image" content="https://studyreward.online/og-image.svg">
   <meta property="og:site_name" content="StudyReward">
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trial Guides"}
+  <!-- Clarity (replace with your Clarity ID) -->
+  <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');</script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trial Guides and Resources","description":"Comprehensive educational guides about clinical trials, medical research participation, and patient education.","url":"https://studyreward.online/guides.html"}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
@@ -31,8 +37,6 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body data-page="guides">
 
@@ -47,6 +51,7 @@
         <a href="clinical-trials.html">Trials</a>
         <a href="states.html">States</a>
         <a href="cities.html">Cities</a>
+        <a href="conditions.html">Conditions</a>
         <a href="guides.html" class="active" aria-current="page">Guides</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -59,6 +64,7 @@
       <a href="clinical-trials.html">Clinical Trials</a>
       <a href="states.html">Browse by State</a>
       <a href="cities.html">Browse by City</a>
+      <a href="conditions.html">Conditions</a>
       <a href="guides.html" class="active" aria-current="page">Guides</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -71,42 +77,76 @@
     </div>
   </div>
 
-  <section class="page-header" id="main-content">
+  <section class="guide-home-hero" id="main-content">
     <div class="container">
-      <h1>Guides &amp; Resources</h1>
-      <p>Learn how clinical trials work, what to expect, and how to make informed decisions as a participant.</p>
+      <h1>Clinical Trial Guides &amp; Resources</h1>
+      <p>Learn how clinical trials work, what to expect as a participant, and how to make informed decisions. Our library of expert-written guides helps you navigate the world of medical research.</p>
+      <div class="ghh-search">
+        <input type="text" id="guides-search-input" placeholder="Search guides..." aria-label="Search guides">
+      </div>
+      <div class="ghh-badges">
+        <span class="ghh-badge">&#128214; 35+ Guides</span>
+        <span class="ghh-badge">&#128218; 8 Categories</span>
+        <span class="ghh-badge">&#128197; Updated Weekly</span>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr;gap:30px">
-        <div>
-          <h2 class="section-title" style="margin-bottom:20px">Featured Guides</h2>
-          <div class="guides-grid" id="guides-featured"></div>
-
-          <h2 class="section-title" style="margin-top:40px;margin-bottom:20px">All Guides</h2>
-          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px">
-            <input type="text" id="guides-search" placeholder="Search guides..." aria-label="Search guides" style="flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit">
-            <select id="guides-category-filter" aria-label="Filter by category" style="padding:10px 14px;border:1px solid var(--gray-200);border-radius:var(--radius);font-size:.9rem;outline:none;font-family:inherit;background:#fff">
-              <option value="">All Categories</option>
-            </select>
-          </div>
-          <div class="guides-grid" id="guides-list">
-            <div class="loading"><span class="spinner"></span>Loading guides...</div>
-          </div>
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Browse by Category</h2>
+          <p class="section-subtitle">Explore guides organized by topic</p>
         </div>
-        <aside class="sidebar" id="guides-categories">
-          <h3>Categories</h3>
-          <div class="sidebar-links">
-            <a href="#">Getting Started</a>
-            <a href="#">Patient Experience</a>
-            <a href="#">Education</a>
-            <a href="#">Financial</a>
-            <a href="#">Legal</a>
-          </div>
-        </aside>
       </div>
+      <div class="categories-grid" id="guide-categories"></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gray-50)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">Beginner's Guide to Clinical Trials</h2>
+          <p class="section-subtitle">Start here if you are new to clinical research</p>
+        </div>
+      </div>
+      <div class="guides-grid" id="guides-beginner"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2 class="section-title">All Guides</h2>
+          <p class="section-subtitle">Our complete library of educational resources</p>
+        </div>
+        <div class="ghh-controls">
+          <input type="text" id="guides-search" placeholder="Search guides..." aria-label="Search guides" class="ghh-search-input">
+          <select id="guides-category-filter" aria-label="Filter by category" class="ghh-select">
+            <option value="">All Categories</option>
+          </select>
+          <select id="guides-sort" aria-label="Sort guides" class="ghh-select">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </div>
+      </div>
+      <div class="guides-grid" id="guides-list">
+        <div class="loading"><span class="spinner"></span>Loading guides...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(135deg,var(--secondary) 0%,#1e40af 100%);color:#fff;text-align:center">
+    <div class="container">
+      <h2 style="font-size:1.4rem;font-weight:700;margin-bottom:10px">Ready to Find a Clinical Trial?</h2>
+      <p style="color:rgba(255,255,255,.85);margin-bottom:24px;font-size:.95rem">Browse thousands of active studies across the United States.</p>
+      <a href="clinical-trials.html" class="btn btn-primary" style="background:var(--accent);color:var(--secondary)">Search Clinical Trials &rarr;</a>
     </div>
   </section>
 
@@ -127,29 +167,28 @@
           </div>
         </div>
         <div>
-          <h4>Categories</h4>
+          <h4>Resources</h4>
           <div class="footer-links">
-            <a href="clinical-trials.html?q=cardiology">Cardiology</a>
-            <a href="clinical-trials.html?q=neurology">Neurology</a>
-            <a href="clinical-trials.html?q=oncology">Oncology</a>
-            <a href="clinical-trials.html?q=mental">Mental Health</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
           </div>
         </div>
         <div>
-          <h4>Company</h4>
+          <h4>Top Conditions</h4>
           <div class="footer-links">
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="conditions/diabetes.html">Diabetes</a>
+            <a href="conditions/cancer.html">Cancer</a>
+            <a href="conditions/heart-disease.html">Heart Disease</a>
+            <a href="conditions.html">View All</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 StudyReward. All rights reserved.</span>
         <div class="footer-bottom-links">
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="terms-of-service.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
         </div>
         <div class="footer-disclaimer">StudyReward is a clinical trial directory for informational purposes only. We do not conduct trials or guarantee compensation. Always consult a healthcare professional.</div>
       </div>

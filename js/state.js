@@ -86,8 +86,16 @@
     if (countEl) countEl.textContent = allStudies.length + ' clinical trial' + (allStudies.length !== 1 ? 's' : '') + ' found';
   }
 
+  function renderSkeleton() {
+    let html = '';
+    for (let i = 0; i < 6; i++) {
+      html += '<div class="study-card card skeleton"><div class="sc-top"><span class="badge skeleton-box" style="width:80px">&nbsp;</span></div><div class="skeleton-box" style="height:20px;width:80%;margin:8px 0"></div><div class="skeleton-box" style="height:14px;width:60%;margin:4px 0"></div><div class="skeleton-box" style="height:14px;width:45%;margin:4px 0"></div><div class="card-footer"><span class="skeleton-box" style="height:16px;width:120px;display:inline-block"></span></div></div>';
+    }
+    return html;
+  }
+
   function loadStateStudies() {
-    container.innerHTML = '<div class="loading"><span class="spinner"></span>Loading studies...</div>';
+    container.innerHTML = renderSkeleton();
 
     const api = '/api/studies?state=' + encodeURIComponent(stateSlug) + '&pageSize=50';
 

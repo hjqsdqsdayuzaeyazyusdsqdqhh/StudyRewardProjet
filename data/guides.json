@@ -1,37 +1,944 @@
 [
-  { "id": 1, "title": "How Clinical Trials Work: A Complete Guide for Beginners", "slug": "how-clinical-trials-work", "category": "Getting Started", "excerpt": "Learn the basics of clinical trials, including what they are, why they matter, and how you can participate.", "author": "Dr. Sarah Mitchell", "date": "2026-06-15", "readTime": "10 min read" },
-  { "id": 2, "title": "How Much Do Clinical Trials Pay? Complete Compensation Guide", "slug": "how-much-do-clinical-trials-pay", "category": "Financial", "excerpt": "Understand clinical trial compensation including stipends, travel reimbursement, and what factors affect payment amounts.", "author": "Michael Park", "date": "2026-06-12", "readTime": "8 min read" },
-  { "id": 3, "title": "Healthy Volunteer Guide: Participating in Clinical Research", "slug": "healthy-volunteer-guide", "category": "Getting Started", "excerpt": "A comprehensive guide for healthy volunteers interested in participating in clinical trials and medical research studies.", "author": "James Rodriguez", "date": "2026-06-10", "readTime": "7 min read" },
-  { "id": 4, "title": "Cancer Clinical Trials Guide: What Patients Need to Know", "slug": "cancer-clinical-trials-guide", "category": "Condition-Specific", "excerpt": "Everything cancer patients should know about clinical trials including access to experimental treatments and cutting-edge therapies.", "author": "Dr. Emily Chen", "date": "2026-06-08", "readTime": "12 min read" },
-  { "id": 5, "title": "Clinical Trial Safety: How Participants Are Protected", "slug": "clinical-trial-safety", "category": "Safety", "excerpt": "Learn about the rigorous safety protocols, ethical guidelines, and regulatory oversight that protect clinical trial participants.", "author": "Dr. Sarah Mitchell", "date": "2026-06-05", "readTime": "9 min read" },
-  { "id": 6, "title": "Understanding Clinical Trial Phases: Phase 1 Through Phase 4", "slug": "understanding-clinical-trial-phases", "category": "Education", "excerpt": "A comprehensive breakdown of the four phases of clinical trials and what each phase means for participants and researchers.", "author": "Dr. Emily Chen", "date": "2026-06-01", "readTime": "10 min read" },
-  { "id": 7, "title": "How to Find Paid Clinical Trials Near You", "slug": "how-to-find-paid-clinical-trials", "category": "Getting Started", "excerpt": "Proven strategies for locating clinical trials in your area that offer compensation for your time and participation.", "author": "James Rodriguez", "date": "2026-05-28", "readTime": "8 min read" },
-  { "id": 8, "title": "What to Expect During Your First Clinical Trial Visit", "slug": "what-to-expect-first-clinical-trial-visit", "category": "Patient Experience", "excerpt": "A step-by-step walkthrough of what happens during your first clinical trial appointment, from screening to follow-up.", "author": "Lisa Thompson", "date": "2026-05-25", "readTime": "6 min read" },
-  { "id": 9, "title": "Diabetes Clinical Trials: Treatment and Prevention Studies", "slug": "diabetes-clinical-trials", "category": "Condition-Specific", "excerpt": "Explore the latest diabetes clinical trials including prevention programs, new medications, and management technologies.", "author": "Dr. Michael Chen", "date": "2026-05-22", "readTime": "11 min read" },
-  { "id": 10, "title": "Questions to Ask Before Joining a Clinical Study", "slug": "questions-to-ask-before-joining-clinical-study", "category": "Patient Experience", "excerpt": "Essential questions every participant should ask their research coordinator before enrolling in a clinical study.", "author": "Attorney Rachel Green", "date": "2026-05-20", "readTime": "5 min read" },
-  { "id": 11, "title": "Clinical Trial Compensation: Taxes and Reporting Guide", "slug": "clinical-trial-compensation-taxes", "category": "Financial", "excerpt": "Learn how clinical trial payments are taxed, what forms you will receive, and how to report compensation on your taxes.", "author": "Michael Park", "date": "2026-05-18", "readTime": "7 min read" },
-  { "id": 12, "title": "Informed Consent: Your Rights as a Research Participant", "slug": "informed-consent-rights-research-participant", "category": "Legal", "excerpt": "Understanding the informed consent process and your legal rights when participating in medical research studies.", "author": "Attorney Rachel Green", "date": "2026-05-15", "readTime": "9 min read" },
-  { "id": 13, "title": "Mental Health Clinical Trials: Depression and Anxiety Studies", "slug": "mental-health-clinical-trials", "category": "Condition-Specific", "excerpt": "Guide to mental health clinical trials for depression, anxiety, PTSD, and other psychiatric conditions.", "author": "Dr. Sarah Mitchell", "date": "2026-05-12", "readTime": "10 min read" },
-  { "id": 14, "title": "Heart Disease Clinical Trials: Cardiovascular Research Guide", "slug": "heart-disease-clinical-trials", "category": "Condition-Specific", "excerpt": "Comprehensive overview of cardiovascular clinical trials including heart failure, hypertension, and cholesterol studies.", "author": "Dr. James Wilson", "date": "2026-05-10", "readTime": "11 min read" },
-  { "id": 15, "title": "Vaccine Clinical Trials: Safety, Efficacy, and Participation", "slug": "vaccine-clinical-trials", "category": "Condition-Specific", "excerpt": "Everything you need to know about vaccine clinical trials, from initial development to phase 4 monitoring.", "author": "Dr. Emily Chen", "date": "2026-05-08", "readTime": "9 min read" },
-  { "id": 16, "title": "Weight Loss Clinical Trials: Research Studies for Obesity", "slug": "weight-loss-clinical-trials", "category": "Condition-Specific", "excerpt": "Discover weight loss clinical trials including new medications, lifestyle interventions, and surgical approaches.", "author": "Lisa Thompson", "date": "2026-05-05", "readTime": "8 min read" },
-  { "id": 17, "title": "Clinical Trial Eligibility: Who Can Participate?", "slug": "clinical-trial-eligibility", "category": "Getting Started", "excerpt": "Understanding clinical trial eligibility criteria including inclusion and exclusion requirements for participants.", "author": "James Rodriguez", "date": "2026-05-02", "readTime": "6 min read" },
-  { "id": 18, "title": "Placebo in Clinical Trials: What Participants Should Know", "slug": "placebo-in-clinical-trials", "category": "Education", "excerpt": "Learn about the use of placebos in clinical research, including randomization, blinding, and what it means for participants.", "author": "Dr. Sarah Mitchell", "date": "2026-04-28", "readTime": "7 min read" },
-  { "id": 19, "title": "Pediatric Clinical Trials: Guide for Parents", "slug": "pediatric-clinical-trials-parent-guide", "category": "Children's Health", "excerpt": "A complete guide for parents considering clinical trial participation for their children, including safety and consent.", "author": "Dr. Emily Chen", "date": "2026-04-25", "readTime": "10 min read" },
-  { "id": 20, "title": "Women's Health Clinical Trials: Research Opportunities", "slug": "womens-health-clinical-trials", "category": "Condition-Specific", "excerpt": "Explore clinical trials focused on women's health including reproductive health, menopause, and female-specific conditions.", "author": "Dr. Sarah Mitchell", "date": "2026-04-22", "readTime": "9 min read" },
-  { "id": 21, "title": "Men's Health Clinical Trials: Prostate and Testosterone Studies", "slug": "mens-health-clinical-trials", "category": "Condition-Specific", "excerpt": "Guide to men's health clinical trials including prostate cancer, low testosterone, and male reproductive health.", "author": "Dr. James Wilson", "date": "2026-04-20", "readTime": "8 min read" },
-  { "id": 22, "title": "Rare Disease Clinical Trials: Finding Treatment Options", "slug": "rare-disease-clinical-trials", "category": "Condition-Specific", "excerpt": "How to find clinical trials for rare diseases and gain access to experimental treatments through research participation.", "author": "Attorney Rachel Green", "date": "2026-04-18", "readTime": "10 min read" },
-  { "id": 23, "title": "Sleep Disorder Clinical Trials: Insomnia and Sleep Apnea Studies", "slug": "sleep-disorder-clinical-trials", "category": "Condition-Specific", "excerpt": "Overview of clinical trials for sleep disorders including insomnia, sleep apnea, narcolepsy, and circadian rhythm disorders.", "author": "Dr. Michael Chen", "date": "2026-04-15", "readTime": "8 min read" },
-  { "id": 24, "title": "Clinical Trial Side Effects: What to Expect", "slug": "clinical-trial-side-effects", "category": "Safety", "excerpt": "Understanding potential side effects in clinical trials, how they are monitored, and what to do if you experience symptoms.", "author": "Dr. Sarah Mitchell", "date": "2026-04-12", "readTime": "7 min read" },
-  { "id": 25, "title": "Neurology Clinical Trials: Alzheimer's and Parkinson's Research", "slug": "neurology-clinical-trials", "category": "Condition-Specific", "excerpt": "Guide to neurology clinical trials for Alzheimer's disease, Parkinson's disease, multiple sclerosis, and epilepsy.", "author": "Dr. Emily Chen", "date": "2026-04-10", "readTime": "11 min read" },
-  { "id": 26, "title": "Observational Studies vs. Interventional Trials: Key Differences", "slug": "observational-vs-interventional-trials", "category": "Education", "excerpt": "Understand the differences between observational studies and interventional clinical trials and what each involves.", "author": "James Rodriguez", "date": "2026-04-08", "readTime": "6 min read" },
-  { "id": 27, "title": "Clinical Trial Insurance: What Is Covered?", "slug": "clinical-trial-insurance", "category": "Financial", "excerpt": "Learn about insurance coverage for clinical trial participation and what costs are typically covered by the study sponsor.", "author": "Michael Park", "date": "2026-04-05", "readTime": "7 min read" },
-  { "id": 28, "title": "Digestive Health Clinical Trials: IBS and Crohn's Research", "slug": "digestive-health-clinical-trials", "category": "Condition-Specific", "excerpt": "Guide to gastrointestinal clinical trials including IBS, Crohn's disease, ulcerative colitis, and GERD studies.", "author": "Dr. James Wilson", "date": "2026-04-02", "readTime": "9 min read" },
-  { "id": 29, "title": "Chronic Pain Clinical Trials: Pain Management Research", "slug": "chronic-pain-clinical-trials", "category": "Condition-Specific", "excerpt": "Overview of chronic pain clinical trials including innovative non-opioid treatments and pain management approaches.", "author": "Lisa Thompson", "date": "2026-03-30", "readTime": "8 min read" },
-  { "id": 30, "title": "Clinical Trial Data Privacy: How Your Information Is Protected", "slug": "clinical-trial-data-privacy", "category": "Legal", "excerpt": "Learn how clinical trial data is collected, stored, and protected, including HIPAA compliance and participant confidentiality.", "author": "Attorney Rachel Green", "date": "2026-03-28", "readTime": "6 min read" },
-  { "id": 31, "title": "Phase 1 Clinical Trials: First-in-Human Studies Explained", "slug": "phase-1-clinical-trials", "category": "Education", "excerpt": "Detailed guide to Phase 1 clinical trials, the first step in testing new treatments in humans.", "author": "Dr. Sarah Mitchell", "date": "2026-03-25", "readTime": "8 min read" },
-  { "id": 32, "title": "Alzheimer's Clinical Trials: Current Research and Studies", "slug": "alzheimers-clinical-trials", "category": "Condition-Specific", "excerpt": "Comprehensive guide to Alzheimer's disease clinical trials including prevention, treatment, and caregiving studies.", "author": "Dr. Emily Chen", "date": "2026-03-22", "readTime": "10 min read" },
-  { "id": 33, "title": "Clinical Trial Myths Debunked: Separating Fact from Fiction", "slug": "clinical-trial-myths-debunked", "category": "Getting Started", "excerpt": "Common myths about clinical trials debunked with facts about safety, compensation, and participation requirements.", "author": "James Rodriguez", "date": "2026-03-20", "readTime": "7 min read" },
-  { "id": 34, "title": "How to Prepare for a Clinical Trial Screening Visit", "slug": "prepare-for-clinical-trial-screening", "category": "Patient Experience", "excerpt": "Practical tips for preparing for your clinical trial screening visit including what to bring and what to expect.", "author": "Lisa Thompson", "date": "2026-03-18", "readTime": "5 min read" },
-  { "id": 35, "title": "COVID-19 Clinical Trials: Past, Present, and Future Research", "slug": "covid-19-clinical-trials", "category": "Condition-Specific", "excerpt": "The evolution of COVID-19 clinical trials from vaccine development to long COVID treatment studies.", "author": "Dr. Michael Chen", "date": "2026-03-15", "readTime": "12 min read" }
+  {
+    "id": 1,
+    "title": "How Clinical Trials Work: A Complete Guide for Beginners",
+    "slug": "how-clinical-trials-work",
+    "category": "Getting Started",
+    "excerpt": "Learn the basics of clinical trials, including what they are, why they matter, and how you can participate.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-06-15",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "What Is a Clinical Trial?", "content": "A clinical trial is a research study conducted with human volunteers to evaluate medical, surgical, or behavioral interventions. These studies are the primary way researchers determine whether new treatments, drugs, or devices are safe and effective for people. Clinical trials follow strict scientific standards designed to protect participants and produce reliable results."},
+      {"heading": "Why Are Clinical Trials Important?", "content": "Clinical trials are essential for advancing medical knowledge and improving patient care. Every medication, vaccine, and medical device available today was tested in clinical trials before receiving approval. Without volunteers willing to participate, medical progress would slow significantly. Trials help answer important questions about new treatments, compare them with existing options, and identify potential side effects."},
+      {"heading": "Who Can Participate in a Clinical Trial?", "content": "Each clinical trial has specific guidelines called eligibility criteria that determine who can join. These criteria may include age, gender, medical history, current health status, and prior treatments. Some trials seek participants with specific conditions, while others need healthy volunteers. The criteria ensure that results are accurate and participants are not exposed to unnecessary risks."},
+      {"heading": "What Are the Phases of a Clinical Trial?", "content": "Clinical trials typically proceed through four phases. Phase 1 involves a small number of participants and focuses on safety and dosage. Phase 2 expands the study to more participants to evaluate effectiveness and further assess safety. Phase 3 involvees larger groups to confirm effectiveness, monitor side effects, and compare with standard treatments. Phase 4 occurs after approval and gathers additional information on long-term safety and effectiveness."},
+      {"heading": "What Are the Risks and Benefits?", "content": "Participating in a clinical trial may offer benefits such as access to new treatments before they become widely available, close medical monitoring, and the satisfaction of contributing to research. Risks may include unknown side effects, the possibility that the treatment is not effective, and additional time and travel commitments. All potential risks and benefits are explained during the informed consent process before enrollment."},
+      {"heading": "How Do I Get Started?", "content": "To find clinical trials that may be right for you, start by searching reputable databases such as ClinicalTrials.gov or using directories like StudyReward. Discuss your options with a healthcare provider who can help determine if participation is appropriate. Once you find a study of interest, contact the research team to learn more about the screening process and what participation involves."}
+    ],
+    "takeaways": [
+      "Clinical trials are research studies that test medical interventions in human volunteers to determine safety and effectiveness.",
+      "Each trial follows strict eligibility criteria and is overseen by regulatory bodies and ethics committees.",
+      "Participation is voluntary and participants can withdraw at any time without penalty.",
+      "Trials progress through phases from initial safety testing to large-scale effectiveness studies.",
+      "All potential risks and benefits are disclosed during the informed consent process."
+    ],
+    "faq": [
+      {"q": "How long do clinical trials typically last?", "a": "The duration varies widely depending on the phase and type of study. Phase 1 trials may last several months, while Phase 3 trials can continue for several years."},
+      {"q": "Do I have to pay to participate in a clinical trial?", "a": "Generally, there is no cost to participate. Study-related medical care and procedures are typically provided at no charge. Some trials may also offer compensation for time and travel."},
+      {"q": "Can I leave a clinical trial after it starts?", "a": "Yes, participation is entirely voluntary. You can withdraw from a trial at any time, for any reason, without affecting your regular medical care."}
+    ],
+    "relatedConditions": ["diabetes", "cancer", "heart-disease", "high-blood-pressure"],
+    "relatedGuides": [2, 5, 6, 17]
+  },
+  {
+    "id": 2,
+    "title": "How Much Do Clinical Trials Pay? Complete Compensation Guide",
+    "slug": "how-much-do-clinical-trials-pay",
+    "category": "Financial",
+    "excerpt": "Understand clinical trial compensation including stipends, travel reimbursement, and what factors affect payment amounts.",
+    "author": "Michael Park",
+    "date": "2026-06-12",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Understanding Clinical Trial Compensation", "content": "Compensation for clinical trial participation varies by study type, duration, and complexity. While some trials offer modest reimbursement for time and travel, others provide more substantial payments, particularly for studies requiring significant time commitments or invasive procedures. Compensation is designed to cover expenses and acknowledge the time contribution of participants."},
+      {"heading": "Types of Compensation", "content": "Participants may receive several forms of compensation including a per-visit stipend paid at each study appointment, a completion bonus for finishing the entire study protocol, travel reimbursement for transportation and parking, and accommodation reimbursement when overnight stays are required. Some longer studies may also provide a daily or weekly stipend."},
+      {"heading": "Factors That Affect Payment Amounts", "content": "Several factors influence how much a clinical trial pays. The duration and total number of required visits play a major role, with longer studies typically offering higher total compensation. Invasive procedures such as biopsies or extended inpatient stays generally command higher payments. The complexity of the study protocol and the level of commitment required also affect compensation. Therapeutic area and study phase may influence budgets available for participant payments."},
+      {"heading": "Typical Compensation Ranges", "content": "While amounts vary significantly, many outpatient clinical trials offer per-visit compensation ranging from $50 to $300. Phase 1 trials that require participants to stay onsite may offer several thousand dollars for a multi-day or multi-week stay. Observational studies involving questionnaires or minimal procedures may offer lower compensation. Some vaccine trials and healthy volunteer studies may provide higher compensation due to the specific participant profiles needed."},
+      {"heading": "Tax Implications of Clinical Trial Payments", "content": "Clinical trial compensation is generally considered taxable income in the United States. Participants may receive a Form 1099-NEC or 1099-MISC from the study sponsor if total payments exceed $600 in a calendar year. It is advisable to keep records of payments received and consult a tax professional for personalized guidance."}
+    ],
+    "takeaways": [
+      "Compensation varies widely based on study type, duration, and procedures involved.",
+      "Per-visit payments typically range from $50 to $300 for outpatient studies.",
+      "Phase 1 inpatient studies may offer several thousand dollars for multi-day stays.",
+      "Travel reimbursement is commonly provided in addition to any stipend.",
+      "Clinical trial payments are generally taxable and should be reported to tax authorities."
+    ],
+    "faq": [
+      {"q": "Is clinical trial compensation guaranteed?", "a": "Compensation is typically tied to completed visits and procedures. Most studies pay per visit, so missing appointments may reduce total compensation."},
+      {"q": "Do I need to report clinical trial income on my taxes?", "a": "Yes, clinical trial compensation is generally considered taxable income. You may receive a Form 1099 if payments exceed $600 in a calendar year."}
+    ],
+    "relatedConditions": ["cancer", "diabetes", "obesity", "chronic-pain"],
+    "relatedGuides": [1, 11, 27, 33]
+  },
+  {
+    "id": 3,
+    "title": "Healthy Volunteer Guide: Participating in Clinical Research",
+    "slug": "healthy-volunteer-guide",
+    "category": "Getting Started",
+    "excerpt": "A comprehensive guide for healthy volunteers interested in participating in clinical trials and medical research studies.",
+    "author": "James Rodriguez",
+    "date": "2026-06-10",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "What Is a Healthy Volunteer?", "content": "A healthy volunteer is a person who participates in clinical research without having the specific condition being studied. Healthy volunteers are essential for many types of research, particularly in Phase 1 trials where the goal is to evaluate safety, tolerability, and how the body processes a new drug. Their participation provides baseline data that researchers use to understand how treatments affect different populations."},
+      {"heading": "Why Are Healthy Volunteers Needed?", "content": "Healthy volunteers serve as control groups in many studies, helping researchers distinguish between effects caused by the treatment and those that occur naturally. They also participate in studies that establish standard ranges for lab tests, investigate how drugs work in the body, and develop new diagnostic tools. Without healthy volunteers, researchers would lack the comparative data needed to interpret study results accurately."},
+      {"heading": "What Types of Studies Recruit Healthy Volunteers?", "content": "Healthy volunteers are commonly recruited for Phase 1 drug safety studies, vaccine trials, medical device testing, diagnostic imaging research, and pharmacokinetic studies that examine how drugs are absorbed and processed. Some observational studies and survey-based research also require healthy participants to establish baseline measurements and population norms."},
+      {"heading": "What to Expect as a Healthy Volunteer", "content": "Participation typically begins with a screening visit that includes a medical history review, physical examination, and lab tests. If accepted into the study, you will follow a specific protocol that may include taking the study drug, undergoing procedures, and attending follow-up visits. Throughout the study, the research team monitors your health closely. Compensation is typically provided for time and travel."}
+    ],
+    "takeaways": [
+      "Healthy volunteers are vital for clinical research as control groups and for safety testing.",
+      "Phase 1 trials frequently need healthy volunteers to establish drug safety profiles.",
+      "Compensation for healthy volunteer studies can be significant, especially for inpatient stays.",
+      "Participation involves thorough medical screening and close monitoring throughout the study."
+    ],
+    "faq": [
+      {"q": "Do healthy volunteers receive the same compensation as patient participants?", "a": "Compensation for healthy volunteers can sometimes be higher because the study requires a specific commitment without the direct therapeutic benefit that patient participants may receive."},
+      {"q": "Can healthy volunteers participate in multiple studies?", "a": "There are usually waiting periods between studies to ensure that previous treatments have cleared from the body and to maintain data integrity."}
+    ],
+    "relatedConditions": ["asthma", "seasonal-allergies", "sleep-disorders"],
+    "relatedGuides": [1, 17, 24, 33]
+  },
+  {
+    "id": 4,
+    "title": "Cancer Clinical Trials Guide: What Patients Need to Know",
+    "slug": "cancer-clinical-trials-guide",
+    "category": "Condition-Specific",
+    "excerpt": "Everything cancer patients should know about clinical trials including access to experimental treatments and cutting-edge therapies.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-06-08",
+    "readTime": "12 min read",
+    "sections": [
+      {"heading": "Why Cancer Clinical Trials Matter", "content": "Cancer clinical trials are research studies that test new approaches to preventing, detecting, diagnosing, and treating cancer. They are essential for advancing oncology care and improving outcomes for patients. Many standard cancer treatments available today, including chemotherapy regimens and immunotherapies, were developed and validated through clinical trials."},
+      {"heading": "Types of Cancer Clinical Trials", "content": "Cancer clinical trials include treatment trials testing new drugs or drug combinations, prevention trials exploring ways to reduce cancer risk, screening trials investigating early detection methods, quality-of-life trials studying ways to improve comfort and well-being, and diagnostic trials examining new testing approaches."},
+      {"heading": "How Cancer Trials Differ from Other Studies", "content": "Cancer trials often have more complex eligibility criteria than studies for other conditions. They may focus on specific cancer types, genetic markers, or treatment histories. Many cancer trials involve multiple treatment cycles over extended periods and require coordination between the research team and the participant's oncology provider."}
+    ],
+    "takeaways": [
+      "Cancer clinical trials test new prevention, detection, diagnosis, and treatment approaches.",
+      "Many standard cancer therapies were developed through clinical trial research.",
+      "Eligibility criteria for cancer trials are often specific to cancer type, stage, and genetic markers.",
+      "Participation offers access to promising treatments not yet widely available."
+    ],
+    "faq": [
+      {"q": "Can I participate in a cancer trial if I have already received treatment?", "a": "It depends on the trial. Some studies require participants to have received no prior treatment, while others specifically enroll patients who have tried certain therapies."},
+      {"q": "Will my insurance cover the costs of a cancer clinical trial?", "a": "Many insurance plans are required to cover routine care costs associated with clinical trials. The study sponsor typically covers the costs of experimental treatments and procedures."}
+    ],
+    "relatedConditions": ["cancer", "breast-cancer", "lung-cancer", "prostate-cancer"],
+    "relatedGuides": [1, 5, 17, 22]
+  },
+  {
+    "id": 5,
+    "title": "Clinical Trial Safety: How Participants Are Protected",
+    "slug": "clinical-trial-safety",
+    "category": "Safety",
+    "excerpt": "Learn about the rigorous safety protocols, ethical guidelines, and regulatory oversight that protect clinical trial participants.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-06-05",
+    "readTime": "9 min read",
+    "sections": [
+      {"heading": "Regulatory Oversight of Clinical Trials", "content": "Clinical trials in the United States are regulated by the Food and Drug Administration (FDA) and the Department of Health and Human Services (HHS). These agencies establish guidelines that govern how trials are conducted, how data is collected, and how participants are protected. Researchers must submit detailed protocols for review before a trial can begin and comply with ongoing reporting requirements throughout the study."},
+      {"heading": "Institutional Review Boards (IRBs)", "content": "Every clinical trial must be approved by an Institutional Review Board (IRB) before it can start. An IRB is an independent committee of medical professionals, ethicists, and community members who review the study protocol to ensure it is ethical and that participant rights are protected. IRBs continue to monitor trials throughout their duration and have the authority to stop a study if safety concerns arise."},
+      {"heading": "Informed Consent Process", "content": "Informed consent is a fundamental ethical requirement in clinical research. Before joining a trial, participants receive detailed information about the study purpose, procedures, potential risks, expected benefits, and alternative options. The consent form is written in plain language, and participants have the opportunity to ask questions. Signing the consent form is voluntary and can be withdrawn at any time."},
+      {"heading": "Data Safety Monitoring Boards", "content": "Many clinical trials, particularly Phase 3 studies, have Data Safety Monitoring Boards (DSMBs) that periodically review unblinded data to assess whether the treatment is safe and effective. DSMBs can recommend modifying or terminating a trial if they find evidence of harm or if the treatment demonstrates clear benefit before the scheduled end of the study."},
+      {"heading": "Adverse Event Reporting", "content": "Clinical trials have rigorous systems for detecting, recording, and reporting adverse events. Participants are monitored throughout the study and any side effects or health changes are documented. Serious adverse events must be reported to regulators and the IRB within specified timeframes. This system ensures that safety concerns are identified and addressed promptly."}
+    ],
+    "takeaways": [
+      "Clinical trials are regulated by the FDA and HHS with strict safety protocols.",
+      "Independent Institutional Review Boards (IRBs) approve and monitor all trials.",
+      "Informed consent ensures participants understand risks and benefits before enrolling.",
+      "Data Safety Monitoring Boards provide independent oversight of ongoing studies.",
+      "Adverse event reporting systems quickly identify and address safety concerns."
+    ],
+    "faq": [
+      {"q": "What happens if I experience side effects during a trial?", "a": "The research team monitors your health closely throughout the study. Any side effects are documented and treated appropriately. The informed consent form describes what side effects may occur and how they will be managed."},
+      {"q": "Can a clinical trial be stopped early for safety reasons?", "a": "Yes. Trials can be stopped early by the IRB, DSMB, or sponsor if significant safety concerns arise or if the treatment shows unexpected harm."}
+    ],
+    "relatedConditions": ["cancer", "heart-disease", "diabetes", "multiple-sclerosis"],
+    "relatedGuides": [1, 6, 12, 24]
+  },
+  {
+    "id": 6,
+    "title": "Understanding Clinical Trial Phases: Phase 1 Through Phase 4",
+    "slug": "understanding-clinical-trial-phases",
+    "category": "Education",
+    "excerpt": "A comprehensive breakdown of the four phases of clinical trials and what each phase means for participants and researchers.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-06-01",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "Phase 1 Trials: Safety First", "content": "Phase 1 trials are the first step in testing a new treatment in humans. These studies typically involve 20 to 80 participants and focus on evaluating safety, determining a safe dosage range, and identifying side effects. Phase 1 trials often enroll healthy volunteers, though some cancer and rare disease trials may include patients. Participants are closely monitored, and the study usually starts with very low doses that gradually increase."},
+      {"heading": "Phase 2 Trials: Efficacy and Side Effects", "content": "Phase 2 trials expand the study to several hundred participants who have the condition the treatment aims to address. These studies gather preliminary data on whether the treatment works and further evaluate its safety. Phase 2 trials help researchers determine the optimal dose and treatment schedule. Multiple Phase 2 trials may explore different dosages or compare the treatment to a placebo."},
+      {"heading": "Phase 3 Trials: Confirmation and Comparison", "content": "Phase 3 trials involve hundreds to thousands of participants and are designed to confirm the treatment's effectiveness, monitor side effects, and compare it with standard treatments or placebos. These studies provide the comprehensive data needed for regulatory approval. Phase 3 trials are typically randomized and may be blinded to reduce bias."},
+      {"heading": "Phase 4 Trials: Post-Market Surveillance", "content": "Phase 4 trials occur after a treatment has received regulatory approval and is available to the public. Also called post-marketing surveillance studies, they gather additional information on long-term safety, effectiveness, and optimal use in diverse populations. Phase 4 studies may identify rare side effects that were not apparent in earlier phases."}
+    ],
+    "takeaways": [
+      "Phase 1 focuses on safety and dosage in a small group of participants.",
+      "Phase 2 evaluates effectiveness and further assesses safety in a larger group.",
+      "Phase 3 confirms effectiveness and provides data for regulatory approval.",
+      "Phase 4 gathers long-term safety data after the treatment is approved.",
+      "Each phase builds on the previous one to ensure thorough evaluation."
+    ],
+    "faq": [
+      {"q": "Do all treatments need to go through all four phases?", "a": "Most treatments go through all four phases, though some may be approved after Phase 3 in certain circumstances such as serious diseases with no available treatments."},
+      {"q": "How long does each phase typically take?", "a": "Phase 1 may take several months to a year. Phase 2 can last from several months to two years. Phase 3 trials often take one to four years. Phase 4 studies may continue indefinitely."}
+    ],
+    "relatedConditions": ["cancer", "diabetes", "alzheimers-disease", "parkinsons-disease"],
+    "relatedGuides": [1, 5, 31, 26]
+  },
+  {
+    "id": 7,
+    "title": "How to Find Paid Clinical Trials Near You",
+    "slug": "how-to-find-paid-clinical-trials",
+    "category": "Getting Started",
+    "excerpt": "Proven strategies for locating clinical trials in your area that offer compensation for your time and participation.",
+    "author": "James Rodriguez",
+    "date": "2026-05-28",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Using Online Clinical Trial Directories", "content": "Several online directories help you find clinical trials. ClinicalTrials.gov is the largest database, maintained by the National Institutes of Health. StudyReward also provides a searchable directory of active studies. These platforms allow you to filter by condition, location, and status. Most directories are free to use and updated regularly with new studies."},
+      {"heading": "Searching by Location and Condition", "content": "To find studies near you, start by searching for your condition or as a healthy volunteer. Filter by your state or city to see locally available options. Many directories allow you to narrow results by study phase, status, and age group. Bookmark promising studies and check back regularly, as new trials are posted throughout the year."},
+      {"heading": "Working with Your Healthcare Provider", "content": "Your healthcare provider can be a valuable resource for finding clinical trials. Doctors often know about research studies being conducted at their institution or in their network. Ask your provider if any trials might be appropriate for your situation. They can also help you evaluate whether participation is aligned with your treatment goals."}
+    ],
+    "takeaways": [
+      "ClinicalTrials.gov and StudyReward are free tools for finding studies by condition and location.",
+      "Filter by state and city to find trials near you.",
+      "Your healthcare provider can help identify appropriate trials and evaluate participation.",
+      "New clinical trials are added regularly, so check back frequently."
+    ],
+    "faq": [
+      {"q": "How often are new clinical trials added to databases?", "a": "New trials are added continuously. ClinicalTrials.gov registers thousands of new studies each year across all therapeutic areas."},
+      {"q": "Can I search for multiple conditions at once?", "a": "Most directories allow searching for a single condition at a time. You can run separate searches for different conditions."}
+    ],
+    "relatedConditions": ["asthma", "arthritis", "depression", "chronic-pain"],
+    "relatedGuides": [1, 2, 10, 34]
+  },
+  {
+    "id": 8,
+    "title": "What to Expect During Your First Clinical Trial Visit",
+    "slug": "what-to-expect-first-clinical-trial-visit",
+    "category": "Patient Experience",
+    "excerpt": "A step-by-step walkthrough of what happens during your first clinical trial appointment, from screening to follow-up.",
+    "author": "Lisa Thompson",
+    "date": "2026-05-25",
+    "readTime": "6 min read",
+    "sections": [
+      {"heading": "Before Your Visit", "content": "Before your first visit, the research team will provide instructions on how to prepare. You may be asked to fast before certain lab tests, bring a list of current medications, and arrive with identification and insurance information if applicable. Confirm the appointment time, location, and parking instructions with the coordinator."},
+      {"heading": "The Screening Process", "content": "The first visit typically begins with a screening process where the research team reviews your medical history, performs a physical examination, and conducts laboratory tests. These baseline measurements help determine if you meet the study's eligibility criteria. The screening visit is also an opportunity to ask questions about the study and clarify what participation will involve."},
+      {"heading": "The Informed Consent Discussion", "content": "If you are not already pre-consented, the informed consent process is reviewed in detail. The research team explains the purpose, procedures, risks, benefits, and alternatives. You will receive a copy of the consent document and have time to review it. You can take the document home to discuss with family or your doctor before signing."},
+      {"heading": "After the Visit", "content": "After your first visit, the research team will inform you whether you qualify to continue in the study. If accepted, your next visit will be scheduled and you will receive instructions for the subsequent steps. If you do not meet the eligibility criteria, you will be informed and may be referred to other studies that could be a better fit."}
+    ],
+    "takeaways": [
+      "Prepare for your first visit by following the research team's instructions carefully.",
+      "The screening process includes medical history review, physical exam, and lab tests.",
+      "Informed consent is fully explained and you can take time to decide.",
+      "Not everyone who screens will qualify, and that is a normal part of the process."
+    ],
+    "faq": [
+      {"q": "How long does the first visit typically take?", "a": "The initial screening visit can take anywhere from one to four hours depending on the study's complexity and the number of procedures required."},
+      {"q": "Should I bring someone with me to the first visit?", "a": "Yes, many participants find it helpful to bring a family member or friend for support and to help remember information discussed during the visit."}
+    ],
+    "relatedConditions": ["diabetes", "cancer", "asthma", "arthritis"],
+    "relatedGuides": [1, 17, 34, 10]
+  },
+  {
+    "id": 9,
+    "title": "Diabetes Clinical Trials: Treatment and Prevention Studies",
+    "slug": "diabetes-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Explore the latest diabetes clinical trials including prevention programs, new medications, and management technologies.",
+    "author": "Dr. Michael Chen",
+    "date": "2026-05-22",
+    "readTime": "11 min read",
+    "sections": [
+      {"heading": "Types of Diabetes Clinical Trials", "content": "Diabetes clinical trials cover a wide range of research areas including new medication development, insulin delivery systems such as smart pens and automated pumps, continuous glucose monitoring technology, lifestyle intervention programs, prevention strategies for at-risk populations, and studies on diabetes complications. Each type of trial addresses different aspects of diabetes care and management."},
+      {"heading": "Prevention Trials", "content": "Prevention trials focus on strategies to delay or prevent the onset of diabetes in people at high risk. These studies may test lifestyle modifications, dietary interventions, or medications that could reduce the likelihood of developing diabetes. Prevention trials are particularly important for addressing the growing prevalence of Type 2 diabetes worldwide."},
+      {"heading": "Treatment Trials", "content": "Treatment trials for diabetes investigate new medications, combination therapies, and advanced insulin formulations. Researchers study how these treatments affect blood glucose control, weight management, cardiovascular health, and quality of life. Many treatment trials also examine how new approaches compare with current standard therapies."}
+    ],
+    "takeaways": [
+      "Diabetes clinical trials cover prevention, treatment, technology, and complication management.",
+      "New drug classes, insulin delivery systems, and monitoring devices are regularly studied.",
+      "Prevention trials focus on delaying or preventing diabetes in at-risk populations.",
+      "Treatment trials compare new approaches with current standard therapies."
+    ],
+    "faq": [
+      {"q": "Can I participate in a diabetes trial if I take insulin?", "a": "Many diabetes trials include participants who use insulin, though some studies may focus on specific treatment regimens. Check the eligibility criteria for each study."},
+      {"q": "Do diabetes trials cover Type 1 and Type 2 separately?", "a": "Most diabetes trials focus on either Type 1 or Type 2 diabetes, as these conditions have different underlying mechanisms and treatment approaches."}
+    ],
+    "relatedConditions": ["diabetes", "obesity", "heart-disease", "kidney-disease"],
+    "relatedGuides": [1, 4, 16, 20]
+  },
+  {
+    "id": 10,
+    "title": "Questions to Ask Before Joining a Clinical Study",
+    "slug": "questions-to-ask-before-joining-clinical-study",
+    "category": "Patient Experience",
+    "excerpt": "Essential questions every participant should ask their research coordinator before enrolling in a clinical study.",
+    "author": "Attorney Rachel Green",
+    "date": "2026-05-20",
+    "readTime": "5 min read",
+    "sections": [
+      {"heading": "Questions About the Study Itself", "content": "Before joining a clinical trial, it is important to understand what the study is trying to accomplish. Ask what condition or question the study is investigating, what phase the trial is in, how long the study will last, and how many visits are required. Understanding these basics helps you evaluate whether the study fits your schedule and expectations."},
+      {"heading": "Questions About Risks and Benefits", "content": "Ask the research team about the potential benefits of participating, what risks and side effects have been identified in earlier research, how side effects will be managed if they occur, and whether there are alternative treatments available outside the study. Also ask what will happen to your medical care if the study is stopped early or if you decide to withdraw."},
+      {"heading": "Questions About Practical Matters", "content": "Practical questions help you plan for participation. Ask about the time commitment required, the location and schedule of visits, whether parking is provided or reimbursed, what compensation is offered and how it is paid, and whether the study covers travel expenses. Also inquire about childcare options if needed and whether procedures can be scheduled outside of work hours."}
+    ],
+    "takeaways": [
+      "Understand the study purpose, duration, and required visits before enrolling.",
+      "Ask about potential risks, side effects, and how they will be managed.",
+      "Clarify practical details including compensation, travel, and scheduling.",
+      "Take notes during discussions so you can review information later."
+    ],
+    "faq": [
+      {"q": "Can I ask questions after I have already enrolled?", "a": "Yes, you can ask questions at any point during the study. The research team is available throughout your participation to address concerns."},
+      {"q": "What if I do not understand something in the consent form?", "a": "Ask the research team to explain any terms or concepts you do not understand. Informed consent requires that you fully understand what you are agreeing to before signing."}
+    ],
+    "relatedConditions": ["cancer", "diabetes", "heart-disease", "arthritis"],
+    "relatedGuides": [1, 8, 12, 17]
+  },
+  {
+    "id": 11,
+    "title": "Clinical Trial Compensation: Taxes and Reporting Guide",
+    "slug": "clinical-trial-compensation-taxes",
+    "category": "Financial",
+    "excerpt": "Learn how clinical trial payments are taxed, what forms you will receive, and how to report compensation on your taxes.",
+    "author": "Michael Park",
+    "date": "2026-05-18",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "Is Clinical Trial Compensation Taxable?", "content": "The Internal Revenue Service generally considers clinical trial compensation as taxable income. This includes per-visit stipends, completion bonuses, and other payments received for participation. The tax treatment is similar to other forms of miscellaneous income. It is important to track all payments received throughout the year to ensure accurate reporting."},
+      {"heading": "Tax Forms You May Receive", "content": "If total compensation from a clinical trial exceeds $600 in a calendar year, the study sponsor will typically issue a Form 1099-NEC (Nonemployee Compensation) or Form 1099-MISC. Some sponsors may issue these forms regardless of the amount. You will need this information when filing your annual tax return. Keep accurate records of payments even if you do not receive a 1099 form."},
+      {"heading": "Reporting Requirements", "content": "Clinical trial income is typically reported on Schedule 1 (Form 1040) as additional income. You may be able to deduct certain out-of-pocket expenses related to your participation, such as travel costs not reimbursed by the sponsor. Consult a tax professional for guidance specific to your situation, especially if you participate in multiple studies during the year."}
+    ],
+    "takeaways": [
+      "Clinical trial compensation is generally treated as taxable income by the IRS.",
+      "You may receive a Form 1099-NEC or 1099-MISC if compensation exceeds $600.",
+      "Report trial income on Schedule 1 of your tax return.",
+      "Keep records of all payments and unreimbursed expenses.",
+      "Consult a tax professional for personalized advice."
+    ],
+    "faq": [
+      {"q": "What if I receive compensation from multiple studies?", "a": "Each sponsor may issue separate 1099 forms. Combine all clinical trial income on your tax return regardless of how many forms you receive."},
+      {"q": "Are travel reimbursements taxable?", "a": "Reimbursements for actual travel expenses are generally not considered taxable income. However, flat per-diem payments may be treated differently."}
+    ],
+    "relatedConditions": [],
+    "relatedGuides": [2, 27, 30, 33]
+  },
+  {
+    "id": 12,
+    "title": "Informed Consent: Your Rights as a Research Participant",
+    "slug": "informed-consent-rights-research-participant",
+    "category": "Legal",
+    "excerpt": "Understanding the informed consent process and your legal rights when participating in medical research studies.",
+    "author": "Attorney Rachel Green",
+    "date": "2026-05-15",
+    "readTime": "9 min read",
+    "sections": [
+      {"heading": "What Is Informed Consent?", "content": "Informed consent is a process that ensures participants understand what a clinical trial involves before deciding whether to join. It is both a legal document and an ongoing conversation between the participant and the research team. The process is designed to respect individual autonomy and ensure participation is truly voluntary."},
+      {"heading": "Key Elements of Informed Consent", "content": "The informed consent document explains the study purpose, duration, required procedures, potential risks and discomforts, expected benefits, available alternative treatments, confidentiality measures, and the voluntary nature of participation. It also describes compensation and medical treatment available in case of injury. Participants should read each section carefully."},
+      {"heading": "Your Rights During the Study", "content": "As a participant, you have the right to withdraw from the study at any time without penalty or loss of benefits. You have the right to be informed of new findings that may affect your willingness to continue. You have the right to ask questions at any time and receive answers in language you understand. You also have the right to privacy and confidentiality of your personal information."}
+    ],
+    "takeaways": [
+      "Informed consent is an ongoing process, not just a one-time form signing.",
+      "The consent document explains risks, benefits, procedures, and alternatives.",
+      "You can withdraw from a study at any time for any reason.",
+      "You have the right to be informed of new findings during the study.",
+      "Your personal information is protected by confidentiality requirements."
+    ],
+    "faq": [
+      {"q": "What happens if I sign the consent form but change my mind?", "a": "You can withdraw at any time by notifying the research team. There are no penalties, and your decision will not affect your regular medical care."},
+      {"q": "Can someone else give consent on my behalf?", "a": "In certain situations, a legally authorized representative may provide consent for individuals who are unable to consent for themselves, such as in studies involving cognitive impairment."}
+    ],
+    "relatedConditions": ["alzheimers-disease", "cancer", "mental-health"],
+    "relatedGuides": [5, 10, 30, 33]
+  },
+  {
+    "id": 13,
+    "title": "Mental Health Clinical Trials: Depression and Anxiety Studies",
+    "slug": "mental-health-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to mental health clinical trials for depression, anxiety, PTSD, and other psychiatric conditions.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-05-12",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "Understanding Mental Health Clinical Trials", "content": "Mental health clinical trials investigate new treatments for conditions such as depression, anxiety disorders, PTSD, bipolar disorder, and schizophrenia. These studies may test new medications, psychotherapeutic approaches, brain stimulation techniques, digital health interventions, or combination treatments. Mental health research presents unique challenges because outcomes are often measured through subjective reports and behavioral assessments."},
+      {"heading": "Types of Mental Health Studies", "content": "Mental health research includes pharmacotherapy trials testing new psychiatric medications, psychotherapy trials evaluating counseling approaches, device trials studying brain stimulation methods such as TMS or tDCS, digital intervention trials testing mobile apps and online therapy platforms, and prevention studies exploring early intervention strategies."}
+    ],
+    "takeaways": [
+      "Mental health trials test medications, therapies, devices, and digital interventions.",
+      "Outcomes in mental health research are often measured through validated questionnaires and clinical assessments.",
+      "Participation in mental health trials provides access to innovative treatments.",
+      "Eligibility criteria may include specific diagnoses, symptom severity, and treatment history."
+    ],
+    "faq": [
+      {"q": "Will I need to stop my current medications to join a mental health trial?", "a": "Some studies require a washout period where current medications are discontinued, while others allow participants to continue their existing treatment. This depends on the study design."},
+      {"q": "Are psychotherapy trials considered clinical research?", "a": "Yes, psychotherapy trials are clinical research studies that follow the same ethical and regulatory standards as medication trials."}
+    ],
+    "relatedConditions": ["depression", "anxiety", "ptsd", "sleep-disorders"],
+    "relatedGuides": [1, 14, 17, 25]
+  },
+  {
+    "id": 14,
+    "title": "Heart Disease Clinical Trials: Cardiovascular Research Guide",
+    "slug": "heart-disease-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Comprehensive overview of cardiovascular clinical trials including heart failure, hypertension, and cholesterol studies.",
+    "author": "Dr. James Wilson",
+    "date": "2026-05-10",
+    "readTime": "11 min read",
+    "sections": [
+      {"heading": "Scope of Cardiovascular Research", "content": "Cardiovascular clinical trials encompass a broad range of conditions including coronary artery disease, heart failure, hypertension, arrhythmias, and valvular heart disease. Research in this field has led to major advances in treatments such as statins, beta-blockers, ACE inhibitors, and interventional procedures like angioplasty and stent placement."},
+      {"heading": "Types of Heart Disease Studies", "content": "Cardiovascular trials include prevention studies examining lifestyle and medication approaches, treatment trials testing new drugs and devices, diagnostic studies evaluating imaging techniques and biomarkers, and procedure trials comparing surgical and interventional approaches."}
+    ],
+    "takeaways": [
+      "Cardiovascular research covers coronary disease, heart failure, hypertension, and arrhythmias.",
+      "Clinical trials have driven major advances in cardiovascular treatments.",
+      "Studies range from prevention to advanced interventional procedures.",
+      "Participation contributes to improving heart disease treatment outcomes."
+    ],
+    "faq": [
+      {"q": "Can I participate in a heart disease trial if I have had a heart attack?", "a": "Many heart disease trials specifically enroll participants who have had heart attacks. Others focus on prevention or management of chronic conditions. Check each study's eligibility criteria."},
+      {"q": "Are cardiovascular device trials different from drug trials?", "a": "Device trials follow similar regulatory pathways but involve different types of procedures and monitoring. They have specific considerations related to implantation and long-term device function."}
+    ],
+    "relatedConditions": ["heart-disease", "high-blood-pressure", "diabetes", "obesity"],
+    "relatedGuides": [4, 9, 16, 21]
+  },
+  {
+    "id": 15,
+    "title": "Vaccine Clinical Trials: Safety, Efficacy, and Participation",
+    "slug": "vaccine-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Everything you need to know about vaccine clinical trials, from initial development to phase 4 monitoring.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-05-08",
+    "readTime": "9 min read",
+    "sections": [
+      {"heading": "How Vaccine Trials Are Conducted", "content": "Vaccine clinical trials follow the same phased approach as other drug trials but have unique considerations. Because vaccines are typically given to healthy people to prevent disease, safety standards are especially rigorous. Vaccine trials must demonstrate that the benefits of preventing disease outweigh any potential risks."},
+      {"heading": "Phases of Vaccine Development", "content": "Vaccine development progresses through preclinical testing, Phase 1 safety studies in small groups, Phase 2 dose-finding and immunogenicity studies, Phase 3 large-scale efficacy trials involving thousands of participants, and Phase 4 post-approval monitoring for long-term safety and effectiveness."}
+    ],
+    "takeaways": [
+      "Vaccine trials follow rigorous safety standards because they are given to healthy individuals.",
+      "The phased development process ensures thorough evaluation before approval.",
+      "Large Phase 3 trials are often needed to demonstrate vaccine efficacy.",
+      "Post-approval monitoring continues to track long-term safety."
+    ],
+    "faq": [
+      {"q": "How are vaccine trial participants monitored for side effects?", "a": "Participants receive detailed diaries to record symptoms and are followed closely by the research team. Serious adverse events are reported to regulators within specified timeframes."},
+      {"q": "Do vaccine trials always include a placebo group?", "a": "Many vaccine trials are placebo-controlled, but the design depends on ethical considerations. If an effective vaccine already exists, it may be used as the comparator instead of a placebo."}
+    ],
+    "relatedConditions": ["covid-19", "seasonal-allergies", "asthma", "hepatitis-b"],
+    "relatedGuides": [5, 6, 18, 35]
+  },
+  {
+    "id": 16,
+    "title": "Weight Loss Clinical Trials: Research Studies for Obesity",
+    "slug": "weight-loss-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Discover weight loss clinical trials including new medications, lifestyle interventions, and surgical approaches.",
+    "author": "Lisa Thompson",
+    "date": "2026-05-05",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Obesity Research Landscape", "content": "Obesity clinical trials investigate a variety of approaches to weight management including pharmacotherapy, lifestyle interventions, behavioral counseling, medical devices, and surgical procedures. Given the complex nature of obesity, research increasingly focuses on personalized approaches that consider genetic, metabolic, behavioral, and environmental factors."},
+      {"heading": "Types of Weight Loss Studies", "content": "Weight loss studies include medication trials testing new appetite-suppressing drugs, lifestyle intervention trials comparing diet and exercise programs, device trials evaluating gastric balloons and neurostimulation devices, surgical trials comparing bariatric procedures, and behavioral studies examining psychological approaches to weight management."}
+    ],
+    "takeaways": [
+      "Obesity research includes pharmacotherapy, lifestyle, device, and surgical studies.",
+      "Personalized approaches considering genetic and metabolic factors are an emerging focus.",
+      "Weight loss trials often require longer follow-up to assess sustained effectiveness.",
+      "Participation in obesity research provides access to comprehensive weight management programs."
+    ],
+    "faq": [
+      {"q": "How long do weight loss clinical trials typically last?", "a": "Weight loss trials often last 6 months to 2 years to evaluate both initial weight loss and long-term weight maintenance."},
+      {"q": "Do weight loss trials include dietary counseling?", "a": "Many trials include dietary counseling and lifestyle support as part of the intervention, even for medication or device studies."}
+    ],
+    "relatedConditions": ["obesity", "diabetes", "heart-disease", "high-blood-pressure"],
+    "relatedGuides": [2, 9, 14, 17]
+  },
+  {
+    "id": 17,
+    "title": "Clinical Trial Eligibility: Who Can Participate?",
+    "slug": "clinical-trial-eligibility",
+    "category": "Getting Started",
+    "excerpt": "Understanding clinical trial eligibility criteria including inclusion and exclusion requirements for participants.",
+    "author": "James Rodriguez",
+    "date": "2026-05-02",
+    "readTime": "6 min read",
+    "sections": [
+      {"heading": "What Are Eligibility Criteria?", "content": "Eligibility criteria are the standards used to determine whether a person can participate in a clinical trial. These criteria ensure that participants share similar characteristics, which helps researchers obtain accurate and reliable results. Criteria also protect participants by excluding individuals who might be at increased risk from the study procedures."},
+      {"heading": "Inclusion Criteria", "content": "Inclusion criteria are the characteristics that a person must have to be eligible for the study. These may include age range, specific diagnosis or condition, disease stage or severity, prior treatment history, and certain laboratory values. Inclusion criteria help ensure that the study population is appropriate for the research question being investigated."},
+      {"heading": "Exclusion Criteria", "content": "Exclusion criteria are characteristics that disqualify a person from participating. These may include certain medical conditions, use of specific medications, pregnancy or breastfeeding, allergies to study components, or participation in another clinical trial. Exclusion criteria protect participant safety and prevent factors that could interfere with study results."}
+    ],
+    "takeaways": [
+      "Eligibility criteria ensure participant safety and reliable study results.",
+      "Inclusion criteria define who can join based on specific characteristics.",
+      "Exclusion criteria identify factors that would make participation unsafe or inappropriate.",
+      "Not meeting criteria for one study does not mean you cannot qualify for another."
+    ],
+    "faq": [
+      {"q": "Can eligibility criteria be waived?", "a": "Generally, eligibility criteria are strictly followed to maintain scientific validity and participant safety. Protocol exceptions are rare and require approval from the study sponsor and IRB."},
+      {"q": "What if I do not meet the criteria for a study I am interested in?", "a": "Ask the research team if there are other studies you might qualify for. Many trials have different eligibility requirements, so it is worth exploring multiple options."}
+    ],
+    "relatedConditions": ["cancer", "diabetes", "asthma", "arthritis"],
+    "relatedGuides": [1, 3, 8, 34]
+  },
+  {
+    "id": 18,
+    "title": "Placebo in Clinical Trials: What Participants Should Know",
+    "slug": "placebo-in-clinical-trials",
+    "category": "Education",
+    "excerpt": "Learn about the use of placebos in clinical research, including randomization, blinding, and what it means for participants.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-04-28",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "What Is a Placebo?", "content": "A placebo is an inactive substance or treatment that looks identical to the treatment being tested but has no active therapeutic ingredients. Placebos are used in clinical trials to help determine whether the treatment's effects are due to the active ingredients or to other factors such as the participant's expectations."},
+      {"heading": "Randomization and Blinding", "content": "Randomization means participants are assigned to treatment or placebo groups by chance, like flipping a coin. Blinding means participants and sometimes researchers do not know who is receiving the treatment and who is receiving the placebo. Single-blind studies keep participants unaware, while double-blind studies keep both participants and researchers unaware of group assignments."},
+      {"heading": "Ethical Use of Placebos", "content": "Placebos are used ethically when no standard treatment exists for the condition, or when the current standard treatment has limited effectiveness. Participants are always informed during the consent process that they may receive a placebo and are told the probability of receiving the treatment versus placebo."}
+    ],
+    "takeaways": [
+      "Placebos are inactive substances used to compare against the treatment being tested.",
+      "Randomization assigns participants to groups by chance to reduce bias.",
+      "Blinding prevents participants and researchers from knowing group assignments.",
+      "Placebo use is governed by ethical guidelines to protect participants.",
+      "Participants are always informed about the possibility of receiving a placebo."
+    ],
+    "faq": [
+      {"q": "Will I know if I am receiving the placebo?", "a": "In blinded studies, neither you nor the research team will know which group you are in during the study. The information becomes available after the study ends."},
+      {"q": "Do placebo groups receive any treatment?", "a": "In many studies, all participants including the placebo group continue to receive their standard medical care. Placebos replace only the experimental treatment."}
+    ],
+    "relatedConditions": ["chronic-pain", "depression", "anxiety", "migraine"],
+    "relatedGuides": [5, 6, 26, 31]
+  },
+  {
+    "id": 19,
+    "title": "Pediatric Clinical Trials: Guide for Parents",
+    "slug": "pediatric-clinical-trials-parent-guide",
+    "category": "Childrens Health",
+    "excerpt": "A complete guide for parents considering clinical trial participation for their children, including safety and consent.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-04-25",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "Why Pediatric Research Matters", "content": "Children are not simply small adults when it comes to medical treatment. Their bodies process medications differently, and conditions may manifest differently in developing bodies. Pediatric clinical trials are essential for developing treatments that are safe and effective specifically for children. Without dedicated pediatric research, children may receive treatments that have only been tested in adults."},
+      {"heading": "Additional Safety Measures", "content": "Pediatric clinical trials have additional safety protections beyond those in adult trials. These include pediatric-specific ethics review, age-appropriate consent and assent processes, and often more frequent safety monitoring. Researchers are trained to work with children and to create a comfortable environment for young participants."},
+      {"heading": "Parental Consent and Child Assent", "content": "For children to participate in research, parents or legal guardians must provide informed consent. Additionally, children who are old enough to understand the study are asked to provide their own assent, or agreement to participate. Both parental consent and child assent are required for most pediatric studies."}
+    ],
+    "takeaways": [
+      "Pediatric research is essential because children's medical needs differ from adults.",
+      "Pediatric trials have additional safety measures and ethical safeguards.",
+      "Both parental consent and child assent are required for participation.",
+      "Researchers use age-appropriate approaches to explain studies to children."
+    ],
+    "faq": [
+      {"q": "At what age can a child provide assent?", "a": "The age varies, but typically children aged 7 and older may be asked to provide assent. The process is adapted to the child's developmental level."},
+      {"q": "Are pediatric trials only for serious conditions?", "a": "Pediatric trials cover a wide range of conditions from common issues like asthma and allergies to rare diseases and cancer."}
+    ],
+    "relatedConditions": ["asthma", "autism", "adhd", "seasonal-allergies"],
+    "relatedGuides": [1, 5, 12, 20]
+  },
+  {
+    "id": 20,
+    "title": "Women's Health Clinical Trials: Research Opportunities",
+    "slug": "womens-health-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Explore clinical trials focused on women's health including reproductive health, menopause, and female-specific conditions.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-04-22",
+    "readTime": "9 min read",
+    "sections": [
+      {"heading": "Women's Health Research Areas", "content": "Women's health clinical trials cover conditions that uniquely or disproportionately affect women. These include reproductive health studies, menopause research, osteoporosis prevention, autoimmune disease studies, breast and gynecologic cancer trials, and cardiovascular disease research which affects women differently than men."},
+      {"heading": "Participation Considerations for Women", "content": "Women of childbearing potential may need to use contraception during clinical trials to prevent pregnancy exposure to experimental treatments. Pregnant and breastfeeding women are often excluded from early-phase trials unless the study specifically addresses pregnancy-related conditions."}
+    ],
+    "takeaways": [
+      "Women's health trials cover reproductive health, menopause, osteoporosis, and female-specific cancers.",
+      "Contraception requirements may apply for women of childbearing potential in some studies.",
+      "Pregnancy-related trials address conditions unique to pregnancy and postpartum health."
+    ],
+    "faq": [
+      {"q": "Can I participate in a clinical trial if I am pregnant?", "a": "Most clinical trials exclude pregnant women due to unknown risks to the fetus. However, some trials specifically study conditions that affect pregnant women."},
+      {"q": "Are there clinical trials specifically for menopause symptoms?", "a": "Yes, there are many clinical trials investigating treatments for menopause symptoms including hormone therapy alternatives, hot flash treatments, and bone health interventions."}
+    ],
+    "relatedConditions": ["osteoporosis", "cancer", "arthritis", "autoimmune-disease"],
+    "relatedGuides": [4, 13, 14, 19]
+  },
+  {
+    "id": 21,
+    "title": "Men's Health Clinical Trials: Prostate and Testosterone Studies",
+    "slug": "mens-health-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to men's health clinical trials including prostate cancer, low testosterone, and male reproductive health.",
+    "author": "Dr. James Wilson",
+    "date": "2026-04-20",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Men's Health Research Focus Areas", "content": "Men's health clinical trials investigate conditions that affect men at higher rates or uniquely. These include prostate cancer studies, testosterone replacement research, cardiovascular disease prevention, male infertility and reproductive health, and mental health conditions such as depression that may present differently in men."},
+      {"heading": "Prostate Cancer Clinical Trials", "content": "Prostate cancer is one of the most researched areas in men's health. Clinical trials explore new screening methods, active surveillance strategies, surgical techniques, radiation approaches, hormonal therapies, and emerging treatments such as immunotherapy and targeted therapy for advanced disease."}
+    ],
+    "takeaways": [
+      "Men's health trials cover prostate cancer, testosterone, cardiovascular health, and male infertility.",
+      "Prostate cancer research is a major focus area with many active trials.",
+      "Participation in men's health trials advances understanding of male-specific conditions."
+    ],
+    "faq": [
+      {"q": "Are there clinical trials for low testosterone?", "a": "Yes, many clinical trials study testosterone replacement therapy, including different delivery methods such as gels, injections, and pellets, as well as long-term safety and effectiveness."},
+      {"q": "Can I participate in a prostate cancer trial if I have already been treated?", "a": "Eligibility depends on the study. Some trials enroll men at initial diagnosis, while others focus on recurrent or advanced disease."}
+    ],
+    "relatedConditions": ["cancer", "heart-disease", "depression", "obesity"],
+    "relatedGuides": [4, 13, 14, 16]
+  },
+  {
+    "id": 22,
+    "title": "Rare Disease Clinical Trials: Finding Treatment Options",
+    "slug": "rare-disease-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "How to find clinical trials for rare diseases and gain access to experimental treatments through research participation.",
+    "author": "Attorney Rachel Green",
+    "date": "2026-04-18",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "Challenges in Rare Disease Research", "content": "Rare diseases each affect a small percentage of the population, which creates unique challenges for clinical research. Finding enough participants for statistically meaningful trials can be difficult. However, regulatory incentives such as orphan drug designation encourage pharmaceutical companies to develop treatments for rare conditions."},
+      {"heading": "Finding Rare Disease Trials", "content": "Patients with rare diseases can find clinical trials through specialized databases, patient advocacy organizations, rare disease foundations, and research networks. Many rare disease organizations maintain registries that connect patients with relevant research opportunities."}
+    ],
+    "takeaways": [
+      "Rare disease trials face unique challenges due to small patient populations.",
+      "Orphan drug incentives encourage development of rare disease treatments.",
+      "Patient advocacy organizations are valuable resources for finding trials.",
+      "Participation in rare disease research can provide access to experimental treatments."
+    ],
+    "faq": [
+      {"q": "What is orphan drug designation?", "a": "Orphan drug designation is a special status granted by the FDA to drugs developed for rare diseases. It provides incentives such as tax credits and market exclusivity to encourage development."},
+      {"q": "Can I participate in a rare disease trial if I travel to the study site?", "a": "Yes, many rare disease trials accept participants from outside the local area. Some studies may offer travel assistance or reimbursement."}
+    ],
+    "relatedConditions": ["cystic-fibrosis", "huntingtons-disease", "als", "sickle-cell-disease"],
+    "relatedGuides": [1, 4, 7, 12]
+  },
+  {
+    "id": 23,
+    "title": "Sleep Disorder Clinical Trials: Insomnia and Sleep Apnea Studies",
+    "slug": "sleep-disorder-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Overview of clinical trials for sleep disorders including insomnia, sleep apnea, narcolepsy, and circadian rhythm disorders.",
+    "author": "Dr. Michael Chen",
+    "date": "2026-04-15",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Sleep Research Overview", "content": "Sleep disorder clinical trials investigate conditions that affect sleep quality, duration, and timing. These include insomnia studies testing behavioral therapies and medications, sleep apnea research examining CPAP devices and surgical interventions, narcolepsy trials exploring new treatments, and circadian rhythm studies addressing shift work sleep disorder and jet lag."},
+      {"heading": "Diagnostic and Treatment Studies", "content": "Sleep research includes diagnostic studies validating new testing methods such as home sleep tests, treatment studies comparing different therapeutic approaches, and device studies evaluating CPAP alternatives and neurostimulation treatments for sleep apnea."}
+    ],
+    "takeaways": [
+      "Sleep research covers insomnia, sleep apnea, narcolepsy, and circadian rhythm disorders.",
+      "Studies include behavioral, pharmacological, and device-based interventions.",
+      "Participation often includes sleep monitoring and standardized sleep assessments."
+    ],
+    "faq": [
+      {"q": "Do I need to stay overnight at a sleep center to participate?", "a": "Some studies require overnight stays in a sleep laboratory for monitoring, while others use home-based sleep testing devices."},
+      {"q": "Can I participate in a sleep study if I work night shifts?", "a": "Some sleep studies specifically enroll shift workers to study circadian rhythm disorders and interventions."}
+    ],
+    "relatedConditions": ["sleep-disorders", "depression", "anxiety", "obesity"],
+    "relatedGuides": [4, 13, 16, 24]
+  },
+  {
+    "id": 24,
+    "title": "Clinical Trial Side Effects: What to Expect",
+    "slug": "clinical-trial-side-effects",
+    "category": "Safety",
+    "excerpt": "Understanding potential side effects in clinical trials, how they are monitored, and what to do if you experience symptoms.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-04-12",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "Understanding Side Effects in Research", "content": "All medical treatments have potential side effects, and clinical trials are designed to identify and characterize these effects. Side effects in clinical trials are systematically documented and graded by severity. Some side effects are expected based on earlier research, while others may be unexpected and discovered during the study."},
+      {"heading": "How Side Effects Are Monitored", "content": "Clinical trials have comprehensive monitoring systems for side effects. Participants are asked to report any symptoms they experience, and researchers conduct regular assessments including laboratory tests and physical examinations. Side effects are documented in detail and reviewed by the research team, the study sponsor, and regulatory authorities."}
+    ],
+    "takeaways": [
+      "Side effects are systematically monitored and documented throughout clinical trials.",
+      "Participants receive clear instructions on reporting symptoms.",
+      "Research teams are trained to manage side effects that occur during studies.",
+      "Safety data from trials helps inform future participants and medical practice."
+    ],
+    "faq": [
+      {"q": "What should I do if I experience a side effect during a trial?", "a": "Contact the research team immediately. They will assess your symptoms and determine the appropriate course of action."},
+      {"q": "Are all side effects reported to regulators?", "a": "Serious adverse events must be reported to regulators within specified timeframes. All side effects are documented in the study records."}
+    ],
+    "relatedConditions": ["cancer", "arthritis", "chronic-pain", "migraine"],
+    "relatedGuides": [5, 6, 18, 26]
+  },
+  {
+    "id": 25,
+    "title": "Neurology Clinical Trials: Alzheimer's and Parkinson's Research",
+    "slug": "neurology-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to neurology clinical trials for Alzheimer's disease, Parkinson's disease, multiple sclerosis, and epilepsy.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-04-10",
+    "readTime": "11 min read",
+    "sections": [
+      {"heading": "Neurology Research Areas", "content": "Neurology clinical trials investigate disorders of the brain and nervous system. Major research areas include Alzheimer's disease and other dementias, Parkinson's disease, multiple sclerosis, epilepsy, migraine, and stroke recovery. Advances in neuroimaging and biomarker research are opening new possibilities for earlier diagnosis and targeted treatments."},
+      {"heading": "Alzheimer's Disease Trials", "content": "Alzheimer's research includes prevention trials for at-risk individuals, disease-modifying treatments targeting amyloid and tau proteins, cognitive enhancement approaches, and caregiving interventions. Many Alzheimer's trials require participants to undergo cognitive assessments and brain imaging."}
+    ],
+    "takeaways": [
+      "Neurology trials cover Alzheimer's, Parkinson's, MS, epilepsy, migraine, and stroke.",
+      "Advances in biomarkers and neuroimaging are enabling earlier and more targeted interventions.",
+      "Cognitive assessments and brain imaging are common in neurology research.",
+      "Participation contributes to understanding and treating complex brain disorders."
+    ],
+    "faq": [
+      {"q": "Can I participate in an Alzheimer's trial if I have mild cognitive impairment?", "a": "Yes, many Alzheimer's prevention trials specifically enroll individuals with mild cognitive impairment or genetic risk factors."},
+      {"q": "Do Parkinson's disease trials require participants to stop their medications?", "a": "Some studies require medication adjustments, while others allow participants to continue their current treatment. This is explained during the screening process."}
+    ],
+    "relatedConditions": ["alzheimers-disease", "parkinsons-disease", "multiple-sclerosis", "migraine"],
+    "relatedGuides": [4, 13, 22, 29]
+  },
+  {
+    "id": 26,
+    "title": "Observational Studies vs. Interventional Trials: Key Differences",
+    "slug": "observational-vs-interventional-trials",
+    "category": "Education",
+    "excerpt": "Understand the differences between observational studies and interventional clinical trials and what each involves.",
+    "author": "James Rodriguez",
+    "date": "2026-04-08",
+    "readTime": "6 min read",
+    "sections": [
+      {"heading": "What Are Interventional Trials?", "content": "Interventional trials are studies where participants receive a specific intervention such as a drug, device, or behavioral change. Researchers then observe the effects of this intervention. These trials are designed to determine whether the intervention causes a specific outcome. Most clinical trials that test new treatments are interventional."},
+      {"heading": "What Are Observational Studies?", "content": "Observational studies involve watching participants without assigning any specific intervention. Researchers collect data on health outcomes as they occur naturally. These studies are useful for identifying risk factors, understanding disease progression, and generating hypotheses that can be tested in interventional trials."}
+    ],
+    "takeaways": [
+      "Interventional trials test specific treatments or interventions in participants.",
+      "Observational studies collect data without assigning interventions.",
+      "Both types of research are important for advancing medical knowledge.",
+      "Observational studies often generate hypotheses that are tested in interventional trials."
+    ],
+    "faq": [
+      {"q": "Do observational studies have the same safety protections as interventional trials?", "a": "Yes, observational studies are also reviewed by IRBs and must follow ethical guidelines, though the risk profile is typically lower since no intervention is being tested."},
+      {"q": "Which type of study is better for learning about treatment effectiveness?", "a": "Interventional trials are generally considered the gold standard for determining treatment effectiveness, while observational studies provide valuable real-world data."}
+    ],
+    "relatedConditions": ["cancer", "heart-disease", "diabetes", "asthma"],
+    "relatedGuides": [1, 6, 18, 31]
+  },
+  {
+    "id": 27,
+    "title": "Clinical Trial Insurance: What Is Covered?",
+    "slug": "clinical-trial-insurance",
+    "category": "Financial",
+    "excerpt": "Learn about insurance coverage for clinical trial participation and what costs are typically covered by the study sponsor.",
+    "author": "Michael Park",
+    "date": "2026-04-05",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "Who Pays for Clinical Trial Costs?", "content": "Clinical trial costs are typically divided between the study sponsor and the participant's health insurance. The sponsor usually covers the cost of the experimental treatment, study-related tests and procedures, and any additional monitoring required. Routine medical care that would be provided regardless of trial participation is often billed to insurance."},
+      {"heading": "Insurance Coverage for Trial Participation", "content": "Many health insurance plans cover routine care costs associated with clinical trials. The Affordable Care Act requires many insurers to cover routine patient care costs for participants in approved clinical trials. However, insurance coverage varies by plan and state. It is important to verify coverage before enrolling."}
+    ],
+    "takeaways": [
+      "Study sponsors typically cover experimental treatment and study-related procedures.",
+      "Routine care costs may be billed to health insurance.",
+      "The Affordable Care Act requires many insurers to cover routine costs for trial participants.",
+      "Verify insurance coverage for clinical trial participation before enrolling."
+    ],
+    "faq": [
+      {"q": "What if my insurance denies coverage for trial-related care?", "a": "Many sponsors have programs to assist with uncovered costs. The research team can help you understand your coverage and options."},
+      {"q": "Can I participate in a trial if I do not have health insurance?", "a": "Some trials accept uninsured participants, but it depends on the study. The research team can discuss specific requirements and available support."}
+    ],
+    "relatedConditions": [],
+    "relatedGuides": [2, 11, 30, 33]
+  },
+  {
+    "id": 28,
+    "title": "Digestive Health Clinical Trials: IBS and Crohn's Research",
+    "slug": "digestive-health-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to gastrointestinal clinical trials including IBS, Crohn's disease, ulcerative colitis, and GERD studies.",
+    "author": "Dr. James Wilson",
+    "date": "2026-04-02",
+    "readTime": "9 min read",
+    "sections": [
+      {"heading": "Gastrointestinal Research Overview", "content": "Gastrointestinal clinical trials investigate a wide range of digestive system conditions. Research areas include irritable bowel syndrome treatments, inflammatory bowel disease therapies for Crohn's disease and ulcerative colitis, gastroesophageal reflux disease management, celiac disease studies, and liver and pancreatic conditions."},
+      {"heading": "IBS and IBD Research", "content": "Irritable bowel syndrome trials often test dietary interventions, microbiome-based therapies, and medications targeting gut-brain interactions. Inflammatory bowel disease research focuses on biologic therapies, small molecule drugs, and strategies for maintaining remission and preventing disease progression."}
+    ],
+    "takeaways": [
+      "GI research covers IBS, IBD, GERD, celiac disease, and liver conditions.",
+      "IBS trials explore dietary, microbiome, and gut-brain targeted approaches.",
+      "IBD research focuses on biologic therapies and remission maintenance.",
+      "Participation in GI research contributes to improving digestive health treatments."
+    ],
+    "faq": [
+      {"q": "Do digestive health trials require dietary changes?", "a": "Many GI trials include dietary modifications as part of the study protocol. Participants receive guidance on any required dietary changes."},
+      {"q": "Are there clinical trials for food allergies?", "a": "Yes, food allergy clinical trials study oral immunotherapy, biologic treatments, and desensitization approaches for various food allergies."}
+    ],
+    "relatedConditions": ["crohns-disease", "liver-disease", "obesity", "diabetes"],
+    "relatedGuides": [4, 9, 16, 29]
+  },
+  {
+    "id": 29,
+    "title": "Chronic Pain Clinical Trials: Pain Management Research",
+    "slug": "chronic-pain-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Overview of chronic pain clinical trials including innovative non-opioid treatments and pain management approaches.",
+    "author": "Lisa Thompson",
+    "date": "2026-03-30",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "Pain Research Landscape", "content": "Chronic pain clinical trials investigate treatments for conditions such as back pain, neuropathic pain, fibromyalgia, arthritis pain, and migraine. Given the opioid crisis, there is a major focus on developing non-opioid pain management alternatives including novel medications, nerve stimulation devices, physical therapy approaches, and psychological interventions."},
+      {"heading": "Types of Pain Studies", "content": "Pain research includes pharmacotherapy trials testing new non-opioid analgesics, device trials studying spinal cord stimulation and TENS units, interventional procedure trials for nerve blocks and injections, behavioral trials for cognitive behavioral therapy and mindfulness, and complementary medicine trials for acupuncture and massage."}
+    ],
+    "takeaways": [
+      "Chronic pain research is increasingly focused on non-opioid alternatives.",
+      "Pain studies cover pharmacotherapy, devices, procedures, behavioral, and complementary approaches.",
+      "Outcome measures include pain intensity, functional status, and quality of life.",
+      "Participation in pain research contributes to developing safer pain management options."
+    ],
+    "faq": [
+      {"q": "Can I participate in a pain trial if I am currently taking pain medication?", "a": "Some studies require participants to be on stable doses, while others may require washout periods. This is evaluated during the screening process."},
+      {"q": "Are there clinical trials specifically for fibromyalgia?", "a": "Yes, fibromyalgia clinical trials test medications, exercise programs, cognitive behavioral therapy, and complementary treatments specifically for this condition."}
+    ],
+    "relatedConditions": ["chronic-pain", "arthritis", "fibromyalgia", "migraine"],
+    "relatedGuides": [4, 5, 13, 24]
+  },
+  {
+    "id": 30,
+    "title": "Clinical Trial Data Privacy: How Your Information Is Protected",
+    "slug": "clinical-trial-data-privacy",
+    "category": "Legal",
+    "excerpt": "Learn how clinical trial data is collected, stored, and protected, including HIPAA compliance and participant confidentiality.",
+    "author": "Attorney Rachel Green",
+    "date": "2026-03-28",
+    "readTime": "6 min read",
+    "sections": [
+      {"heading": "Data Protection Standards", "content": "Clinical trial data is protected by multiple layers of privacy and security standards. The Health Insurance Portability and Accountability Act (HIPAA) establishes national standards for protecting health information. Research institutions have additional policies and procedures to safeguard participant data."},
+      {"heading": "How Your Data Is Used", "content": "Clinical trial data is used to evaluate the safety and effectiveness of the treatment being studied. Data is typically de-identified before being shared with researchers, regulators, and the scientific community. Participants are informed during the consent process about how their data will be collected, used, and shared."}
+    ],
+    "takeaways": [
+      "Participant data is protected by HIPAA and institutional privacy policies.",
+      "Data is typically de-identified before being shared externally.",
+      "The informed consent process explains how your data will be used.",
+      "Participants have rights to access their own health information."
+    ],
+    "faq": [
+      {"q": "How long is my clinical trial data kept?", "a": "Research data is typically kept for years or even decades to allow for long-term analysis and regulatory review. Retention periods are specified in the consent document."},
+      {"q": "Can my data be shared with other researchers?", "a": "With appropriate de-identification and IRB approval, clinical trial data may be shared with other researchers to advance scientific knowledge."}
+    ],
+    "relatedConditions": [],
+    "relatedGuides": [5, 12, 27, 33]
+  },
+  {
+    "id": 31,
+    "title": "Phase 1 Clinical Trials: First-in-Human Studies Explained",
+    "slug": "phase-1-clinical-trials",
+    "category": "Education",
+    "excerpt": "Detailed guide to Phase 1 clinical trials, the first step in testing new treatments in humans.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-03-25",
+    "readTime": "8 min read",
+    "sections": [
+      {"heading": "What Makes Phase 1 Unique", "content": "Phase 1 trials are the first time a new treatment is tested in humans after extensive preclinical research. These studies typically involve 20 to 80 participants and focus on determining safety, tolerability, and how the body processes the treatment. Phase 1 studies are closely monitored and proceed cautiously with dose escalation."},
+      {"heading": "Dose Escalation in Phase 1", "content": "Phase 1 trials often use dose escalation designs where early participants receive lower doses and later participants may receive higher doses, provided earlier doses were well-tolerated. This approach helps identify the maximum tolerated dose while maintaining safety. Participants are informed about which dose level the study is currently testing."}
+    ],
+    "takeaways": [
+      "Phase 1 trials are the first human studies after extensive preclinical research.",
+      "Small groups of participants help determine safety and appropriate dosing.",
+      "Dose escalation designs gradually increase doses as safety is confirmed.",
+      "Phase 1 participants receive close monitoring throughout the study."
+    ],
+    "faq": [
+      {"q": "Are Phase 1 trials risky?", "a": "Phase 1 trials involve uncertainty since the treatment has limited human data. However, extensive preclinical testing has been completed, and multiple safety measures are in place to protect participants."},
+      {"q": "Do Phase 1 trials ever benefit participants directly?", "a": "While Phase 1 trials primarily focus on safety, some participants may experience therapeutic benefit. This is more common in oncology Phase 1 trials where participants may have exhausted standard treatment options."}
+    ],
+    "relatedConditions": ["cancer", "diabetes", "heart-disease", "chronic-pain"],
+    "relatedGuides": [1, 5, 6, 26]
+  },
+  {
+    "id": 32,
+    "title": "Alzheimer's Clinical Trials: Current Research and Studies",
+    "slug": "alzheimers-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Comprehensive guide to Alzheimer's disease clinical trials including prevention, treatment, and caregiving studies.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-03-22",
+    "readTime": "10 min read",
+    "sections": [
+      {"heading": "Alzheimer's Research Priorities", "content": "Alzheimer's disease clinical trials address multiple aspects of the condition including prevention strategies for at-risk individuals, disease-modifying therapies targeting pathological changes in the brain, symptomatic treatments for cognitive and behavioral symptoms, and caregiving interventions to support families."},
+      {"heading": "Participation in Alzheimer's Studies", "content": "Alzheimer's trials include participants across the disease spectrum from those with no symptoms but genetic risk factors, to individuals with mild cognitive impairment, to those living with moderate to severe Alzheimer's. Each stage of the disease requires different types of studies and interventions."}
+    ],
+    "takeaways": [
+      "Alzheimer's research covers prevention, disease modification, symptom management, and caregiver support.",
+      "Trials include participants across all stages of the disease.",
+      "Biomarker-based studies are advancing early detection and intervention.",
+      "Participation in Alzheimer's research is critical for developing effective treatments."
+    ],
+    "faq": [
+      {"q": "Can caregivers participate in Alzheimer's trials?", "a": "Yes, many Alzheimer's studies include caregiver components that provide support, education, and training for family members caring for individuals with Alzheimer's."},
+      {"q": "Are there Alzheimer's prevention trials for people with a family history?", "a": "Yes, prevention trials specifically enroll individuals with genetic risk factors or family history to test interventions that may delay or prevent cognitive decline."}
+    ],
+    "relatedConditions": ["alzheimers-disease", "parkinsons-disease", "dementia", "depression"],
+    "relatedGuides": [4, 14, 25, 29]
+  },
+  {
+    "id": 33,
+    "title": "Clinical Trial Myths Debunked: Separating Fact from Fiction",
+    "slug": "clinical-trial-myths-debunked",
+    "category": "Getting Started",
+    "excerpt": "Common myths about clinical trials debunked with facts about safety, compensation, and participation requirements.",
+    "author": "James Rodriguez",
+    "date": "2026-03-20",
+    "readTime": "7 min read",
+    "sections": [
+      {"heading": "Myth: Clinical Trials Are Dangerous", "content": "While clinical trials do involve some level of risk, they are not inherently dangerous. Every trial follows strict safety protocols, is reviewed by multiple oversight bodies, and must meet ethical and regulatory standards. Risks are clearly explained during the consent process, and participants can withdraw at any time."},
+      {"heading": "Myth: You Must Be Sick to Participate", "content": "Many clinical trials need healthy volunteers. Phase 1 safety studies, vaccine trials, and medical device studies often recruit healthy participants. Healthy volunteers play a vital role in establishing baseline data and safety profiles for new treatments."},
+      {"heading": "Myth: Clinical Trials Are Only for Last Resort", "content": "Clinical trials are not only for people who have exhausted all other options. People participate in trials for many reasons including access to new treatments, contributing to science, receiving close medical monitoring, and receiving compensation for their time."}
+    ],
+    "takeaways": [
+      "Clinical trials have extensive safety protocols and oversight.",
+      "Healthy volunteers are needed for many types of research.",
+      "People participate in trials for many reasons, not just as a last resort.",
+      "Understanding the facts helps potential participants make informed decisions."
+    ],
+    "faq": [
+      {"q": "Is it true that clinical trials only test untested treatments?", "a": "No. Clinical trials test a wide range of interventions at various stages, from first-in-human studies to comparisons of established treatments."},
+      {"q": "Do clinical trials ever use placebos when effective treatments exist?", "a": "Placebos are used ethically when no standard treatment exists, or when the study design compares adding a new treatment to standard care versus standard care alone."}
+    ],
+    "relatedConditions": [],
+    "relatedGuides": [1, 3, 5, 12]
+  },
+  {
+    "id": 34,
+    "title": "How to Prepare for a Clinical Trial Screening Visit",
+    "slug": "prepare-for-clinical-trial-screening",
+    "category": "Patient Experience",
+    "excerpt": "Practical tips for preparing for your clinical trial screening visit including what to bring and what to expect.",
+    "author": "Lisa Thompson",
+    "date": "2026-03-18",
+    "readTime": "5 min read",
+    "sections": [
+      {"heading": "Documents and Information to Bring", "content": "For your screening visit, bring a photo ID, your insurance card if applicable, a list of current medications including dosages, your medical records if available, and your calendar to schedule future appointments. If you have a primary care physician, bring their contact information."},
+      {"heading": "How to Prepare Physically", "content": "Follow any pre-visit instructions provided by the research team. You may need to fast before blood tests, avoid certain medications, or refrain from alcohol or caffeine. Get a good night's sleep and stay hydrated. Wear comfortable clothing in case physical examinations are needed."},
+      {"heading": "Questions to Ask During Screening", "content": "Use the screening visit to ask any remaining questions. Topics to cover include the study schedule, time commitment, compensation details, what happens if you need to miss a visit, and how the study will communicate with your regular doctor."}
+    ],
+    "takeaways": [
+      "Bring identification, insurance, medication list, and medical records to screening.",
+      "Follow all pre-visit instructions provided by the research team.",
+      "Use the screening visit as an opportunity to ask questions.",
+      "Not everyone passes screening, and that is a normal part of the process."
+    ],
+    "faq": [
+      {"q": "What happens if I do not pass the screening?", "a": "If you do not meet the eligibility criteria, the research team will inform you. They may be able to refer you to other studies that could be a better fit."},
+      {"q": "How long after screening will I know if I am accepted?", "a": "This varies by study. Some provide results within a few days, while others may take several weeks depending on lab tests and other evaluations."}
+    ],
+    "relatedConditions": ["diabetes", "cancer", "asthma", "arthritis"],
+    "relatedGuides": [8, 10, 17, 33]
+  },
+  {
+    "id": 35,
+    "title": "COVID-19 Clinical Trials: Past, Present, and Future Research",
+    "slug": "covid-19-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "The evolution of COVID-19 clinical trials from vaccine development to long COVID treatment studies.",
+    "author": "Dr. Michael Chen",
+    "date": "2026-03-15",
+    "readTime": "12 min read",
+    "sections": [
+      {"heading": "COVID-19 Research Acceleration", "content": "The COVID-19 pandemic led to an unprecedented acceleration of clinical trial processes while maintaining safety standards. Vaccine development that typically takes years was completed in months through parallel testing, rolling regulatory reviews, and global collaboration. This rapid progress demonstrated both the importance and the potential efficiency of clinical research."},
+      {"heading": "Long COVID Studies", "content": "As the pandemic has evolved, long COVID has emerged as a significant research priority. Clinical trials now investigate treatments for persistent symptoms such as fatigue, cognitive impairment, respiratory issues, and cardiovascular complications. These studies aim to understand the underlying mechanisms and develop effective interventions."}
+    ],
+    "takeaways": [
+      "The pandemic demonstrated that clinical trial processes can be accelerated while maintaining safety.",
+      "Vaccine development during COVID-19 set new benchmarks for research efficiency.",
+      "Long COVID research is a growing area of clinical investigation.",
+      "Clinical trial infrastructure developed during the pandemic continues to benefit medical research."
+    ],
+    "faq": [
+      {"q": "Are there still COVID-19 clinical trials recruiting?", "a": "Yes, clinical trials continue for new vaccines, treatments, and long COVID interventions."},
+      {"q": "How did COVID-19 trials maintain safety while being conducted quickly?", "a": "Safety protocols were maintained through careful monitoring, frequent safety reviews, and adaptive trial designs that could modify protocols based on emerging data."}
+    ],
+    "relatedConditions": ["covid-19", "asthma", "heart-disease", "diabetes"],
+    "relatedGuides": [1, 5, 15, 26]
+  }
 ]

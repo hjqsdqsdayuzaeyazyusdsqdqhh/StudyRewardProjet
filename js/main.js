@@ -32,6 +32,10 @@
     return '<div class="empty-state"><div class="es-icon">!</div><h3>' + (title || 'Nothing found') + '</h3><p>' + (msg || 'Try adjusting your filters or search terms.') + '</p></div>';
   }
 
+  function slugify(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+  }
+
   function errorHTML() {
     return '<div class="empty-state"><div class="es-icon">!</div><h3>Unable to load data</h3><p>Please try again later.</p></div>';
   }
@@ -132,12 +136,27 @@
     });
   }
 
-  // ===== Global Header Search (instant dropdown) =====
+  // ===== Global Header Search (instant dropdown + autocomplete + recent/popular) =====
   (function initGlobalSearch() {
     const headerSearch = $('.header-search');
     if (!headerSearch) return;
     const input = headerSearch.querySelector('input');
     if (!input) return;
+
+    const LS_KEY = 'sr_recent_searches';
+    const MAX_RECENT = 5;
+    const popularSearches = ['Diabetes', 'Cancer', 'Heart Disease', 'Depression', 'Anxiety', 'Asthma', 'Chronic Pain', 'California', 'Texas', 'New York'];
+
+    function getRecent() {
+      try { return JSON.parse(localStorage.getItem(LS_KEY)) || []; } catch { return []; }
+    }
+
+    function addRecent(q) {
+      const recent = getRecent().filter(function(s) { return s.toLowerCase() !== q.toLowerCase(); });
+      recent.unshift(q);
+      if (recent.length > MAX_RECENT) recent.length = MAX_RECENT;
+      try { localStorage.setItem(LS_KEY, JSON.stringify(recent)); } catch {}
+    }
 
     const dropdown = document.createElement('div');
     dropdown.className = 'search-dropdown';
@@ -150,42 +169,114 @@
     }
 
     document.addEventListener('click', closeDropdown);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') dropdown.classList.remove('open'); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') dropdown.classList.remove('open'); });
 
-    const doSearch = debounce(function () {
-      const q = input.value.trim().toLowerCase();
-      if (!q) { dropdown.classList.remove('open'); return; }
-      fetchJSON('data/studies.json').then(studies => {
-        const results = studies.filter(s =>
-          s.title.toLowerCase().includes(q) ||
-          s.category.toLowerCase().includes(q) ||
-          s.state.toLowerCase().includes(q) ||
-          s.city.toLowerCase().includes(q) ||
-          s.sponsor.toLowerCase().includes(q)
-        ).slice(0, 6);
+    function renderSuggestions(q) {
+      if (!q || !q.trim()) return;
+      return fetchJSON('data/studies.json').then(function(studies) {
+        var lq = q.toLowerCase();
+        var results = studies.filter(function(s) {
+          return s.title.toLowerCase().includes(lq) ||
+            s.category.toLowerCase().includes(lq) ||
+            s.state.toLowerCase().includes(lq) ||
+            s.city.toLowerCase().includes(lq) ||
+            s.sponsor.toLowerCase().includes(lq);
+        }).slice(0, 6);
+
         if (!results.length) {
-          dropdown.innerHTML = '<div class="sd-empty">No results found</div>';
+          dropdown.innerHTML =
+            '<div class="sd-empty">No results found</div>' +
+            '<div class="sd-suggestions">' +
+              '<div class="sd-suggestion-title">Try searching:</div>' +
+              '<a href="conditions.html" class="sd-suggestion">Browse Conditions</a>' +
+              '<a href="states.html" class="sd-suggestion">Browse States</a>' +
+              '<a href="guides.html" class="sd-suggestion">Read Guides</a>' +
+            '</div>';
         } else {
-          dropdown.innerHTML = results.map(s =>
-            '<a href="/study/' + s.id + '" class="sd-item">' +
+          dropdown.innerHTML = results.filter(function(s) { return s.nctId; }).map(function(s) {
+            return '<a href="/study/' + s.nctId + '" class="sd-item" data-nct="' + s.nctId + '">' +
               '<span class="sd-title">' + escape(s.title) + '</span>' +
               '<span class="sd-meta">' + escape(s.city) + ', ' + escape(s.state) + ' &middot; ' + s.reward + '</span>' +
-            '</a>'
-          ).join('');
+            '</a>';
+          }).join('');
         }
         dropdown.classList.add('open');
-      }).catch(() => {});
-    }, 300);
+      }).catch(function() {});
+    }
 
-    input.addEventListener('input', doSearch);
-    input.addEventListener('focus', function () { if (this.value.trim()) doSearch(); });
-    input.addEventListener('keydown', e => {
+    function renderHome() {
+      var recent = getRecent();
+      var html = '';
+      if (recent.length) {
+        html += '<div class="sd-group"><div class="sd-group-title">Recent Searches</div>' +
+          recent.map(function(r) {
+            return '<a href="clinical-trials.html?q=' + encodeURIComponent(r) + '" class="sd-item sd-recent">' + escape(r) + '</a>';
+          }).join('') + '</div>';
+      }
+      html += '<div class="sd-group"><div class="sd-group-title">Popular Searches</div>' +
+        popularSearches.map(function(p) {
+          return '<a href="clinical-trials.html?q=' + encodeURIComponent(p) + '" class="sd-item sd-popular">' + escape(p) + '</a>';
+        }).join('') + '</div>';
+      dropdown.innerHTML = html;
+      dropdown.classList.add('open');
+    }
+
+    input.addEventListener('input', function() {
+      if (this.value.trim()) {
+        renderSuggestions(this.value);
+      } else {
+        dropdown.classList.remove('open');
+      }
+    });
+
+    input.addEventListener('focus', function() {
+      if (this.value.trim()) {
+        renderSuggestions(this.value);
+      } else {
+        renderHome();
+      }
+    });
+
+    input.addEventListener('keydown', function(e) {
       if (e.key === 'Enter') {
         e.preventDefault();
-        window.location.href = 'clinical-trials.html?q=' + encodeURIComponent(input.value);
+        var q = input.value.trim();
+        if (q) addRecent(q);
+        window.location.href = 'clinical-trials.html?q=' + encodeURIComponent(q);
+      }
+      // Arrow key navigation
+      var items = dropdown.querySelectorAll('.sd-item, .sd-suggestion');
+      if (items.length) {
+        var active = dropdown.querySelector('.sd-item.active, .sd-suggestion.active');
+        var idx = -1;
+        if (active) { idx = Array.prototype.indexOf.call(items, active); active.classList.remove('active'); }
+        if (e.key === 'ArrowDown') { e.preventDefault(); idx = Math.min(idx + 1, items.length - 1); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); idx = Math.max(idx - 1, 0); }
+        if (idx >= 0) { items[idx].classList.add('active'); items[idx].focus(); }
+      }
+    });
+
+    // Navigate to results page with nctId validation
+    document.addEventListener('click', function(e) {
+      var item = e.target.closest('.sd-item, .sd-suggestion');
+      if (item) {
+        addRecent(item.textContent.trim());
+        var nct = item.getAttribute('data-nct') || item.dataset.nct;
+        if (item.getAttribute('href') && item.getAttribute('href').indexOf('/study/') === 0 && !nct) {
+          console.error('Missing nctId for study:', item.textContent.trim());
+          e.preventDefault();
+        }
       }
     });
   })();
+
+  // ===== Guide Card Click =====
+  document.addEventListener('click', function(e) {
+    var card = e.target.closest('.guide-card[data-href]');
+    if (card && !e.target.closest('a')) {
+      window.location.href = card.dataset.href;
+    }
+  });
 
   // ===== Page Router =====
   const page = document.body.dataset.page;
@@ -201,7 +292,8 @@
 
   // ===== Renderers =====
   function renderStudyCard(s) {
-    return '<div class="study-card card" data-id="' + s.id + '">' +
+    var nctId = s.nctId || s.id;
+    return '<div class="study-card card" data-id="' + nctId + '">' +
       '<div class="sc-top">' +
         '<span class="badge badge-' + s.status.toLowerCase() + '">' + s.status + '</span>' +
         (s.healthyVolunteers ? '<span class="badge badge-healthy">Healthy Vols</span>' : '') +
@@ -218,17 +310,18 @@
       '<p>' + escape(s.description) + '</p>' +
       '<div class="card-footer">' +
         '<span class="reward">' + s.reward + '</span>' +
-        '<a href="/study/' + s.id + '" class="btn-link">View Details</a>' +
+        '<a href="/study/' + nctId + '" class="btn-link">View Details</a>' +
       '</div></div>';
   }
 
   function renderStudyCardCompact(s) {
+    var nctId = s.nctId || s.id;
     return '<div class="study-card card compact">' +
       '<span class="badge badge-' + s.status.toLowerCase() + '">' + s.status + '</span>' +
       '<h3>' + escape(s.title) + '</h3>' +
       '<div class="meta"><span>' + escape(s.city) + ', ' + escape(s.state) + '</span></div>' +
       '<div class="card-footer"><span class="reward">' + s.reward + '</span>' +
-        '<a href="/study/' + s.id + '" class="btn-link">View</a></div></div>';
+        '<a href="/study/' + nctId + '" class="btn-link">View</a></div></div>';
   }
 
   function renderStateCard(s, count) {
@@ -245,16 +338,16 @@
   }
 
   function renderGuideCard(g) {
-    return '<div class="guide-card card">' +
+    return '<div class="guide-card card" data-href="guides/' + g.slug + '.html">' +
       '<div class="gc-top">' +
         '<span class="guide-category">' + g.category + '</span>' +
         '<span class="guide-readtime">' + g.readTime + '</span>' +
       '</div>' +
-      '<h3>' + escape(g.title) + '</h3>' +
+      '<h3><a href="guides/' + g.slug + '.html">' + escape(g.title) + '</a></h3>' +
       '<p>' + escape(g.excerpt) + '</p>' +
       '<div class="guide-footer">' +
         '<span class="guide-author">By ' + g.author + ' &middot; ' + g.date + '</span>' +
-        '<span class="guide-cta">Read Guide &rarr;</span>' +
+        '<a href="guides/' + g.slug + '.html" class="guide-cta">Read Guide &rarr;</a>' +
       '</div></div>';
   }
 
@@ -370,7 +463,7 @@
       healthyVolunteers: p.get('healthyVolunteers') || '',
       sort: p.get('sort') || 'newest',
       perPage: parseInt(p.get('perPage')) || 9,
-      study: parseInt(p.get('study')) || 0
+      study: p.get('study') || ''
     };
   }
 
@@ -542,7 +635,7 @@
 
       // If study detail view
       if (params.study) {
-        const study = allStudies.find(s => s.id === params.study);
+        const study = allStudies.find(s => s.nctId === params.study);
         if (study) {
           renderStudyDetail(study, allStudies, categories);
           return;
@@ -626,7 +719,7 @@
         container.querySelectorAll('.study-card .btn-link').forEach(a => {
           const id = a.closest('.study-card').dataset.id;
           if (id) {
-            const study = allStudies.find(s => s.id == id);
+            const study = allStudies.find(s => s.nctId === id);
             if (study) a.href = '/study/' + id;
           }
         });
@@ -753,7 +846,7 @@
     const layout = $('.trials-layout');
     if (!layout) return;
 
-    const related = allStudies.filter(s => s.category === study.category && s.id !== study.id).slice(0, 4);
+    const related = allStudies.filter(s => s.category === study.category && s.nctId !== study.nctId).slice(0, 4);
 
     layout.innerHTML =
       '<div class="study-detail">' +
@@ -950,67 +1043,91 @@
   // =============================================
   function loadGuides() {
     const container = $('#guides-list');
-    const featuredContainer = $('#guides-featured');
+    const catContainer = $('#guide-categories');
+    const beginnerContainer = $('#guides-beginner');
     if (!container) return;
 
     fetchJSON('data/guides.json').then(guides => {
-      // Featured
-      if (featuredContainer) {
-        featuredContainer.innerHTML = guides.slice(0, 2).map(g =>
-          '<div class="guide-card card featured">' +
-            '<div class="gc-top">' +
-              '<span class="guide-category">Featured &middot; ' + g.category + '</span>' +
-              '<span class="guide-readtime">' + g.readTime + '</span>' +
-            '</div>' +
-            '<h3>' + escape(g.title) + '</h3>' +
-            '<p>' + escape(g.excerpt) + '</p>' +
-            '<div class="guide-footer">' +
-              '<span class="guide-author">By ' + g.author + ' &middot; ' + g.date + '</span>' +
-              '<span class="guide-cta">Read Guide &rarr;</span>' +
-            '</div></div>'
-        ).join('');
+      // Category cards
+      if (catContainer) {
+        const cats = [...new Set(guides.map(g => g.category))].sort();
+        catContainer.innerHTML = cats.map(c => {
+          const iconMap = {
+            'Getting Started': '&#128214;', 'Financial': '&#128176;', 'Safety': '&#128737;',
+            'Education': '&#127891;', 'Legal': '&#9878;', 'Patient Experience': '&#128104;&#8205;&#128105;&#8205;&#128103;&#8205;&#128102;',
+            'Condition-Specific': '&#128137;', 'Childrens Health': '&#128118;'
+          };
+          return '<a href="guides/categories/' + slugify(c) + '.html" class="category-card">' +
+            '<div class="cat-icon">' + (iconMap[c] || '&#128196;') + '</div>' +
+            '<h4>' + escape(c) + '</h4>' +
+            '<div class="cat-count">' + guides.filter(g => g.category === c).length + ' guide' + (guides.filter(g => g.category === c).length !== 1 ? 's' : '') + '</div>' +
+            '<div class="cat-link">Browse Guides &rarr;</div></a>';
+        }).join('');
       }
 
-      // Search + category filter
-      const searchInput = $('#guides-search');
+      // Beginner guides
+      if (beginnerContainer) {
+        const beginnerSlugs = ['how-clinical-trials-work', 'what-to-expect-first-clinical-trial-visit', 'questions-to-ask-before-joining-clinical-study'];
+        const beginnerGuides = beginnerSlugs.map(s => guides.find(g => g.slug === s)).filter(Boolean);
+        beginnerContainer.innerHTML = beginnerGuides.length
+          ? beginnerGuides.map(renderGuideCard).join('')
+          : guides.filter(g => g.category === 'Getting Started').slice(0, 3).map(renderGuideCard).join('');
+      }
+
+      // Search inputs (hero + main section)
+      var heroSearchInput = $('#guides-search-input');
+      var mainSearchInput = $('#guides-search');
+      var searchInput = mainSearchInput || heroSearchInput;
       const catFilter = $('#guides-category-filter');
+      const sortSelect = $('#guides-sort');
       let filteredGuides = [...guides];
+
+      // Populate filter
+      if (catFilter) {
+        const cats = [...new Set(guides.map(g => g.category))].sort();
+        catFilter.innerHTML = '<option value="">All Categories</option>' +
+          cats.map(c => '<option value="' + c + '">' + c + '</option>').join('');
+      }
+
+      // Sync hero search with main search
+      if (heroSearchInput && mainSearchInput && heroSearchInput !== mainSearchInput) {
+        heroSearchInput.addEventListener('input', function() {
+          mainSearchInput.value = this.value;
+          renderGuides();
+        });
+        mainSearchInput.addEventListener('input', function() {
+          heroSearchInput.value = this.value;
+          renderGuides();
+        });
+      }
 
       function renderGuides() {
         const q = (searchInput ? searchInput.value : '').toLowerCase();
         const cat = catFilter ? catFilter.value : '';
+        const sort = sortSelect ? sortSelect.value : 'newest';
+
         filteredGuides = guides.filter(g => {
           const matchQ = !q || g.title.toLowerCase().includes(q) || g.excerpt.toLowerCase().includes(q) || g.category.toLowerCase().includes(q);
           const matchCat = !cat || g.category === cat;
           return matchQ && matchCat;
         });
+
+        // Sort
+        switch (sort) {
+          case 'az': filteredGuides.sort((a, b) => a.title.localeCompare(b.title)); break;
+          case 'za': filteredGuides.sort((a, b) => b.title.localeCompare(a.title)); break;
+          case 'oldest': filteredGuides.sort((a, b) => new Date(a.date) - new Date(b.date)); break;
+          default: filteredGuides.sort((a, b) => new Date(b.date) - new Date(a.date)); break;
+        }
+
         container.innerHTML = filteredGuides.length
           ? filteredGuides.map(renderGuideCard).join('')
           : emptyHTML('No guides found', '');
       }
 
       if (searchInput) searchInput.addEventListener('input', renderGuides);
-
-      if (catFilter) {
-        const cats = [...new Set(guides.map(g => g.category))];
-        catFilter.innerHTML = '<option value="">All Categories</option>' +
-          cats.map(c => '<option value="' + c + '">' + c + '</option>').join('');
-        catFilter.addEventListener('change', renderGuides);
-      }
-
-      // Categories sidebar
-      const sidebar = $('#guides-categories');
-      if (sidebar) {
-        const cats = [...new Set(guides.map(g => g.category))];
-        sidebar.innerHTML = '<h3>Categories</h3><div class="sidebar-links">' +
-          cats.map(c => '<a href="#" data-cat="' + c + '">' + c + '</a>').join('') + '</div>';
-        sidebar.addEventListener('click', e => {
-          const a = e.target.closest('a');
-          if (!a || !a.dataset.cat) return;
-          e.preventDefault();
-          if (catFilter) { catFilter.value = a.dataset.cat; renderGuides(); }
-        });
-      }
+      if (catFilter) catFilter.addEventListener('change', renderGuides);
+      if (sortSelect) sortSelect.addEventListener('change', renderGuides);
 
       renderGuides();
     }).catch(() => {

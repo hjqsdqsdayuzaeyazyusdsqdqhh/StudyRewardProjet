@@ -139,17 +139,18 @@
     fetch('/api/studies?' + params.toString())
       .then(r => r.ok ? r.json() : Promise.reject())
       .then(data => {
-        const studies = (data.studies || []).filter(s => s.id !== studyId).slice(0, 4);
+        const studies = (data.studies || []).filter(s => s.nctId !== studyId).slice(0, 4);
         if (!studies.length) {
           container.innerHTML = '<p class="no-related">No related studies found at this time.</p>';
           return;
         }
         container.innerHTML = '<div class="studies-grid">' + studies.map(s => {
+          var nctId = s.nctId || s.id;
           return '<div class="study-card card compact">' +
             '<span class="badge badge-' + s.status.toLowerCase() + '">' + escape(s.status) + '</span>' +
-            '<h3><a href="/study/' + escape(s.id) + '">' + escape(s.title) + '</a></h3>' +
+            '<h3><a href="/study/' + escape(nctId) + '">' + escape(s.title) + '</a></h3>' +
             '<div class="meta"><span>' + escape(s.city || '') + (s.city && s.state ? ', ' : '') + escape(s.state || '') + '</span></div>' +
-            '<div class="card-footer"><a href="/study/' + escape(s.id) + '" class="btn-link">View Details &rarr;</a></div></div>';
+            '<div class="card-footer"><a href="/study/' + escape(nctId) + '" class="btn-link">View Details &rarr;</a></div></div>';
         }).join('') + '</div>';
       })
       .catch(() => {

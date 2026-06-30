@@ -8,7 +8,11 @@
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://clinicaltrials.gov https://www.google-analytics.com; frame-src 'self' https://www.googletagmanager.com" }
       ]
     }
   ],
@@ -16,6 +20,7 @@
     { "source": "/state/:slug", "destination": "/states/:slug" },
     { "source": "/city/:slug", "destination": "/cities/:slug" },
     { "source": "/condition/:slug", "destination": "/conditions/:slug" },
-    { "source": "/study/:nctId", "destination": "/api/study?nctId=:nctId" }
+    { "source": "/study/:nctId", "destination": "/api/study?nctId=:nctId" },
+    { "source": "/guides/:slug", "destination": "/guides/:slug.html" }
   ]
 }
