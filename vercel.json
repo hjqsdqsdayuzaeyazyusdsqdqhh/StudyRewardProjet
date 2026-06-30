@@ -14,6 +14,8 @@
   ],
   "rewrites": [
     { "source": "/state/:slug", "destination": "/states/:slug" },
-    { "source": "/city/:slug", "destination": "/cities/:slug" }
+    { "source": "/city/:slug", "destination": "/cities/:slug" },
+    { "source": "/condition/:slug", "destination": "/conditions/:slug" },
+    { "source": "/study/:nctId", "destination": "/api/study?nctId=:nctId" }
   ]
 }

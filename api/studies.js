@@ -39,7 +39,7 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(200).end();
 
-  const { state, city, pageSize = '20', pageToken = '' } = req.query;
+  const { state, city, condition, pageSize = '20', pageToken = '' } = req.query;
 
   const base = 'https://clinicaltrials.gov/api/v2/studies';
   const params = new URLSearchParams({
@@ -49,6 +49,10 @@ export default async function handler(req, res) {
   });
   if (pageToken) params.set('pageToken', pageToken);
 
+  if (condition) {
+    const name = condition.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    params.set('query.cond', name);
+  }
   if (city) {
     const cityInfo = resolveCity(city.toLowerCase().replace(/[^a-z0-9-]/g, ''));
     if (!cityInfo) return res.status(404).json({ error: 'Unknown city: ' + city });
@@ -61,8 +65,9 @@ export default async function handler(req, res) {
     const abbr = STATE_ABBR[slug];
     if (!abbr) return res.status(404).json({ error: 'Unknown state: ' + state });
     params.set('query.locs', 'US:' + abbr);
-  } else {
-    return res.status(400).json({ error: 'Missing state or city parameter' });
+  }
+  if (!condition && !state && !city) {
+    return res.status(400).json({ error: 'Missing condition, state, or city parameter' });
   }
 
   try {

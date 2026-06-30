@@ -32,7 +32,7 @@
       '</div>' +
       '<p>' + escape((s.summary || '').slice(0, 200)) + '</p>' +
       '<div class="card-footer">' +
-        '<a href="https://clinicaltrials.gov/study/' + escape(s.id) + '" class="btn-link" target="_blank" rel="noopener">View Details on ClinicalTrials.gov &rarr;</a>' +
+        '<a href="/study/' + escape(s.id) + '" class="btn-link">View Details &rarr;</a>' +
       '</div></div>';
   }
 

@@ -167,7 +167,7 @@
           dropdown.innerHTML = '<div class="sd-empty">No results found</div>';
         } else {
           dropdown.innerHTML = results.map(s =>
-            '<a href="clinical-trials.html?study=' + s.id + '" class="sd-item">' +
+            '<a href="/study/' + s.id + '" class="sd-item">' +
               '<span class="sd-title">' + escape(s.title) + '</span>' +
               '<span class="sd-meta">' + escape(s.city) + ', ' + escape(s.state) + ' &middot; ' + s.reward + '</span>' +
             '</a>'
@@ -194,7 +194,8 @@
     'clinical-trials': loadClinicalTrials,
     states: loadStates,
     cities: loadCities,
-    guides: loadGuides
+    guides: loadGuides,
+    conditions: loadConditions
   };
   if (loaders[page]) loaders[page]();
 
@@ -217,7 +218,7 @@
       '<p>' + escape(s.description) + '</p>' +
       '<div class="card-footer">' +
         '<span class="reward">' + s.reward + '</span>' +
-        '<a href="clinical-trials.html?study=' + s.id + '" class="btn-link">View Details</a>' +
+        '<a href="/study/' + s.id + '" class="btn-link">View Details</a>' +
       '</div></div>';
   }
 
@@ -227,7 +228,7 @@
       '<h3>' + escape(s.title) + '</h3>' +
       '<div class="meta"><span>' + escape(s.city) + ', ' + escape(s.state) + '</span></div>' +
       '<div class="card-footer"><span class="reward">' + s.reward + '</span>' +
-        '<a href="clinical-trials.html?study=' + s.id + '" class="btn-link">View</a></div></div>';
+        '<a href="/study/' + s.id + '" class="btn-link">View</a></div></div>';
   }
 
   function renderStateCard(s, count) {
@@ -626,7 +627,7 @@
           const id = a.closest('.study-card').dataset.id;
           if (id) {
             const study = allStudies.find(s => s.id == id);
-            if (study) a.href = 'clinical-trials.html?study=' + id;
+            if (study) a.href = '/study/' + id;
           }
         });
       }
@@ -905,6 +906,40 @@
       }
 
       doRender();
+    }).catch(() => {
+      container.innerHTML = errorHTML();
+    });
+  }
+
+  // =============================================
+  // CONDITIONS
+  // =============================================
+  function loadConditions() {
+    const container = $('#conditions-list');
+    const searchInput = $('#conditions-search');
+    if (!container) return;
+
+    fetchJSON('data/conditions.json').then(conditions => {
+      function doRender(q) {
+        const query = (q || '').toLowerCase();
+        const filtered = query
+          ? conditions.filter(c => c.name.toLowerCase().includes(query) || (c.symptoms || '').toLowerCase().includes(query))
+          : conditions;
+        container.innerHTML = filtered.map(c =>
+          '<a href="conditions/' + c.slug + '.html" class="condition-card">' +
+            '<div class="cond-icon">' + (c.icon || '🔬') + '</div>' +
+            '<h4>' + escape(c.name) + '</h4>' +
+            '<div class="cond-desc">' + escape((c.description || '').slice(0, 120)) + '</div>' +
+            '<div class="cond-link">View Studies &rarr;</div>' +
+          '</a>'
+        ).join('') || emptyHTML('No conditions found', '');
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function () { doRender(this.value); });
+      }
+
+      doRender('');
     }).catch(() => {
       container.innerHTML = errorHTML();
     });
