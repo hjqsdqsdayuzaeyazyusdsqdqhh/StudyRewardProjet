@@ -1,0 +1,560 @@
+[
+  {
+    "name": "Diabetes",
+    "slug": "diabetes",
+    "icon": "🩸",
+    "description": "Diabetes is a chronic metabolic disorder characterized by elevated blood sugar levels. It affects how the body processes glucose, the main source of energy. Clinical trials for diabetes explore new treatments, insulin delivery systems, and potential cures.",
+    "symptoms": "Increased thirst, frequent urination, extreme hunger, unexplained weight loss, fatigue, blurred vision, slow-healing sores",
+    "riskFactors": "Family history, obesity, physical inactivity, age, high blood pressure, abnormal cholesterol levels",
+    "treatment": "Diabetes management includes insulin therapy, oral medications, lifestyle modifications, blood sugar monitoring, and dietary changes. Clinical trials are investigating new drug classes, artificial pancreas systems, and regenerative medicine approaches.",
+    "whyParticipate": "Participating in diabetes clinical trials provides access to cutting-edge treatments, contributes to medical research, and helps future generations manage this condition more effectively.",
+    "relatedConditions": ["Prediabetes", "Obesity", "Heart Disease", "Kidney Disease", "Metabolic Syndrome"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are diabetes clinical trials?", "a": "Diabetes clinical trials are research studies that test new treatments, medications, devices, or interventions for managing or curing diabetes. They help determine the safety and effectiveness of potential new approaches."},
+      {"q": "Who can participate in diabetes clinical trials?", "a": "Eligibility varies by study. Factors include type of diabetes (Type 1, Type 2, gestational), age, duration of diagnosis, current treatment regimen, and overall health status. Each study has specific inclusion and exclusion criteria."},
+      {"q": "How much do diabetes clinical trials pay?", "a": "Compensation depends on the study duration, number of visits, and procedures involved. Participants may receive payments ranging from $50 to $300 per visit, with total compensation varying by study."},
+      {"q": "Are diabetes clinical trials safe?", "a": "All clinical trials follow strict safety protocols and are reviewed by Institutional Review Boards (IRBs) to protect participants. Potential risks are explained during the informed consent process before enrollment."}
+    ]
+  },
+  {
+    "name": "Cancer",
+    "slug": "cancer",
+    "icon": "🔬",
+    "description": "Cancer is a broad group of diseases characterized by abnormal cell growth with the potential to invade other parts of the body. Clinical trials in oncology are crucial for developing new treatments including immunotherapies, targeted therapies, and precision medicine approaches.",
+    "symptoms": "Unexplained weight loss, persistent fatigue, lumps or swelling, changes in skin, persistent cough, changes in bowel or bladder habits",
+    "riskFactors": "Tobacco use, excessive alcohol consumption, poor diet, physical inactivity, genetic predisposition, exposure to carcinogens, age",
+    "treatment": "Cancer treatment varies by type and stage and includes surgery, radiation, chemotherapy, immunotherapy, hormone therapy, and targeted drug therapy. Clinical trials are at the forefront of discovering more effective and less toxic treatment options.",
+    "whyParticipate": "Cancer clinical trials offer access to promising new therapies before they become widely available and contribute directly to advancing cancer research and treatment standards.",
+    "relatedConditions": ["Breast Cancer", "Lung Cancer", "Prostate Cancer", "Colorectal Cancer", "Leukemia"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are cancer clinical trials?", "a": "Cancer clinical trials are research studies that evaluate new treatments, diagnostic methods, or prevention strategies. They are essential for improving cancer care and finding potential cures."},
+      {"q": "Who can participate in cancer clinical trials?", "a": "Eligibility depends on cancer type, stage, prior treatments, and overall health. Each study specifies criteria including tumor type, genetic markers, and performance status."},
+      {"q": "How much do cancer clinical trials pay?", "a": "Compensation varies by study. Many cancer trials cover travel expenses and provide stipends. The focus is typically on treatment access rather than high compensation."},
+      {"q": "Are cancer clinical trials safe?", "a": "Patient safety is paramount. Trials follow rigorous protocols reviewed by ethics committees, and participants are closely monitored throughout the study."}
+    ]
+  },
+  {
+    "name": "Depression",
+    "slug": "depression",
+    "icon": "🧠",
+    "description": "Depression (major depressive disorder) is a common mood disorder that causes persistent sadness, loss of interest, and impaired daily functioning. Clinical trials for depression investigate new antidepressant medications, neuromodulation therapies, and psychotherapeutic approaches.",
+    "symptoms": "Persistent sadness, loss of interest in activities, changes in appetite, sleep disturbances, fatigue, difficulty concentrating, feelings of worthlessness, suicidal thoughts",
+    "riskFactors": "Family history, trauma or stress, certain medical conditions, substance use, personality factors, hormonal changes",
+    "treatment": "Treatment includes antidepressant medications, psychotherapy (CBT, interpersonal therapy), electroconvulsive therapy (ECT), transcranial magnetic stimulation (TMS), and lifestyle modifications. Clinical trials explore novel mechanisms of action and personalized treatment approaches.",
+    "whyParticipate": "Depression clinical trials provide access to innovative treatments and contribute to understanding the biological basis of mood disorders, potentially helping millions who do not respond to existing therapies.",
+    "relatedConditions": ["Anxiety", "Bipolar Disorder", "PTSD", "Insomnia", "Chronic Pain"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Pennsylvania"],
+    "faq": [
+      {"q": "What are depression clinical trials?", "a": "Depression clinical trials investigate new medications, therapies, or devices to treat depression. They aim to find more effective and faster-acting treatments with fewer side effects."},
+      {"q": "Who can participate in depression clinical trials?", "a": "Eligibility typically requires a diagnosis of depression based on standardized criteria. Factors include severity, treatment history, age, and absence of certain other conditions."},
+      {"q": "How much do depression clinical trials pay?", "a": "Compensation varies by study intensity. Outpatient studies may pay $50-$150 per visit, while more intensive studies may offer higher compensation."},
+      {"q": "Are depression clinical trials safe?", "a": "Yes, all trials have safety monitoring. Participants are carefully screened and monitored throughout. The informed consent process explains all potential risks and benefits."}
+    ]
+  },
+  {
+    "name": "Obesity",
+    "slug": "obesity",
+    "icon": "⚖️",
+    "description": "Obesity is a complex medical condition characterized by excessive body fat that increases health risks. Clinical trials for obesity explore weight management medications, surgical techniques, behavioral interventions, and combination approaches.",
+    "symptoms": "Excessive body weight, difficulty with physical activity, shortness of breath, joint pain, fatigue, sleep apnea",
+    "riskFactors": "Genetic predisposition, poor diet, physical inactivity, certain medications, medical conditions, environmental factors, lack of sleep",
+    "treatment": "Treatment includes dietary changes, increased physical activity, behavior modification, prescription medications, and bariatric surgery. Clinical trials are investigating new pharmacotherapies, gut microbiome interventions, and digital health tools.",
+    "whyParticipate": "Obesity clinical trials offer access to emerging treatments and contribute to understanding the complex mechanisms of weight regulation, helping address the global obesity epidemic.",
+    "relatedConditions": ["Diabetes", "Heart Disease", "High Blood Pressure", "Sleep Disorders", "Metabolic Syndrome"],
+    "relatedStates": ["Texas", "Florida", "Ohio", "Michigan", "North Carolina"],
+    "faq": [
+      {"q": "What are obesity clinical trials?", "a": "Obesity clinical trials test new medications, devices, surgical techniques, and lifestyle interventions for weight loss and weight management."},
+      {"q": "Who can participate in obesity clinical trials?", "a": "Eligibility usually requires a certain BMI range. Studies may focus on specific populations such as those with obesity-related complications or those seeking non-surgical options."},
+      {"q": "How much do obesity clinical trials pay?", "a": "Compensation varies. Studies may offer $50-$200 per visit plus travel reimbursement. Longer-term studies with more visits typically offer higher compensation."},
+      {"q": "Are obesity clinical trials safe?", "a": "All trials follow strict safety guidelines. Participants receive medical supervision throughout the study period and are informed of all potential risks before enrollment."}
+    ]
+  },
+  {
+    "name": "Heart Disease",
+    "slug": "heart-disease",
+    "icon": "❤️",
+    "description": "Heart disease encompasses various conditions affecting the heart and blood vessels, including coronary artery disease, heart failure, and arrhythmias. Clinical trials investigate new medications, devices, surgical techniques, and prevention strategies.",
+    "symptoms": "Chest pain, shortness of breath, fatigue, irregular heartbeat, dizziness, swelling in legs, fainting",
+    "riskFactors": "High blood pressure, high cholesterol, smoking, diabetes, obesity, family history, age, sedentary lifestyle",
+    "treatment": "Treatment includes medications (statins, beta-blockers, ACE inhibitors), lifestyle changes, angioplasty, stent placement, bypass surgery, and cardiac rehabilitation. Clinical trials explore novel therapies and minimally invasive procedures.",
+    "whyParticipate": "Heart disease clinical trials advance cardiovascular medicine and provide access to innovative treatments that may improve quality of life and outcomes for millions affected by heart conditions.",
+    "relatedConditions": ["High Blood Pressure", "Diabetes", "Obesity", "High Cholesterol", "Stroke"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are heart disease clinical trials?", "a": "These trials investigate new treatments, medications, devices, and prevention strategies for various heart conditions, from coronary artery disease to heart failure."},
+      {"q": "Who can participate in heart disease clinical trials?", "a": "Eligibility depends on the specific heart condition being studied, its severity, previous treatments, and overall health status."},
+      {"q": "How much do heart disease clinical trials pay?", "a": "Compensation varies by study complexity and duration. Participants may receive $100-$300 per visit plus travel reimbursement."},
+      {"q": "Are heart disease clinical trials safe?", "a": "Safety is carefully monitored with regular checkups and assessments. All trials have independent oversight to protect participant wellbeing."}
+    ]
+  },
+  {
+    "name": "Asthma",
+    "slug": "asthma",
+    "icon": "💨",
+    "description": "Asthma is a chronic respiratory condition where airways become inflamed and narrow, causing breathing difficulty. Clinical trials explore new inhaler technologies, biologic therapies, and personalized management approaches.",
+    "symptoms": "Wheezing, coughing, shortness of breath, chest tightness, symptoms worsen at night or with exercise",
+    "riskFactors": "Family history, allergies, respiratory infections, occupational exposures, smoking, air pollution, obesity",
+    "treatment": "Treatment includes inhaled corticosteroids, bronchodilators, leukotriene modifiers, and biologic therapies. Clinical trials investigate novel biologic targets, improved delivery devices, and precision medicine approaches.",
+    "whyParticipate": "Asthma clinical trials help develop more effective treatments with fewer side effects and contribute to understanding the underlying mechanisms of airway inflammation.",
+    "relatedConditions": ["Allergies", "COPD", "Sleep Apnea", "Eczema", "Sinusitis"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are asthma clinical trials?", "a": "Asthma clinical trials test new medications, inhaler devices, and management strategies to improve symptom control and reduce exacerbations."},
+      {"q": "Who can participate in asthma clinical trials?", "a": "Studies typically require a confirmed asthma diagnosis. Factors include severity, current medications, age, and trigger profile."},
+      {"q": "How much do asthma clinical trials pay?", "a": "Compensation typically ranges from $50-$150 per visit. Study duration and number of visits affect total compensation."},
+      {"q": "Are asthma clinical trials safe?", "a": "Yes, participants are closely monitored with regular lung function tests and assessments. Rescue medications are typically provided during the study."}
+    ]
+  },
+  {
+    "name": "Chronic Pain",
+    "slug": "chronic-pain",
+    "icon": "💊",
+    "description": "Chronic pain is persistent pain lasting beyond normal healing time, affecting physical function and quality of life. Clinical trials investigate non-opioid pain management options, nerve stimulation therapies, and integrative approaches.",
+    "symptoms": "Persistent pain lasting more than 3-6 months, fatigue, sleep disturbances, mood changes, reduced mobility, decreased quality of life",
+    "riskFactors": "Previous injury, surgery, arthritis, nerve damage, fibromyalgia, age, obesity, stress, genetic predisposition",
+    "treatment": "Treatment includes physical therapy, medications (NSAIDs, anticonvulsants, antidepressants), nerve blocks, spinal cord stimulation, cognitive behavioral therapy, and acupuncture. Clinical trials explore novel non-addictive pain medications and neuromodulation techniques.",
+    "whyParticipate": "Chronic pain clinical trials are essential for developing safer alternatives to opioids and improving pain management strategies for millions suffering from persistent pain conditions.",
+    "relatedConditions": ["Fibromyalgia", "Arthritis", "Migraine", "Back Pain", "Neuropathy"],
+    "relatedStates": ["California", "Texas", "Florida", "Ohio", "Michigan"],
+    "faq": [
+      {"q": "What are chronic pain clinical trials?", "a": "These trials investigate new treatments for persistent pain conditions, including medications, nerve stimulation, physical therapy approaches, and psychological interventions."},
+      {"q": "Who can participate in chronic pain clinical trials?", "a": "Eligibility depends on pain type, duration, location, and prior treatments. Studies may focus on specific conditions like back pain or fibromyalgia."},
+      {"q": "How much do chronic pain clinical trials pay?", "a": "Compensation varies by study. Participants typically receive $75-$200 per visit plus travel reimbursement."},
+      {"q": "Are chronic pain clinical trials safe?", "a": "Yes, trials follow strict protocols with regular monitoring. Pain management is always available, and participants can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Anxiety",
+    "slug": "anxiety",
+    "icon": "😰",
+    "description": "Anxiety disorders involve excessive fear, worry, and related behavioral disturbances that interfere with daily life. Clinical trials investigate new medications, digital therapeutics, and psychotherapy approaches for anxiety treatment.",
+    "symptoms": "Excessive worry, restlessness, difficulty concentrating, irritability, muscle tension, sleep problems, panic attacks, avoidance behaviors",
+    "riskFactors": "Family history, childhood adversity, stress, certain medical conditions, substance use, personality factors",
+    "treatment": "Treatment includes SSRIs, SNRIs, cognitive-behavioral therapy (CBT), mindfulness-based approaches, and exposure therapy. Clinical trials explore psychedelic-assisted therapy, novel anxiolytics, and digital mental health interventions.",
+    "whyParticipate": "Anxiety clinical trials contribute to developing more effective, faster-acting treatments and help reduce the burden of anxiety disorders affecting millions worldwide.",
+    "relatedConditions": ["Depression", "PTSD", "Panic Disorder", "Insomnia", "OCD"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Washington"],
+    "faq": [
+      {"q": "What are anxiety clinical trials?", "a": "Anxiety clinical trials test new medications, therapies, and interventions to reduce anxiety symptoms and improve daily functioning."},
+      {"q": "Who can participate in anxiety clinical trials?", "a": "Eligibility typically requires a diagnosed anxiety disorder. Factors include severity, duration, previous treatments, and absence of certain other conditions."},
+      {"q": "How much do anxiety clinical trials pay?", "a": "Compensation typically ranges from $50-$150 per visit. Remote or digital therapy studies may offer different compensation structures."},
+      {"q": "Are anxiety clinical trials safe?", "a": "Yes, participants receive thorough screening and ongoing monitoring. Therapeutic support is available throughout the trial period."}
+    ]
+  },
+  {
+    "name": "High Blood Pressure",
+    "slug": "high-blood-pressure",
+    "icon": "🩺",
+    "description": "Hypertension (high blood pressure) is a common condition where blood vessel pressure is consistently elevated, increasing risk for heart disease and stroke. Clinical trials explore new antihypertensive medications, device-based therapies, and lifestyle interventions.",
+    "symptoms": "Often asymptomatic, but may include headaches, shortness of breath, nosebleeds, dizziness, chest pain, vision changes",
+    "riskFactors": "Age, family history, obesity, sedentary lifestyle, high sodium intake, alcohol consumption, stress, kidney disease",
+    "treatment": "Treatment includes lifestyle modifications (diet, exercise, sodium reduction) and medications (diuretics, ACE inhibitors, ARBs, calcium channel blockers). Clinical trials investigate novel drug targets and renal denervation techniques.",
+    "whyParticipate": "High blood pressure clinical trials help develop more effective treatments with fewer side effects and advance understanding of hypertension mechanisms.",
+    "relatedConditions": ["Heart Disease", "Kidney Disease", "Diabetes", "Stroke", "Obesity"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Georgia"],
+    "faq": [
+      {"q": "What are high blood pressure clinical trials?", "a": "These trials investigate new medications, devices, and lifestyle approaches to lower blood pressure and reduce cardiovascular risk."},
+      {"q": "Who can participate in high blood pressure clinical trials?", "a": "Eligibility depends on blood pressure levels, current medications, and overall health status. Some studies focus on resistant hypertension."},
+      {"q": "How much do high blood pressure clinical trials pay?", "a": "Compensation varies by study. Participants may receive $50-$200 per visit plus travel reimbursement."},
+      {"q": "Are high blood pressure clinical trials safe?", "a": "Yes, blood pressure is closely monitored throughout trials. Participants receive regular checkups and can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Alzheimer's Disease",
+    "slug": "alzheimers-disease",
+    "icon": "🧩",
+    "description": "Alzheimer's disease is a progressive neurodegenerative disorder that causes memory loss, cognitive decline, and behavioral changes. Clinical trials investigate disease-modifying therapies, early detection methods, and interventions to slow progression.",
+    "symptoms": "Memory loss, difficulty with familiar tasks, confusion with time or place, trouble understanding visual images, problems with speaking or writing, changes in personality",
+    "riskFactors": "Age, family history, genetic factors (APOE-e4), head injury, cardiovascular risk factors, limited education, social isolation",
+    "treatment": "Current treatments include cholinesterase inhibitors and memantine to manage symptoms. Clinical trials are exploring anti-amyloid antibodies, tau-targeting therapies, neuroprotective agents, and lifestyle interventions.",
+    "whyParticipate": "Alzheimer's clinical trials are critical for finding treatments that can slow or prevent disease progression, offering hope to millions affected by this devastating condition.",
+    "relatedConditions": ["Dementia", "Parkinson's Disease", "Cognitive Decline", "Depression", "Heart Disease"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Arizona"],
+    "faq": [
+      {"q": "What are Alzheimer's clinical trials?", "a": "Alzheimer's clinical trials test new medications, interventions, and diagnostic tools to treat, slow, or prevent the progression of Alzheimer's disease."},
+      {"q": "Who can participate in Alzheimer's clinical trials?", "a": "Eligibility varies by study. Some focus on early-stage Alzheimer's, others on mild cognitive impairment, and some include healthy volunteers at risk."},
+      {"q": "How much do Alzheimer's clinical trials pay?", "a": "Compensation varies. Studies may offer $50-$200 per visit plus travel reimbursement. Caregiver support is sometimes provided."},
+      {"q": "Are Alzheimer's clinical trials safe?", "a": "Yes, safety is the top priority. Trials have independent monitoring, regular assessments, and participants can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Parkinson's Disease",
+    "slug": "parkinsons-disease",
+    "icon": "🏃",
+    "description": "Parkinson's disease is a progressive neurological disorder affecting movement, balance, and coordination due to loss of dopamine-producing brain cells. Clinical trials explore neuroprotective therapies, symptom management innovations, and potential disease-modifying treatments.",
+    "symptoms": "Tremor, bradykinesia (slowness of movement), rigidity, postural instability, changes in speech, loss of automatic movements, cognitive changes",
+    "riskFactors": "Age, genetic factors, environmental exposures, head injury, male gender, family history",
+    "treatment": "Treatment includes levodopa/carbidopa, dopamine agonists, MAO-B inhibitors, deep brain stimulation (DBS), and physical therapy. Clinical trials investigate gene therapies, stem cell treatments, and novel drug delivery systems.",
+    "whyParticipate": "Parkinson's clinical trials accelerate the development of treatments that could slow disease progression and improve quality of life for those living with this condition.",
+    "relatedConditions": ["Alzheimer's Disease", "Dementia", "Depression", "Sleep Disorders", "Essential Tremor"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are Parkinson's disease clinical trials?", "a": "These trials test new treatments, medications, and therapies to manage Parkinson's symptoms and potentially slow or halt disease progression."},
+      {"q": "Who can participate in Parkinson's clinical trials?", "a": "Eligibility depends on disease stage, current medications, age, and overall health. Some studies focus on early-stage disease while others include advanced cases."},
+      {"q": "How much do Parkinson's clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit with travel reimbursement for extended study commitments."},
+      {"q": "Are Parkinson's clinical trials safe?", "a": "Yes, all trials follow strict safety protocols with regular monitoring. Participants are informed of all risks before enrollment."}
+    ]
+  },
+  {
+    "name": "COPD",
+    "slug": "copd",
+    "icon": "🫁",
+    "description": "Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease causing airflow blockage and breathing difficulties. Clinical trials investigate new bronchodilators, anti-inflammatory therapies, and interventions to improve lung function and quality of life.",
+    "symptoms": "Chronic cough, shortness of breath, wheezing, chest tightness, excess mucus production, frequent respiratory infections, fatigue",
+    "riskFactors": "Smoking, secondhand smoke exposure, occupational dusts and chemicals, air pollution, genetic factors (alpha-1 antitrypsin deficiency), age",
+    "treatment": "Treatment includes bronchodilators, inhaled corticosteroids, pulmonary rehabilitation, oxygen therapy, and lung volume reduction surgery. Clinical trials explore novel biologic therapies, stem cell treatments, and digital health monitoring.",
+    "whyParticipate": "COPD clinical trials are essential for developing more effective treatments that can slow disease progression and improve breathing for millions affected worldwide.",
+    "relatedConditions": ["Asthma", "Emphysema", "Chronic Bronchitis", "Heart Disease", "Lung Cancer"],
+    "relatedStates": ["Florida", "Texas", "California", "Ohio", "Pennsylvania"],
+    "faq": [
+      {"q": "What are COPD clinical trials?", "a": "COPD clinical trials test new medications, devices, and rehabilitation strategies to improve lung function, reduce exacerbations, and enhance quality of life."},
+      {"q": "Who can participate in COPD clinical trials?", "a": "Eligibility typically requires a confirmed COPD diagnosis with specific lung function measurements. Factors include smoking history, exacerbation frequency, and current medications."},
+      {"q": "How much do COPD clinical trials pay?", "a": "Compensation varies. Participants typically receive $50-$150 per visit plus travel reimbursement."},
+      {"q": "Are COPD clinical trials safe?", "a": "Yes, participants receive regular pulmonary function tests and medical monitoring. Rescue medications are provided and participants can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Arthritis",
+    "slug": "arthritis",
+    "icon": "🦴",
+    "description": "Arthritis is inflammation of one or more joints causing pain and stiffness that worsens with age. Clinical trials investigate new anti-inflammatory medications, biologic therapies, joint preservation techniques, and regenerative medicine approaches.",
+    "symptoms": "Joint pain, stiffness, swelling, decreased range of motion, redness around joints, warmth, fatigue",
+    "riskFactors": "Age, family history, obesity, previous joint injury, autoimmune conditions, infection, occupation",
+    "treatment": "Treatment includes NSAIDs, corticosteroids, disease-modifying antirheumatic drugs (DMARDs), physical therapy, and joint replacement surgery. Clinical trials explore novel JAK inhibitors, biosimilars, and cartilage regeneration therapies.",
+    "whyParticipate": "Arthritis clinical trials help develop more effective pain management options and disease-modifying treatments that can preserve joint function and improve quality of life.",
+    "relatedConditions": ["Osteoarthritis", "Rheumatoid Arthritis", "Chronic Pain", "Obesity", "Gout"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are arthritis clinical trials?", "a": "Arthritis clinical trials test new medications, therapies, and interventions to reduce joint inflammation, manage pain, and prevent joint damage."},
+      {"q": "Who can participate in arthritis clinical trials?", "a": "Eligibility depends on arthritis type (osteoarthritis, rheumatoid arthritis, etc.), severity, previous treatments, and overall health."},
+      {"q": "How much do arthritis clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit with travel reimbursement."},
+      {"q": "Are arthritis clinical trials safe?", "a": "Yes, all trials have safety monitoring. Participants receive regular checkups and are informed of all potential risks during the consent process."}
+    ]
+  },
+  {
+    "name": "Migraine",
+    "slug": "migraine",
+    "icon": "🤕",
+    "description": "Migraine is a neurological condition characterized by recurrent moderate to severe headaches often accompanied by sensory disturbances. Clinical trials investigate CGRP inhibitors, neuromodulation devices, and novel acute and preventive treatments.",
+    "symptoms": "Throbbing head pain (often one-sided), nausea, vomiting, sensitivity to light and sound, visual aura, dizziness, cognitive difficulty",
+    "riskFactors": "Family history, gender (more common in women), hormonal changes, stress, certain foods and drinks, sleep changes, weather changes",
+    "treatment": "Treatment includes acute medications (triptans, NSAIDs, gepants) and preventive treatments (beta-blockers, anticonvulsants, CGRP monoclonal antibodies, Botox). Clinical trials explore new classes of acute and preventive therapies.",
+    "whyParticipate": "Migraine clinical trials contribute to developing more effective treatments with fewer side effects and help understand the underlying mechanisms of this complex neurological condition.",
+    "relatedConditions": ["Chronic Pain", "Depression", "Anxiety", "Sleep Disorders", "Fibromyalgia"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are migraine clinical trials?", "a": "Migraine clinical trials test new medications, devices, and therapies to prevent migraines or treat them more effectively when they occur."},
+      {"q": "Who can participate in migraine clinical trials?", "a": "Eligibility typically requires a diagnosis of migraine (with or without aura). Factors include frequency, duration, and previous treatment responses."},
+      {"q": "How much do migraine clinical trials pay?", "a": "Compensation varies. Participants may receive $75-$200 per visit plus travel reimbursement. Some trials also provide study medication."},
+      {"q": "Are migraine clinical trials safe?", "a": "Yes, participants are closely monitored throughout the study. Rescue medications are typically available, and safety protocols are strictly followed."}
+    ]
+  },
+  {
+    "name": "COVID-19",
+    "slug": "covid-19",
+    "icon": "🦠",
+    "description": "COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Clinical trials continue to investigate treatments, vaccines, and long-term management strategies for acute infection and long COVID symptoms.",
+    "symptoms": "Fever, cough, fatigue, loss of taste or smell, shortness of breath, body aches, sore throat, congestion, headache",
+    "riskFactors": "Age, immunocompromised status, underlying medical conditions (heart disease, diabetes, obesity), smoking, pregnancy, unvaccinated status",
+    "treatment": "Treatment includes antiviral medications, monoclonal antibodies, supportive care, and vaccination for prevention. Clinical trials explore new antiviral agents, combination therapies, and interventions for long COVID.",
+    "whyParticipate": "COVID-19 clinical trials are vital for developing better treatments, understanding long-term effects, and preparing for future pandemic threats.",
+    "relatedConditions": ["Long COVID", "Respiratory Infections", "Heart Disease", "Diabetes", "Chronic Fatigue"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are COVID-19 clinical trials?", "a": "COVID-19 clinical trials investigate new treatments, vaccines, and management strategies for acute infection and long-term complications of the disease."},
+      {"q": "Who can participate in COVID-19 clinical trials?", "a": "Eligibility varies by study. Some focus on acute treatment, others on prevention, and many are studying long COVID management."},
+      {"q": "How much do COVID-19 clinical trials pay?", "a": "Compensation varies by study type and duration. Vaccine trials and treatment studies typically offer $50-$200 per visit."},
+      {"q": "Are COVID-19 clinical trials safe?", "a": "Yes, all trials follow strict safety protocols. Participants are monitored closely and can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "ADHD",
+    "slug": "adhd",
+    "icon": "🎯",
+    "description": "Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder affecting attention, impulse control, and activity levels. Clinical trials investigate new medications, behavioral interventions, and digital therapeutic approaches.",
+    "symptoms": "Inattention, hyperactivity, impulsivity, difficulty organizing tasks, forgetfulness, restlessness, interrupting others, difficulty waiting turn",
+    "riskFactors": "Genetics, premature birth, low birth weight, prenatal exposure to substances, brain injury, environmental toxins",
+    "treatment": "Treatment includes stimulant and non-stimulant medications, behavioral therapy, organizational skills training, and educational support. Clinical trials explore novel non-stimulant medications, digital therapeutics, and neuromodulation.",
+    "whyParticipate": "ADHD clinical trials help develop more treatment options with fewer side effects and improve understanding of ADHD across different age groups.",
+    "relatedConditions": ["Anxiety", "Depression", "Autism", "Learning Disabilities", "Sleep Disorders"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Pennsylvania"],
+    "faq": [
+      {"q": "What are ADHD clinical trials?", "a": "ADHD clinical trials test new medications, behavioral interventions, and digital tools to improve attention, reduce hyperactivity, and enhance daily functioning."},
+      {"q": "Who can participate in ADHD clinical trials?", "a": "Studies include children, adolescents, and adults with diagnosed ADHD. Eligibility depends on age, symptom profile, and treatment history."},
+      {"q": "How much do ADHD clinical trials pay?", "a": "Compensation varies. Studies typically offer $50-$150 per visit. Child studies may include parent compensation for time and travel."},
+      {"q": "Are ADHD clinical trials safe?", "a": "Yes, participants are closely monitored. All trials have independent oversight, and participants can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Autism",
+    "slug": "autism",
+    "icon": "🧩",
+    "description": "Autism Spectrum Disorder (ASD) is a neurodevelopmental condition affecting communication, social interaction, and behavior. Clinical trials investigate behavioral interventions, medications for associated symptoms, and support strategies across the lifespan.",
+    "symptoms": "Difficulty with social communication, restricted interests, repetitive behaviors, sensory sensitivities, difficulty with changes in routine, varying language abilities",
+    "riskFactors": "Genetic factors, advanced parental age, preterm birth, prenatal exposure to certain medications, family history",
+    "treatment": "Treatment is individualized and may include behavioral therapy (ABA), speech therapy, occupational therapy, social skills training, and medications for co-occurring conditions. Clinical trials explore targeted therapies for core symptoms.",
+    "whyParticipate": "Autism clinical trials advance understanding of the condition and help develop more effective interventions and support strategies for individuals across the autism spectrum.",
+    "relatedConditions": ["ADHD", "Anxiety", "Depression", "Sensory Processing Disorder", "Sleep Disorders"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Massachusetts"],
+    "faq": [
+      {"q": "What are autism clinical trials?", "a": "Autism clinical trials test behavioral interventions, medications, and therapies to improve communication, social skills, and quality of life for individuals with autism."},
+      {"q": "Who can participate in autism clinical trials?", "a": "Eligibility depends on age, autism diagnosis confirmation, and specific study goals. Some studies include children, others focus on adults."},
+      {"q": "How much do autism clinical trials pay?", "a": "Compensation varies. Studies may offer $50-$200 per visit plus travel reimbursement. Behavioral studies may have different compensation structures."},
+      {"q": "Are autism clinical trials safe?", "a": "Yes, all trials prioritize participant safety with regular monitoring and ethical oversight. The consent process explains all procedures and risks."}
+    ]
+  },
+  {
+    "name": "PTSD",
+    "slug": "ptsd",
+    "icon": "💔",
+    "description": "Post-Traumatic Stress Disorder (PTSD) is a mental health condition triggered by experiencing or witnessing a traumatic event. Clinical trials investigate trauma-focused therapies, medications, and novel treatments including psychedelic-assisted therapy.",
+    "symptoms": "Intrusive memories, flashbacks, nightmares, severe anxiety, avoidance of trauma reminders, negative thoughts, hypervigilance, irritability, sleep disturbances",
+    "riskFactors": "Experiencing trauma, childhood adversity, lack of social support, family history of mental health conditions, personality factors, occupation (military, first responders)",
+    "treatment": "Treatment includes trauma-focused CBT, EMDR, prolonged exposure therapy, SSRIs, and SNRIs. Clinical trials explore MDMA-assisted therapy, ketamine, and novel psychotherapeutic approaches.",
+    "whyParticipate": "PTSD clinical trials are essential for developing more effective treatments for those who do not respond to existing therapies, particularly in military and first responder populations.",
+    "relatedConditions": ["Depression", "Anxiety", "Substance Use Disorder", "Chronic Pain", "Insomnia"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Colorado"],
+    "faq": [
+      {"q": "What are PTSD clinical trials?", "a": "PTSD clinical trials test new therapeutic approaches, medications, and interventions to reduce trauma-related symptoms and improve daily functioning."},
+      {"q": "Who can participate in PTSD clinical trials?", "a": "Eligibility requires a PTSD diagnosis based on standardized criteria. Studies may focus on specific trauma types or populations such as veterans."},
+      {"q": "How much do PTSD clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit. Some intensive therapy studies offer higher compensation."},
+      {"q": "Are PTSD clinical trials safe?", "a": "Yes, participant safety is paramount. Trials include regular mental health monitoring, and therapeutic support is available throughout the study."}
+    ]
+  },
+  {
+    "name": "Kidney Disease",
+    "slug": "kidney-disease",
+    "icon": "🫘",
+    "description": "Chronic Kidney Disease (CKD) is a progressive loss of kidney function over time. Clinical trials investigate treatments to slow disease progression, manage complications, and improve outcomes for dialysis and transplant patients.",
+    "symptoms": "Fatigue, swelling in legs and ankles, shortness of breath, nausea, confusion, difficulty sleeping, muscle cramps, changes in urination",
+    "riskFactors": "Diabetes, high blood pressure, heart disease, family history, age, obesity, smoking, certain ethnicities",
+    "treatment": "Treatment includes medications (ACE inhibitors, SGLT2 inhibitors), dietary modifications, dialysis, and kidney transplantation. Clinical trials explore novel nephroprotective agents and artificial kidney technologies.",
+    "whyParticipate": "Kidney disease clinical trials advance treatment options that can slow disease progression, reduce dialysis dependence, and improve outcomes for patients with compromised kidney function.",
+    "relatedConditions": ["Diabetes", "High Blood Pressure", "Heart Disease", "Obesity", "Urinary Tract Infections"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Georgia"],
+    "faq": [
+      {"q": "What are kidney disease clinical trials?", "a": "These trials investigate new treatments, medications, and devices to preserve kidney function, manage complications, and improve dialysis and transplant outcomes."},
+      {"q": "Who can participate in kidney disease clinical trials?", "a": "Eligibility depends on CKD stage, underlying cause, current treatments, and overall health. Some studies focus on early-stage disease, others on dialysis patients."},
+      {"q": "How much do kidney disease clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit plus travel reimbursement for study-related appointments."},
+      {"q": "Are kidney disease clinical trials safe?", "a": "Yes, participants receive close medical monitoring throughout the trial. All studies have independent safety oversight and ethics committee approval."}
+    ]
+  },
+  {
+    "name": "Sleep Disorders",
+    "slug": "sleep-disorders",
+    "icon": "🌙",
+    "description": "Sleep disorders encompass conditions affecting sleep quality, timing, and duration including insomnia, sleep apnea, and narcolepsy. Clinical trials investigate new medications, behavioral interventions, and devices to improve sleep health.",
+    "symptoms": "Difficulty falling or staying asleep, excessive daytime sleepiness, loud snoring, gasping during sleep, restless legs, irregular sleep-wake cycles, fatigue",
+    "riskFactors": "Stress, irregular schedule, certain medical conditions, medications, age, obesity, family history, mental health conditions",
+    "treatment": "Treatment includes cognitive behavioral therapy for insomnia (CBT-I), CPAP therapy, oral appliances, medications, and lifestyle modifications. Clinical trials explore novel hypnotics, orexin antagonists, and digital sleep interventions.",
+    "whyParticipate": "Sleep disorder clinical trials help develop more effective treatments with fewer side effects and advance understanding of the critical role of sleep in overall health.",
+    "relatedConditions": ["Insomnia", "Sleep Apnea", "Depression", "Anxiety", "Obesity", "Heart Disease"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are sleep disorder clinical trials?", "a": "Sleep disorder clinical trials test new medications, devices, and behavioral interventions to improve sleep quality, duration, and daytime functioning."},
+      {"q": "Who can participate in sleep disorder clinical trials?", "a": "Eligibility depends on the specific sleep condition, severity, and prior treatments. Sleep studies often include overnight monitoring."},
+      {"q": "How much do sleep disorder clinical trials pay?", "a": "Compensation varies. Overnight sleep studies may offer $200-$500+ per night. Outpatient behavioral studies may offer $50-$150 per visit."},
+      {"q": "Are sleep disorder clinical trials safe?", "a": "Yes, participants are monitored throughout the study. Sleep studies are conducted in controlled environments with medical supervision."}
+    ]
+  },
+  {
+    "name": "Liver Disease",
+    "slug": "liver-disease",
+    "icon": "🫁",
+    "description": "Liver disease encompasses conditions causing liver damage including fatty liver disease, hepatitis, cirrhosis, and liver cancer. Clinical trials investigate antiviral therapies, antifibrotic agents, and treatments for metabolic liver conditions.",
+    "symptoms": "Jaundice, abdominal pain and swelling, chronic fatigue, nausea, loss of appetite, easy bruising, dark urine, pale stools",
+    "riskFactors": "Excessive alcohol consumption, obesity, diabetes, viral hepatitis (B and C), genetic factors, certain medications, exposure to toxins",
+    "treatment": "Treatment depends on the underlying cause and includes antiviral medications, lifestyle modifications, corticosteroids, and liver transplantation. Clinical trials explore NASH treatments, gene therapies, and novel antifibrotic agents.",
+    "whyParticipate": "Liver disease clinical trials are crucial for developing treatments for conditions like NASH and cirrhosis where few therapeutic options currently exist.",
+    "relatedConditions": ["Diabetes", "Obesity", "Hepatitis", "Cirrhosis", "High Cholesterol"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are liver disease clinical trials?", "a": "These trials investigate new treatments for various liver conditions including fatty liver disease, hepatitis, cirrhosis, and liver cancer."},
+      {"q": "Who can participate in liver disease clinical trials?", "a": "Eligibility depends on the specific liver condition, disease stage, prior treatments, and overall health status."},
+      {"q": "How much do liver disease clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit plus travel reimbursement."},
+      {"q": "Are liver disease clinical trials safe?", "a": "Yes, all trials follow strict safety guidelines with regular liver function monitoring and independent oversight."}
+    ]
+  },
+  {
+    "name": "Psoriasis",
+    "slug": "psoriasis",
+    "icon": "🧴",
+    "description": "Psoriasis is a chronic autoimmune condition causing rapid skin cell buildup resulting in scaly patches. Clinical trials investigate biologic therapies, topical treatments, and systemic medications to control inflammation and improve skin clearance.",
+    "symptoms": "Red, raised, inflamed patches of skin, silvery-white scales, dry cracked skin, itching, burning, thickened or ridged nails, joint swelling (psoriatic arthritis)",
+    "riskFactors": "Family history, immune system disorders, stress, infections, certain medications, smoking, obesity",
+    "treatment": "Treatment includes topical corticosteroids, vitamin D analogs, phototherapy, oral systemic medications, and biologic therapies targeting specific immune pathways. Clinical trials explore novel cytokine inhibitors and oral small molecules.",
+    "whyParticipate": "Psoriasis clinical trials help develop more effective treatments with convenient dosing and contribute to understanding autoimmune mechanisms.",
+    "relatedConditions": ["Psoriatic Arthritis", "Eczema", "Depression", "Heart Disease", "Crohn's Disease"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are psoriasis clinical trials?", "a": "Psoriasis clinical trials test new medications, biologic therapies, and topical treatments to reduce skin inflammation and improve quality of life."},
+      {"q": "Who can participate in psoriasis clinical trials?", "a": "Eligibility depends on psoriasis severity, body surface area affected, prior treatments, and whether psoriatic arthritis is present."},
+      {"q": "How much do psoriasis clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit plus study-related medications and monitoring at no cost."},
+      {"q": "Are psoriasis clinical trials safe?", "a": "Yes, participants are carefully monitored for side effects. All trials have safety oversight and participants can withdraw at any time."}
+    ]
+  },
+  {
+    "name": "Hepatitis C",
+    "slug": "hepatitis-c",
+    "icon": "🧪",
+    "description": "Hepatitis C is a viral infection causing liver inflammation that can become chronic and lead to cirrhosis or liver cancer. Clinical trials investigate new antiviral therapies, treatment-shortening regimens, and approaches for hard-to-treat populations.",
+    "symptoms": "Fatigue, fever, nausea, poor appetite, abdominal pain, dark urine, clay-colored stools, joint pain, jaundice",
+    "riskFactors": "IV drug use, blood transfusion before 1992, needlestick injuries, hemodialysis, HIV co-infection, born to infected mother",
+    "treatment": "Treatment includes direct-acting antiviral (DAA) medications that can cure most cases. Clinical trials explore pangenotypic regimens, shorter treatment durations, and strategies for eliminating hepatitis C globally.",
+    "whyParticipate": "Hepatitis C clinical trials help develop more accessible and shorter treatment regimens, contributing to the global goal of eliminating hepatitis C as a public health threat.",
+    "relatedConditions": ["Liver Disease", "Cirrhosis", "Liver Cancer", "HIV/AIDS", "Kidney Disease"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are hepatitis C clinical trials?", "a": "Hepatitis C clinical trials test new antiviral medications and treatment approaches to improve cure rates and reduce treatment duration."},
+      {"q": "Who can participate in hepatitis C clinical trials?", "a": "Eligibility depends on hepatitis C genotype, viral load, liver function, prior treatment history, and whether cirrhosis is present."},
+      {"q": "How much do hepatitis C clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit with study medications and monitoring provided at no cost."},
+      {"q": "Are hepatitis C clinical trials safe?", "a": "Yes, participants receive regular monitoring of liver function and viral levels. All trials follow strict safety protocols."}
+    ]
+  },
+  {
+    "name": "HIV/AIDS",
+    "slug": "hiv-aids",
+    "icon": "🔴",
+    "description": "HIV (Human Immunodeficiency Virus) attacks the immune system and can progress to AIDS without treatment. Clinical trials investigate long-acting antiretroviral therapies, vaccine development, and cure research strategies.",
+    "symptoms": "Fever, fatigue, swollen lymph nodes, rash, muscle aches, sore throat, night sweats, mouth ulcers, weight loss",
+    "riskFactors": "Unprotected sex, sharing needles, mother-to-child transmission, blood transfusion (rare), occupational exposure",
+    "treatment": "Treatment includes antiretroviral therapy (ART) which controls viral replication and prevents progression to AIDS. Clinical trials explore long-acting injectable formulations, broadly neutralizing antibodies, and HIV cure strategies.",
+    "whyParticipate": "HIV clinical trials are essential for developing longer-acting treatments, improving prevention methods, and working toward a functional cure for HIV.",
+    "relatedConditions": ["Hepatitis C", "Tuberculosis", "STIs", "Certain Cancers", "Cardiovascular Disease"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Georgia"],
+    "faq": [
+      {"q": "What are HIV clinical trials?", "a": "HIV clinical trials test new antiretroviral medications, prevention methods (PrEP), vaccine candidates, and potential cure strategies."},
+      {"q": "Who can participate in HIV clinical trials?", "a": "Eligibility varies. Some studies include people living with HIV, others focus on HIV-negative individuals for prevention research."},
+      {"q": "How much do HIV clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit with study medications and monitoring provided at no cost."},
+      {"q": "Are HIV clinical trials safe?", "a": "Yes, all trials have strict safety protocols. Participants receive regular health monitoring and can access standard HIV care throughout the study."}
+    ]
+  },
+  {
+    "name": "Multiple Sclerosis",
+    "slug": "multiple-sclerosis",
+    "icon": "🧬",
+    "description": "Multiple Sclerosis (MS) is an autoimmune disease where the immune system attacks the protective myelin sheath covering nerve fibers. Clinical trials investigate disease-modifying therapies, remyelination strategies, and symptomatic treatments.",
+    "symptoms": "Fatigue, numbness or tingling, weakness, vision problems, balance issues, bladder dysfunction, cognitive changes, spasticity, pain",
+    "riskFactors": "Age (20-40), female gender, family history, certain infections (Epstein-Barr), vitamin D deficiency, smoking, obesity, Northern latitude",
+    "treatment": "Treatment includes disease-modifying therapies (interferons, glatiramer acetate, S1P receptor modulators, monoclonal antibodies), corticosteroids for relapses, and symptomatic treatments. Clinical trials explore BTK inhibitors, remyelinating agents, and cell-based therapies.",
+    "whyParticipate": "MS clinical trials are vital for developing treatments that can stop disease progression, repair nerve damage, and improve quality of life for those living with MS.",
+    "relatedConditions": ["Autoimmune Diseases", "Chronic Pain", "Depression", "Fatigue", "Bladder Disorders"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are multiple sclerosis clinical trials?", "a": "MS clinical trials test new medications and therapies to reduce relapses, slow disease progression, and manage symptoms of multiple sclerosis."},
+      {"q": "Who can participate in MS clinical trials?", "a": "Eligibility depends on MS type (relapsing-remitting, primary progressive, secondary progressive), disease activity, and prior treatments."},
+      {"q": "How much do MS clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit plus travel reimbursement. Study medications and monitoring are typically provided."},
+      {"q": "Are MS clinical trials safe?", "a": "Yes, participants receive regular neurological assessments and monitoring. All trials have independent safety committees and ethical oversight."}
+    ]
+  },
+  {
+    "name": "Osteoporosis",
+    "slug": "osteoporosis",
+    "icon": "🦴",
+    "description": "Osteoporosis is a condition where bones become weak and brittle due to loss of bone density. Clinical trials investigate new medications to increase bone density, reduce fracture risk, and improve bone quality.",
+    "symptoms": "Often asymptomatic until fracture, back pain, loss of height over time, stooped posture, bone fractures from minor falls",
+    "riskFactors": "Age, female gender, family history, low body weight, smoking, excessive alcohol, certain medications (steroids), low calcium intake, vitamin D deficiency",
+    "treatment": "Treatment includes bisphosphonates, hormone therapy, denosumab, teriparatide, and romosozumab. Clinical trials explore novel anabolic agents, cathepsin K inhibitors, and combination therapies.",
+    "whyParticipate": "Osteoporosis clinical trials help develop more effective treatments with convenient dosing schedules and contribute to understanding bone metabolism and fracture prevention.",
+    "relatedConditions": ["Arthritis", "Vitamin D Deficiency", "Thyroid Disorders", "Celiac Disease", "Diabetes"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Ohio"],
+    "faq": [
+      {"q": "What are osteoporosis clinical trials?", "a": "Osteoporosis clinical trials test new medications and therapies to increase bone density, reduce fracture risk, and improve bone health."},
+      {"q": "Who can participate in osteoporosis clinical trials?", "a": "Eligibility depends on bone density scores (T-scores), age, fracture history, and prior osteoporosis treatments."},
+      {"q": "How much do osteoporosis clinical trials pay?", "a": "Compensation varies. Participants typically receive $50-$150 per visit with bone density scans and lab work provided at no cost."},
+      {"q": "Are osteoporosis clinical trials safe?", "a": "Yes, participants are monitored with regular bone density scans and blood work. All trials follow strict safety guidelines."}
+    ]
+  },
+  {
+    "name": "Crohn's Disease",
+    "slug": "crohns-disease",
+    "icon": "🫃",
+    "description": "Crohn's disease is a chronic inflammatory bowel disease causing inflammation of the digestive tract. Clinical trials investigate biologic therapies, JAK inhibitors, and novel approaches to induce and maintain remission.",
+    "symptoms": "Abdominal pain, severe diarrhea, fatigue, weight loss, malnutrition, fever, blood in stool, reduced appetite",
+    "riskFactors": "Family history, age (usually diagnosed before 30), smoking, certain medications (NSAIDs), environmental factors, ethnic background",
+    "treatment": "Treatment includes anti-inflammatory drugs, immune system suppressors, biologic therapies (anti-TNF, anti-integrin), antibiotics, and surgery. Clinical trials explore IL-23 inhibitors, oral small molecules, and microbiome-based therapies.",
+    "whyParticipate": "Crohn's disease clinical trials advance treatment options for patients who do not respond to current therapies and contribute to understanding inflammatory bowel disease mechanisms.",
+    "relatedConditions": ["Ulcerative Colitis", "Irritable Bowel Syndrome", "Arthritis", "Malnutrition", "Anemia"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are Crohn's disease clinical trials?", "a": "Crohn's disease clinical trials test new medications and therapies to reduce intestinal inflammation, maintain remission, and improve quality of life."},
+      {"q": "Who can participate in Crohn's disease clinical trials?", "a": "Eligibility depends on disease location, severity, prior treatments, and whether there are complications like fistulas or strictures."},
+      {"q": "How much do Crohn's disease clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit plus travel reimbursement. Study medications and monitoring are provided at no cost."},
+      {"q": "Are Crohn's disease clinical trials safe?", "a": "Yes, participants receive regular monitoring including laboratory tests and endoscopic evaluations as needed. Safety is closely overseen by independent committees."}
+    ]
+  },
+  {
+    "name": "Glaucoma",
+    "slug": "glaucoma",
+    "icon": "👁️",
+    "description": "Glaucoma is a group of eye conditions that damage the optic nerve, often caused by abnormally high eye pressure. Clinical trials investigate new eye drops, laser treatments, surgical techniques, and neuroprotective agents.",
+    "symptoms": "Often asymptomatic in early stages, gradual loss of peripheral vision, tunnel vision in advanced stages, eye pain, blurred vision, halos around lights",
+    "riskFactors": "Age, family history, high eye pressure, certain ethnicities (African, Hispanic), thin corneas, diabetes, high blood pressure, eye injury",
+    "treatment": "Treatment includes prescription eye drops (prostaglandins, beta-blockers, carbonic anhydrase inhibitors), laser trabeculoplasty, and surgical procedures. Clinical trials explore sustained-release drug delivery, gene therapies, and neuroprotective agents.",
+    "whyParticipate": "Glaucoma clinical trials help develop treatments that can preserve vision and prevent blindness by improving intraocular pressure control and protecting optic nerve health.",
+    "relatedConditions": ["Cataracts", "Macular Degeneration", "Diabetes", "High Blood Pressure", "Nearsightedness"],
+    "relatedStates": ["California", "Florida", "Texas", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are glaucoma clinical trials?", "a": "Glaucoma clinical trials test new eye drops, laser treatments, surgical devices, and medications to lower eye pressure and preserve vision."},
+      {"q": "Who can participate in glaucoma clinical trials?", "a": "Eligibility depends on glaucoma type (open-angle, angle-closure), disease severity, eye pressure levels, and prior treatments."},
+      {"q": "How much do glaucoma clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$150 per visit with eye exams and study medications provided at no cost."},
+      {"q": "Are glaucoma clinical trials safe?", "a": "Yes, participants receive regular comprehensive eye exams and monitoring. All trials follow strict safety protocols approved by ethics committees."}
+    ]
+  },
+  {
+    "name": "Eczema",
+    "slug": "eczema",
+    "icon": "🧴",
+    "description": "Eczema (atopic dermatitis) is a chronic inflammatory skin condition causing itchy, red, and irritated skin. Clinical trials investigate topical treatments, systemic medications, and biologic therapies targeting specific immune pathways.",
+    "symptoms": "Intense itching, red to brownish-gray patches, small raised bumps, thickened scaly skin, raw sensitive skin from scratching, dark-colored patches",
+    "riskFactors": "Family history, asthma or hay fever, certain immune system variations, skin barrier defects, environmental factors, stress",
+    "treatment": "Treatment includes moisturizers, topical corticosteroids, calcineurin inhibitors, phototherapy, systemic immunosuppressants, and biologic therapies (dupilumab, tralokinumab). Clinical trials explore novel JAK inhibitors and microbiome-based approaches.",
+    "whyParticipate": "Eczema clinical trials help develop more effective treatments with better safety profiles and contribute to understanding the complex mechanisms of atopic dermatitis.",
+    "relatedConditions": ["Asthma", "Allergies", "Hay Fever", "Psoriasis", "Skin Infections"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are eczema clinical trials?", "a": "Eczema clinical trials test new topical treatments, systemic medications, and biologic therapies to reduce inflammation, itching, and improve skin barrier function."},
+      {"q": "Who can participate in eczema clinical trials?", "a": "Eligibility depends on eczema severity, body surface area affected, age, and prior treatment history."},
+      {"q": "How much do eczema clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$200 per visit with study medications and dermatology exams provided at no cost."},
+      {"q": "Are eczema clinical trials safe?", "a": "Yes, participants are monitored regularly for skin improvement and potential side effects. All trials have safety oversight."}
+    ]
+  },
+  {
+    "name": "Hepatitis B",
+    "slug": "hepatitis-b",
+    "icon": "🧪",
+    "description": "Hepatitis B is a viral infection causing liver inflammation that can become chronic and lead to cirrhosis or liver cancer. Clinical trials investigate new antiviral therapies, immune-based treatments, and functional cure strategies.",
+    "symptoms": "Fatigue, jaundice, abdominal pain, nausea, vomiting, dark urine, joint pain, loss of appetite, fever",
+    "riskFactors": "Birth to infected mother, unprotected sex, sharing needles, occupational exposure, hemodialysis, travel to endemic areas",
+    "treatment": "Treatment includes antiviral medications (tenofovir, entecavir) and pegylated interferon. Clinical trials explore novel entry inhibitors, capsid inhibitors, RNA interference therapies, and immunomodulatory approaches toward functional cure.",
+    "whyParticipate": "Hepatitis B clinical trials are essential for developing finite treatment regimens and potential cures for the hundreds of millions living with chronic hepatitis B worldwide.",
+    "relatedConditions": ["Liver Disease", "Cirrhosis", "Liver Cancer", "Hepatitis C", "HIV/AIDS"],
+    "relatedStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+    "faq": [
+      {"q": "What are hepatitis B clinical trials?", "a": "Hepatitis B clinical trials test new antiviral medications and immune-based therapies to improve viral suppression and potentially achieve functional cure."},
+      {"q": "Who can participate in hepatitis B clinical trials?", "a": "Eligibility depends on hepatitis B status (chronic vs. resolved), viral load, liver function, and prior treatment history."},
+      {"q": "How much do hepatitis B clinical trials pay?", "a": "Compensation varies. Participants typically receive $50-$200 per visit with study medications and monitoring provided at no cost."},
+      {"q": "Are hepatitis B clinical trials safe?", "a": "Yes, participants receive regular liver function monitoring and viral load testing. All trials follow strict safety protocols."}
+    ]
+  },
+  {
+    "name": "Seasonal Allergies",
+    "slug": "seasonal-allergies",
+    "icon": "🌸",
+    "description": "Seasonal allergies (allergic rhinitis) occur when the immune system overreacts to airborne substances like pollen. Clinical trials investigate new antihistamines, nasal sprays, immunotherapy approaches, and biologic therapies.",
+    "symptoms": "Sneezing, runny or stuffy nose, itchy eyes, nose or throat, watery eyes, postnasal drip, cough, fatigue from poor sleep",
+    "riskFactors": "Family history of allergies, personal history of asthma or eczema, exposure to pollen, mold, dust mites, or pet dander",
+    "treatment": "Treatment includes antihistamines, nasal corticosteroid sprays, decongestants, eye drops, and allergen immunotherapy (allergy shots or sublingual tablets). Clinical trials explore novel biologic therapies targeting allergic pathways and improved immunotherapy formulations.",
+    "whyParticipate": "Seasonal allergy clinical trials help develop more effective treatments with faster onset and fewer side effects, improving quality of life for millions affected by allergies.",
+    "relatedConditions": ["Asthma", "Eczema", "Sinusitis", "Food Allergies", "Hay Fever"],
+    "relatedStates": ["California", "Texas", "Florida", "New York", "Illinois"],
+    "faq": [
+      {"q": "What are seasonal allergy clinical trials?", "a": "Seasonal allergy clinical trials test new medications, nasal sprays, and immunotherapy treatments to reduce allergic reactions and improve symptom control."},
+      {"q": "Who can participate in seasonal allergy clinical trials?", "a": "Eligibility typically requires confirmed allergic rhinitis with sensitivity to relevant allergens. Studies often exclude those with severe asthma or other conditions."},
+      {"q": "How much do seasonal allergy clinical trials pay?", "a": "Compensation varies. Participants may receive $50-$150 per visit with study medications provided at no cost during allergy season."},
+      {"q": "Are seasonal allergy clinical trials safe?", "a": "Yes, participants are monitored for allergic reactions and side effects. Trials have safety protocols and participants can withdraw at any time."}
+    ]
+  }
+]

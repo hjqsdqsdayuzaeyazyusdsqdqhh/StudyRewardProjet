@@ -11,5 +11,9 @@
         { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/state/:slug", "destination": "/states/:slug" },
+    { "source": "/city/:slug", "destination": "/cities/:slug" }
   ]
 }

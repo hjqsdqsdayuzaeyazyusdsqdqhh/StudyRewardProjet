@@ -882,9 +882,26 @@
 
         filtered.sort((a, b) => (counts[b.name + '|' + b.state] || 0) - (counts[a.name + '|' + a.state] || 0));
 
-        container.innerHTML = filtered.length
-          ? filtered.map(c => renderCityCard(c, counts[c.name + '|' + c.state] || 0)).join('')
-          : emptyHTML('No cities found', '');
+        if (!filtered.length) {
+          container.innerHTML = emptyHTML('No cities found', '');
+          return;
+        }
+
+        // Group by state
+        const grouped = {};
+        filtered.forEach(c => {
+          if (!grouped[c.state]) grouped[c.state] = [];
+          grouped[c.state].push(c);
+        });
+
+        const stateKeys = Object.keys(grouped).sort();
+        container.innerHTML = stateKeys.map(st => {
+          const stSlug = st.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const cityCards = grouped[st].map(c => renderCityCard(c, counts[c.name + '|' + c.state] || 0)).join('');
+          return '<div class="state-city-group">' +
+            '<a href="states/' + stSlug + '.html" class="state-city-header">' + escape(st) + '</a>' +
+            '<div class="cities-grid">' + cityCards + '</div></div>';
+        }).join('');
       }
 
       doRender();

@@ -505,6 +505,12 @@ ul{list-style:none}
 .city-card .city-state{font-size:.82rem;color:var(--gray-400);margin-bottom:6px}
 .city-card .city-count{font-size:.82rem;color:var(--primary);font-weight:500}
 
+/* ===== CITY STATE GROUPS ===== */
+.state-city-group{margin-bottom:28px}
+.state-city-header{display:block;font-size:1.05rem;font-weight:700;color:var(--secondary);padding:8px 0;margin-bottom:8px;text-decoration:none;border-bottom:2px solid var(--primary-light)}
+.state-city-header:hover{color:var(--primary)}
+.state-city-group .cities-grid{gap:10px}
+
 /* ===== HOW IT WORKS ===== */
 .how-grid{
   display:grid;
