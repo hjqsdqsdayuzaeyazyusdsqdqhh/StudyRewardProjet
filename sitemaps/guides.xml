@@ -7,13 +7,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/biologic-drugs-biosimilars-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/cancer-clinical-trials-guide</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/cancer-prevention-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/chronic-pain-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/clinical-trial-advocacy-support</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -26,6 +44,12 @@
   </url>
   <url>
     <loc>https://studyreward.online/guides/clinical-trial-data-privacy</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/clinical-trial-diversity</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -61,6 +85,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/clinical-trial-timeline</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/clinical-trial-travel-tips</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/clinical-trials-for-seniors</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/covid-19-clinical-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -79,6 +121,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/gene-therapy-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/healthy-volunteer-guide</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -86,6 +134,12 @@
   </url>
   <url>
     <loc>https://studyreward.online/guides/heart-disease-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/heart-health-prevention-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -103,6 +157,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/how-to-choose-the-right-clinical-trial</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/how-to-find-paid-clinical-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -110,6 +170,12 @@
   </url>
   <url>
     <loc>https://studyreward.online/guides/informed-consent-rights-research-participant</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/medical-devices-clinical-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -175,7 +241,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/remote-decentralized-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/sleep-disorder-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/stem-cell-clinical-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -187,7 +265,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://studyreward.online/guides/understanding-clinical-trial-results</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://studyreward.online/guides/vaccine-clinical-trials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://studyreward.online/guides/veterans-clinical-trials</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
