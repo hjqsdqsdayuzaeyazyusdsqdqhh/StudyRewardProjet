@@ -16,10 +16,13 @@
   <meta property="og:title" content="StudyReward | Find Paid Clinical Trials Near You">
   <meta property="og:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition. Earn rewards while advancing medical research.">
   <meta property="og:image" content="https://studyreward.online/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="StudyReward | Find Paid Clinical Trials Near You">
   <meta name="twitter:description" content="Discover paid clinical trials in your area. Browse studies by state, city, or medical condition.">
+  <meta name="twitter:image" content="https://studyreward.online/og-image.svg">
   <meta property="og:site_name" content="StudyReward">
   <!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -27,6 +30,11 @@
 
   <!-- Clarity (replace with your Clarity ID) -->
   <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');</script>
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.clarity.ms">
+<link rel="dns-prefetch" href="https://clinicaltrials.gov">
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,6 +44,23 @@
     "description": "Find paid clinical trials near you and earn rewards while advancing medical research."
   }
   </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "StudyReward",
+  "url": "https://studyreward.online",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://studyreward.online/clinical-trials.html?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
   <script type="application/ld+json">
   {
@@ -51,8 +76,6 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
 </head>
 <body data-page="home">
 
@@ -76,7 +99,7 @@
       </nav>
       <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="mobile-nav">
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
       <div class="mobile-search"><input type="text" placeholder="Search trials..." aria-label="Search"></div>
       <a href="index.html" class="active" aria-current="page">Home</a>
       <a href="clinical-trials.html">Clinical Trials</a>
@@ -92,7 +115,7 @@
     <div class="container">
       <h1>Find Paid Clinical Trials Near You</h1>
       <p>Earn money while contributing to groundbreaking medical research. Browse thousands of clinical studies across the United States and find the perfect trial for you.</p>
-      <form class="hero-search" action="clinical-trials.html" method="get">
+      <form class="hero-search" role="search" action="clinical-trials.html" method="get">
         <input type="text" name="q" placeholder="Search by condition, location, or study name..." aria-label="Search clinical trials">
         <button type="submit">Search</button>
       </form>
@@ -126,28 +149,28 @@
       <div class="how-grid">
         <div class="how-step">
           <div class="how-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
+            <svg role="img" aria-label="Search icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
           </div>
           <h3>1. Search Trials</h3>
           <p>Browse our database of paid clinical trials by condition, location, or keyword to find studies that match your interests.</p>
         </div>
         <div class="how-step">
           <div class="how-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 10L4 7"/></svg>
+            <svg role="img" aria-label="Check eligibility icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 10L4 7"/></svg>
           </div>
           <h3>2. Check Eligibility</h3>
           <p>Review each study's requirements including age, health status, and other criteria to see if you qualify.</p>
         </div>
         <div class="how-step">
           <div class="how-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+            <svg role="img" aria-label="Apply icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
           </div>
           <h3>3. Apply Online</h3>
           <p>Submit your application directly through the study provider. The research team will contact you with next steps.</p>
         </div>
         <div class="how-step">
           <div class="how-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.7-8 11-4.5-1.3-8-6-8-11V5l8-3z"/></svg>
+            <svg role="img" aria-label="Security shield icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.7-8 11-4.5-1.3-8-6-8-11V5l8-3z"/></svg>
           </div>
           <h3>4. Earn Rewards</h3>
           <p>Participate in the study and receive compensation for your time and contribution to medical research.</p>
@@ -248,7 +271,7 @@
     <div class="container">
       <h2>Stay Updated on New Studies</h2>
       <p>Get notified when new paid clinical trials become available in your area.</p>
-      <form class="newsletter-form">
+      <form class="newsletter-form" role="form" aria-label="Newsletter subscription">
         <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
         <button type="submit">Subscribe</button>
       </form>

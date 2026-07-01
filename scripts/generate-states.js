@@ -65,13 +65,15 @@ states.forEach(st => {
     .replace(/<title>.*?<\/title>/, '<title>Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward</title>')
     .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '. Browse medical research studies with compensation in ' + escapeHTML(name) + ' and discover clinical research opportunities near you.">')
     .replace(/<link rel="canonical"[^>]*>/, '<link rel="canonical" href="https://studyreward.online/states/' + slug + '">')
+    .replace(/<link rel="alternate"[^>]*>/, '<link rel="alternate" hreflang="en" href="https://studyreward.online/states/' + slug + '">')
     .replace(/<meta property="og:url"[^>]*>/, '<meta property="og:url" content="https://studyreward.online/states/' + slug + '">')
     .replace(/<meta property="og:title"[^>]*>/, '<meta property="og:title" content="Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward">')
     .replace(/<meta property="og:description"[^>]*>/, '<meta property="og:description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '.">')
     .replace(/<meta name="twitter:title"[^>]*>/, '<meta name="twitter:title" content="Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward">')
     .replace(/<meta name="twitter:description"[^>]*>/, '<meta name="twitter:description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '.">')
     .replace(/href="(?!(?:https?:\/\/|\/\/|\.\.\/|#))([^"]+)"/g, 'href="../$1"')
-    .replace(/src="(?!(?:https?:\/\/|\/\/|\.\.\/))([^"]+)"/g, 'src="../$1"');
+    .replace(/src="(?!(?:https?:\/\/|\/\/|\.\.\/))([^"]+)"/g, 'src="../$1"')
+    .replace('</head>', '<link rel="preconnect" href="https://www.googletagmanager.com">\n<link rel="preconnect" href="https://www.clarity.ms">\n<link rel="dns-prefetch" href="https://clinicaltrials.gov">\n</head>');
 
   // Breadcrumb
   const breadcrumb = '<div class="breadcrumbs"><div class="container"><a href="../index.html">Home</a><span class="sep">/</span><a href="../states.html">States</a><span class="sep">/</span><span class="current">' + escapeHTML(name) + '</span></div></div>';
@@ -113,7 +115,15 @@ states.forEach(st => {
     ]}) +
     '</script>';
 
-  const finalHtml = '<!DOCTYPE html>\n<html lang="en-US">\n<head>\n' + head + '\n' + jsonld +
+  const orgLD = '<script type="application/ld+json">' +
+    JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"https://studyreward.online","logo":"https://studyreward.online/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}) +
+    '</script>';
+
+  const siteLD = '<script type="application/ld+json">' +
+    JSON.stringify({"@context":"https://schema.org","@type":"WebSite","name":"StudyReward","url":"https://studyreward.online","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://studyreward.online/clinical-trials.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}) +
+    '</script>';
+
+  const finalHtml = '<!DOCTYPE html>\n<html lang="en-US">\n<head>\n' + head + '\n' + orgLD + '\n' + siteLD + '\n' + jsonld +
     '\n</head>\n<body data-page="state" data-state="' + escapeHTML(name) + '" data-state-abbr="' + abbr + '">\n\n' +
     '  <a href="#main-content" class="skip-link">Skip to main content</a>\n\n' +
     '  <header class="header">\n    <div class="container">\n' +
@@ -130,7 +140,7 @@ states.forEach(st => {
     '      </nav>\n' +
     '      <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>\n' +
     '    </div>\n' +
-    '    <div class="mobile-nav">\n' +
+    '    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">\n' +
     '      <div class="mobile-search"><input type="text" placeholder="Search trials..."></div>\n' +
     '      <a href="../index.html">Home</a>\n' +
     '      <a href="../clinical-trials.html">Clinical Trials</a>\n' +

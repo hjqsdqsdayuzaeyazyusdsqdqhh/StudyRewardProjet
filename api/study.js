@@ -281,7 +281,10 @@ export default async function handler(req, res) {
 <meta name="twitter:title" content="${escape(pageTitle)}">
 <meta name="twitter:description" content="${escape(pageDesc)}">
 <meta property="og:image" content="${SITE}/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="StudyReward">
+<meta name="twitter:image" content="${SITE}/og-image.svg">
 
 <!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>
@@ -289,6 +292,16 @@ export default async function handler(req, res) {
 
 <!-- Clarity (replace with your Clarity ID) -->
 <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');<\/script>
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.clarity.ms">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"${SITE}","logo":"${SITE}/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"StudyReward","url":"${SITE}","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"${SITE}/clinical-trials.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
 
 <script type="application/ld+json">${JSON.stringify(jsonLd[0])}</script>
 <script type="application/ld+json">${JSON.stringify(jsonLd[1])}</script>

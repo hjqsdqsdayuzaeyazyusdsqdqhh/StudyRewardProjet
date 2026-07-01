@@ -76,14 +76,26 @@ conditions.forEach(cond => {
     '<meta name="twitter:card" content="summary_large_image">\n' +
     '<meta name="twitter:title" content="' + title + '">\n' +
     '<meta name="twitter:description" content="' + metaDesc + '">\n' +
+    '<meta name="twitter:image" content="https://studyreward.online/og-image.svg">\n' +
     '<meta property="og:image" content="https://studyreward.online/og-image.svg">\n' +
+    '<meta property="og:image:width" content="1200">\n' +
+    '<meta property="og:image:height" content="630">\n' +
     '<meta property="og:site_name" content="StudyReward">\n\n' +
 
     '<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->\n' +
     '<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>\n' +
     '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'G-XXXXXXXXXX\');<\/script>\n\n' +
     '<!-- Clarity (replace with your Clarity ID) -->\n' +
-    '<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src=\'https://www.clarity.ms/tag/\'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,\'clarity\',\'script\',\'YOUR_CLARITY_ID\');<\/script>\n\n' +
+    '<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src=\'https://www.clarity.ms/tag/\'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,\'clarity\',\'script\',\'YOUR_CLARITY_ID\');<\/script>\n' +
+    '<script type="application/ld+json">' +
+    JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"https://studyreward.online","logo":"https://studyreward.online/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}) +
+    '</script>\n' +
+    '<script type="application/ld+json">' +
+    JSON.stringify({"@context":"https://schema.org","@type":"WebSite","name":"StudyReward","url":"https://studyreward.online","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://studyreward.online/clinical-trials.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}) +
+    '</script>\n' +
+    '<link rel="preconnect" href="https://www.googletagmanager.com">\n' +
+    '<link rel="preconnect" href="https://www.clarity.ms">\n' +
+    '<link rel="dns-prefetch" href="https://clinicaltrials.gov">\n\n' +
 
     '<script type="application/ld+json">' +
     JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":metaDesc,"url":"https://studyreward.online/conditions/" + slug}) +
@@ -125,7 +137,7 @@ conditions.forEach(cond => {
     '    </nav>\n' +
     '    <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>\n' +
     '  </div>\n' +
-    '  <div class="mobile-nav">\n' +
+    '  <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">\n' +
     '    <div class="mobile-search"><input type="text" placeholder="Search trials..."></div>\n' +
     '    <a href="../index.html">Home</a>\n' +
     '    <a href="../clinical-trials.html">Clinical Trials</a>\n' +
