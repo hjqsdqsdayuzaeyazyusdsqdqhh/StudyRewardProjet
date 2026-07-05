@@ -94,8 +94,6 @@ cities.forEach(city => {
     '</script>\n\n' +
 
     '<link rel="stylesheet" href="../css/style.css">\n' +
-    '<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">\n' +
-    '<link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">\n' +
     '</head>\n' +
     '<body data-page="city" data-city="' + slug + '" data-city-name="' + escapeHTML(name) + '" data-state="' + escapeHTML(state) + '">\n\n' +
 

@@ -18,10 +18,11 @@ function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-// Derive head template (just the <head> contents)
+// Derive head template (just the <head> contents), strip generic JSON-LD to avoid duplicates
 const headStart = html.indexOf('<head>');
 const headEnd = html.indexOf('</head>');
-const headTemplate = html.substring(headStart + '<head>'.length, headEnd);
+let headTemplate = html.substring(headStart + '<head>'.length, headEnd);
+headTemplate = headTemplate.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>\s*/g, '');
 
 // Everything from <body> to end
 const bodyStart = html.indexOf('<body');
