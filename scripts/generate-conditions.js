@@ -30,7 +30,7 @@ conditions.forEach(cond => {
 
   const relatedCondHtml = (cond.relatedConditions || []).map(r => {
     const rs = slugify(r);
-    return '<a href="conditions/' + rs + '.html" class="condition-card">' +
+    return '<a href="../conditions/' + rs + '.html" class="condition-card">' +
       '<h4>' + escapeHTML(r) + '</h4>' +
       '<div class="cond-link">View Studies &rarr;</div></a>';
   }).join('');
@@ -38,7 +38,7 @@ conditions.forEach(cond => {
   const relatedStateHtml = (cond.relatedStates || []).map(st => {
     const s = states.find(x => x.name === st);
     if (!s) return '';
-    return '<a href="states/' + s.slug + '.html" class="state-card">' +
+    return '<a href="../states/' + s.slug + '.html" class="state-card">' +
       '<span class="state-name">' + escapeHTML(st) + ' (' + s.abbr + ')</span>' +
       '<span class="state-count">View studies &rarr;</span></a>';
   }).join('');
@@ -46,7 +46,7 @@ conditions.forEach(cond => {
   // Find cities in related states
   const relatedCities = cities.filter(c => (cond.relatedStates || []).includes(c.state)).slice(0, 8);
   const relatedCityHtml = relatedCities.map(c =>
-    '<a href="cities/' + c.slug + '.html" class="city-card">' +
+    '<a href="../cities/' + c.slug + '.html" class="city-card">' +
       '<h4>' + escapeHTML(c.name) + '</h4>' +
       '<div class="city-state">' + escapeHTML(c.state) + '</div>' +
       '<div class="city-count">View studies &rarr;</div></a>'

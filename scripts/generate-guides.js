@@ -34,78 +34,81 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
 }
 
-function renderHeader(navActive) {
+function renderHeader(navActive, rootPrefix) {
+  rootPrefix = rootPrefix || '../';
   return `<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="header">
   <div class="container">
-    <a href="../index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
+    <a href="${rootPrefix}index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
     <div class="header-search"><input type="text" placeholder="Search trials..."><span class="hs-icon">&#128269;</span></div>
     <nav class="nav" role="navigation" aria-label="Main">
-      <a href="../index.html">Home</a>
-      <a href="../clinical-trials.html">Trials</a>
-      <a href="../states.html">States</a>
-      <a href="../cities.html">Cities</a>
-      <a href="../conditions.html">Conditions</a>
-      <a href="../guides.html"${navActive === 'guides' ? ' class="active" aria-current="page"' : ''}>Guides</a>
-      <a href="../about.html">About</a>
-      <a href="../contact.html">Contact</a>
+      <a href="${rootPrefix}index.html">Home</a>
+      <a href="${rootPrefix}clinical-trials.html">Trials</a>
+      <a href="${rootPrefix}states.html">States</a>
+      <a href="${rootPrefix}cities.html">Cities</a>
+      <a href="${rootPrefix}conditions.html">Conditions</a>
+      <a href="${rootPrefix}guides.html"${navActive === 'guides' ? ' class="active" aria-current="page"' : ''}>Guides</a>
+      <a href="${rootPrefix}about.html">About</a>
+      <a href="${rootPrefix}contact.html">Contact</a>
     </nav>
     <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
     <div class="mobile-search"><input type="text" placeholder="Search trials..."></div>
-    <a href="../index.html">Home</a>
-    <a href="../clinical-trials.html">Clinical Trials</a>
-    <a href="../states.html">Browse by State</a>
-    <a href="../cities.html">Browse by City</a>
-    <a href="../conditions.html">Conditions</a>
-    <a href="../guides.html">Guides</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
+    <a href="${rootPrefix}index.html">Home</a>
+    <a href="${rootPrefix}clinical-trials.html">Clinical Trials</a>
+    <a href="${rootPrefix}states.html">Browse by State</a>
+    <a href="${rootPrefix}cities.html">Browse by City</a>
+    <a href="${rootPrefix}conditions.html">Conditions</a>
+    <a href="${rootPrefix}guides.html">Guides</a>
+    <a href="${rootPrefix}about.html">About</a>
+    <a href="${rootPrefix}contact.html">Contact</a>
   </div>
 </header>`;
 }
 
-function renderFooter() {
+function renderFooter(rootPrefix) {
+  rootPrefix = rootPrefix || '../';
   return `<footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="../index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
+        <a href="${rootPrefix}index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a>
         <p>Helping you find paid clinical trials across the United States.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <div class="footer-links">
-          <a href="../clinical-trials.html">Clinical Trials</a>
-          <a href="../states.html">Browse by State</a>
-          <a href="../cities.html">Browse by City</a>
-          <a href="../guides.html">Guides</a>
+          <a href="${rootPrefix}clinical-trials.html">Clinical Trials</a>
+          <a href="${rootPrefix}states.html">Browse by State</a>
+          <a href="${rootPrefix}cities.html">Browse by City</a>
+          <a href="${rootPrefix}guides.html">Guides</a>
         </div>
       </div>
       <div>
         <h4>Resources</h4>
         <div class="footer-links">
-          <a href="../about.html">About</a>
-          <a href="../contact.html">Contact</a>
-          <a href="../privacy.html">Privacy Policy</a>
+          <a href="${rootPrefix}about.html">About</a>
+          <a href="${rootPrefix}contact.html">Contact</a>
+          <a href="${rootPrefix}privacy-policy.html">Privacy Policy</a>
+          <a href="${rootPrefix}terms-of-service.html">Terms of Service</a>
         </div>
       </div>
       <div>
         <h4>Top Conditions</h4>
         <div class="footer-links">
-          <a href="../conditions/diabetes.html">Diabetes</a>
-          <a href="../conditions/cancer.html">Cancer</a>
-          <a href="../conditions/heart-disease.html">Heart Disease</a>
-          <a href="../conditions.html">View All</a>
+          <a href="${rootPrefix}conditions/diabetes.html">Diabetes</a>
+          <a href="${rootPrefix}conditions/cancer.html">Cancer</a>
+          <a href="${rootPrefix}conditions/heart-disease.html">Heart Disease</a>
+          <a href="${rootPrefix}conditions.html">View All</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 StudyReward. All rights reserved.</span>
       <div class="footer-bottom-links">
-        <a href="../privacy.html">Privacy</a>
-        <a href="../terms.html">Terms</a>
+        <a href="${rootPrefix}privacy-policy.html">Privacy</a>
+        <a href="${rootPrefix}terms-of-service.html">Terms</a>
       </div>
       <div class="footer-disclaimer">This site provides information about clinical trials for educational purposes only. It is not medical advice. Always consult a healthcare provider before participating in any clinical trial.</div>
     </div>
@@ -395,7 +398,7 @@ Object.keys(categories).forEach(catName => {
   const desc = `Browse our collection of ${escape(catName.toLowerCase())} guides about clinical trials and medical research participation.`;
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -436,7 +439,7 @@ Object.keys(categories).forEach(catName => {
 </head>
 <body data-page="guides">
 
-${renderHeader('guides')}
+${renderHeader('guides', '../../')}
 ${renderBreadcrumb([
   { label: 'Home', url: '../../index.html' },
   { label: 'Guides', url: '../../guides.html' },
@@ -471,7 +474,7 @@ ${renderBreadcrumb([
   </div>
 </section>
 
-${renderFooter()}
+${renderFooter('../../')}
 </body>
 </html>`;
 
