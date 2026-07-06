@@ -1,0 +1,188 @@
+const fs = require('fs');
+function g(id, title, slug, cat, excerpt, author, date, readTime, sections, takeaways, faq, relCond, relGuides) {
+  return { id, title, slug, category: cat, excerpt, author, date, readTime, sections, takeaways, faq, relatedConditions: relCond, relatedGuides: relGuides };
+}
+const guides = [];
+
+guides.push(g(91, "Eating Disorder Clinical Trials", "eating-disorder-clinical-trials", "Condition-Specific",
+  "Overview of clinical trials for eating disorders including anorexia, bulimia, binge eating disorder, and emerging treatment approaches.",
+  "Dr. Sarah Mitchell", "2026-03-01", "8 min read",
+  [
+    { heading: "Anorexia Nervosa Research", content: "Anorexia nervosa clinical trials address the complex medical and psychological aspects of this serious condition. Family-based treatment studies continue to refine protocols for adolescents. Cognitive behavioral therapy trials explore adaptations for adults with anorexia. Pharmacological research investigates medications targeting weight restoration and relapse prevention. Studies also examine the role of nutritional rehabilitation strategies and medical monitoring protocols." },
+    { heading: "Bulimia Nervosa Clinical Trials", content: "Bulimia trials evaluate both psychological and pharmacological interventions. Cognitive behavioral therapy remains the most studied psychological approach, with trials exploring enhanced and technology-delivered versions. Medication studies examine antidepressants, particularly SSRIs, for binge-purge behavior reduction. Research also addresses co-occurring conditions including mood disorders and substance use." },
+    { heading: "Binge Eating Disorder Studies", content: "Binge eating disorder research has expanded significantly with FDA-approved treatments now available. Trials of lisdexamfetamine and other medications continue for safety and efficacy. Psychological intervention studies compare different therapy approaches and delivery formats. Research explores the neurobiology of binge eating and potential novel treatment targets. Weight management approaches for individuals with both binge eating disorder and overweight are studied." },
+    { heading: "Innovative Approaches and Prevention", content: "Emerging eating disorder research includes psychedelic-assisted therapy, neuromodulation techniques, and digital health interventions. Prevention trials target at-risk populations including athletes, dancers, and college students. Studies examine the role of social media and body image interventions. Genetic and neuroimaging research aims to identify biological markers and treatment targets." }
+  ],
+  ["Anorexia research covers family-based treatment, CBT adaptations, and pharmacological approaches for weight restoration.", "Bulimia trials evaluate CBT, SSRIs, and treatments for co-occurring mood and substance use disorders.", "Binge eating disorder studies include FDA-approved medications, psychological interventions, and weight management approaches.", "Innovative research explores psychedelic therapy, neuromodulation, digital interventions, and prevention strategies."],
+  [
+    { q: "Are eating disorder trials safe for medically unstable patients?", a: "Medical stability requirements vary by study. Some trials require medical clearance, while others include medical monitoring as part of the protocol." },
+    { q: "Can I participate if I am currently in treatment?", a: "Some trials allow concurrent treatment, while others require participants to not be in other treatment programs. Check each study's criteria." },
+    { q: "Do eating disorder trials include nutritional counseling?", a: "Many trials include nutritional components as part of the intervention or provide nutritional monitoring throughout participation." }
+  ],
+  "anorexia bulimia binge-eating-disorder depression", "4 13 16 25"
+));
+
+guides.push(g(92, "Fibromyalgia and Chronic Fatigue Syndrome Clinical Trials", "fibromyalgia-chronic-fatigue-trials", "Condition-Specific",
+  "Guide to clinical trials for fibromyalgia and chronic fatigue syndrome including pain management and energy conservation approaches.",
+  "Dr. Sarah Mitchell", "2026-02-26", "8 min read",
+  [
+    { heading: "Fibromyalgia Pain Research", content: "Fibromyalgia clinical trials evaluate treatments for widespread pain and associated symptoms. FDA-approved medications including pregabalin, duloxetine, and milnacipran continue to be studied for long-term effectiveness and in combination. Non-pharmacological research examines exercise programs, cognitive behavioral therapy, and mind-body approaches. Emerging treatments including low-dose naltrexone, cannabinoids, and neuromodulation techniques are being investigated." },
+    { heading: "Chronic Fatigue Syndrome Studies", content: "Myalgic encephalomyelitis or chronic fatigue syndrome clinical trials address the complex nature of this condition. Research explores graded exercise therapy and cognitive behavioral approaches with careful attention to pacing and symptom management. Pharmacological studies investigate immune modulators, antivirals, and mitochondrial support agents. Biomarker research aims to identify objective diagnostic tests and treatment response predictors." },
+    { heading: "Pain Processing and Central Sensitization Research", content: "Clinical trials increasingly focus on the mechanisms of central sensitization that underlie fibromyalgia and related conditions. Neuroimaging studies examine brain activity patterns associated with pain processing. Research investigates the role of sleep disturbance, stress, and inflammation in amplifying pain signals. Treatments targeting central nervous system pain processing including neuromodulation are active research areas." },
+    { heading: "Multidisciplinary Treatment Approaches", content: "Comprehensive treatment programs combining medication, exercise, cognitive behavioral therapy, and sleep management are studied for fibromyalgia and chronic fatigue syndrome. Research evaluates the optimal combination and sequencing of interventions. Studies also examine the effectiveness of specialized pain rehabilitation programs and the role of peer support. Patient education and self-management approaches are important components of multidisciplinary care." }
+  ],
+  ["Fibromyalgia research examines medications, exercise, CBT, and emerging treatments including neuromodulation.", "Chronic fatigue syndrome trials explore graded exercise, pacing, and pharmacological approaches including immune modulators.", "Central sensitization research uses neuroimaging to understand pain processing and identify treatment targets.", "Multidisciplinary programs combining multiple interventions are studied for comprehensive symptom management."],
+  [
+    { q: "Are there objective tests for fibromyalgia in clinical trials?", a: "While no definitive diagnostic test exists, trials use standardized questionnaires, tender point exams, and emerging biomarker research." },
+    { q: "Can exercise make symptoms worse in chronic fatigue syndrome trials?", a: "Trials carefully design exercise protocols with appropriate pacing to avoid symptom exacerbation. Graded approaches start at very low intensity." },
+    { q: "What medications are being studied for fibromyalgia pain?", a: "Current research includes low-dose naltrexone, cannabinoids, sodium channel blockers, and neuromodulation agents beyond approved treatments." }
+  ],
+  "fibromyalgia chronic-pain sleep-disorders depression", "4 13 24 29"
+));
+
+guides.push(g(93, "Addiction and Substance Use Disorder Clinical Trials", "addiction-substance-use-trials", "Condition-Specific",
+  "Overview of clinical trials for addiction and substance use disorders including opioid, alcohol, and smoking cessation research.",
+  "Dr. Emily Chen", "2026-02-22", "8 min read",
+  [
+    { heading: "Opioid Use Disorder Research", content: "Clinical trials for opioid use disorder evaluate medications including buprenorphine, methadone, and naltrexone in various formulations and delivery methods. Long-acting injectable and implantable formulations aim to improve adherence and reduce relapse. Research explores novel non-opioid treatments for withdrawal management and craving reduction. Studies also address the role of behavioral interventions in combination with medication-assisted treatment." },
+    { heading: "Alcohol Use Disorder Studies", content: "Alcohol use disorder trials investigate both pharmacological and psychosocial interventions. Medications including naltrexone, acamprosate, and disulfiram continue to be studied in combination with behavioral therapies. Emerging treatments include psychedelic-assisted therapy and neurostimulation approaches. Research also examines digital interventions and mobile health applications for alcohol reduction." },
+    { heading: "Smoking Cessation and Tobacco Research", content: "Clinical trials for smoking cessation evaluate nicotine replacement therapies, varenicline, and behavioral interventions. E-cigarette and harm reduction research examines the risks and benefits of alternative nicotine delivery systems. Studies explore tailored interventions for specific populations including pregnant women and individuals with mental health conditions. Emerging approaches include vaccine development and genetic-based treatment matching." },
+    { heading: "Addressing Co-Occurring Disorders", content: "Clinical trials increasingly address the high prevalence of co-occurring mental health conditions in individuals with substance use disorders. Research examines integrated treatment approaches for dual diagnosis. Studies explore how to sequence addiction treatment with mental health care for optimal outcomes. Trauma-informed care approaches are being evaluated in substance use disorder trials." }
+  ],
+  ["Opioid use disorder research evaluates medications, long-acting formulations, and novel non-opioid treatments.", "Alcohol use disorder trials investigate medications, psychedelic therapy, and digital interventions.", "Smoking cessation research covers nicotine replacement, varenicline, e-cigarettes, and vaccine development.", "Integrated treatment approaches for co-occurring mental health conditions are a growing research focus."],
+  [
+    { q: "Are medication-assisted treatments available through clinical trials?", a: "Yes, many trials offer medication-assisted treatment as part of the study protocol, often at no cost to participants." },
+    { q: "Can I participate if I am not ready to stop using substances?", a: "Some studies accept participants at various stages of readiness, while others require a commitment to abstinence. Check each study's criteria." },
+    { q: "Do substance use trials provide counseling?", a: "Most substance use trials include counseling or behavioral therapy as a core component of the intervention." }
+  ],
+  "addiction depression anxiety ptsd", "4 13 22 35"
+));
+
+guides.push(g(94, "Hepatitis Clinical Trials", "hepatitis-clinical-trials", "Condition-Specific",
+  "Guide to hepatitis clinical trials including hepatitis B, C, D, and autoimmune hepatitis research studies.",
+  "Dr. James Wilson", "2026-02-18", "7 min read",
+  [
+    { heading: "Hepatitis C Research After the Cure Era", content: "With highly effective curative treatments now available for hepatitis C, clinical trials have shifted focus. Research now addresses treatment access and delivery optimization, particularly for underserved populations. Studies examine long-term outcomes after cure, including liver cancer risk reduction and management of extrahepatic manifestations. Retreatment trials evaluate options for the small percentage of patients who do not achieve cure with initial therapy." },
+    { heading: "Hepatitis B Functional Cure Studies", content: "Current hepatitis B clinical trials aim for functional cure, defined as sustained loss of hepatitis B surface antigen after a finite treatment course. Approaches include novel antivirals, entry inhibitors, capsid inhibitors, and immunomodulatory therapies. Combination strategies targeting multiple steps of the viral life cycle are being evaluated. Research also explores discontinuation of long-term nucleoside analogue therapy in selected patients." },
+    { heading: "Hepatitis D and Emerging Hepatitis Research", content: "Hepatitis D remains the most severe form of viral hepatitis, and clinical trials have recently yielded promising treatment options. Entry inhibitor therapies have shown efficacy in suppressing HDV replication. Research also addresses autoimmune hepatitis through novel immunosuppressive regimens. Trials explore biomarkers for disease activity and treatment response in various hepatitis forms." },
+    { heading: "Liver Cancer Prevention in Hepatitis Patients", content: "Clinical trials examine strategies to reduce liver cancer risk in patients with chronic hepatitis. Surveillance studies evaluate optimal screening intervals and diagnostic tools. Chemoprevention trials test medications that may reduce cancer risk in high-risk populations. Research also explores the role of antiviral therapy in preventing hepatocellular carcinoma." }
+  ],
+  ["Hepatitis C research has shifted to access optimization and long-term outcomes after curative treatment.", "Hepatitis B trials pursue functional cure through novel antivirals, capsid inhibitors, and immunomodulatory approaches.", "Hepatitis D research has advanced with entry inhibitor therapies showing promise.", "Liver cancer prevention in hepatitis patients is a key research priority with surveillance and chemoprevention studies."],
+  [
+    { q: "Can I participate in a hepatitis trial if I have already been treated?", a: "Eligibility varies. Some trials enroll treatment-naive patients, while others study retreatment or long-term outcomes after prior therapy." },
+    { q: "Are there clinical trials for hepatitis vaccine development?", a: "Yes, therapeutic vaccine trials for hepatitis B aim to boost immune responses and achieve functional cure." },
+    { q: "What monitoring is required in hepatitis trials?", a: "Regular blood tests for liver function, viral load, and imaging studies are common. The frequency depends on the specific study and treatment phase." }
+  ],
+  "hepatitis-b hepatitis-c liver-disease", "4 28 82 88"
+));
+
+guides.push(g(95, "Blood Disorders: Anemia and Clotting Clinical Trials", "blood-disorders-clinical-trials", "Condition-Specific",
+  "Overview of clinical trials for blood disorders including anemia, hemophilia, sickle cell disease, and clotting disorders.",
+  "Dr. Sarah Mitchell", "2026-02-14", "8 min read",
+  [
+    { heading: "Anemia Research", content: "Anemia clinical trials cover a wide range of causes including iron deficiency, chronic disease, and bone marrow disorders. Iron replacement studies explore new oral and intravenous formulations with improved tolerability. Trials of erythropoiesis-stimulating agents continue to optimize dosing for chronic kidney disease and cancer-related anemia. Research also addresses anemia in pregnancy and anemia of inflammation through novel therapeutic approaches." },
+    { heading: "Sickle Cell Disease Clinical Trials", content: "Sickle cell disease research has experienced a renaissance with new therapeutic options. Gene therapy trials offer potential cures through genetic modification of patient stem cells. Hydroxyurea optimization studies continue to improve outcomes. Trials of new disease-modifying therapies target various aspects of sickle cell pathophysiology. Research also addresses pain management, stroke prevention, and complication management in sickle cell disease." },
+    { heading: "Hemophilia and Bleeding Disorder Studies", content: "Hemophilia clinical trials have advanced with extended half-life clotting factor concentrates and novel non-factor therapies. Gene therapy trials for hemophilia A and B have shown transformative results, with some participants achieving sustained factor expression. Emicizumab and other bispecific antibody therapies offer subcutaneous prophylaxis options. Research also addresses inhibitors, the most serious complication of hemophilia treatment." },
+    { heading: "Clotting Disorder and Thrombosis Research", content: "Clinical trials for clotting disorders study new anticoagulants, antiplatelet agents, and thrombolytic therapies. Research addresses optimal duration of anticoagulation for venous thromboembolism. Direct oral anticoagulant trials continue to expand indications. Studies also explore prevention of thrombosis in high-risk settings including surgery, cancer, and pregnancy." }
+  ],
+  ["Anemia research covers iron formulations, erythropoiesis-stimulating agents, and treatments for specific anemia types.", "Sickle cell trials include gene therapy, disease-modifying agents, and complication management approaches.", "Hemophilia research has advanced with gene therapy, extended half-life factors, and non-factor therapies like emicizumab.", "Clotting disorder trials study anticoagulants, antiplatelet agents, and thrombosis prevention strategies."],
+  [
+    { q: "Are gene therapies for blood disorders available in clinical trials?", a: "Yes, gene therapy trials for sickle cell disease, hemophilia A, and hemophilia B have shown promising results and continue to enroll participants." },
+    { q: "Can I participate in a blood disorder trial if I have had a transfusion?", a: "Eligibility depends on the specific study. Some trials exclude recent transfusions, while others do not." },
+    { q: "What tests are common in blood disorder trials?", a: "Complete blood counts, coagulation panels, iron studies, and specific factor activity levels are frequently measured." }
+  ],
+  "sickle-cell-disease hemophilia anemia", "4 22 41 42"
+));
+
+guides.push(g(96, "Migraine and Headache Disorder Clinical Trials", "migraine-headache-clinical-trials", "Condition-Specific",
+  "Guide to clinical trials for migraine and headache disorders including preventive treatments, acute therapies, and innovative approaches.",
+  "Dr. Michael Chen", "2026-02-10", "7 min read",
+  [
+    { heading: "Migraine Prevention Research", content: "Migraine prevention clinical trials have expanded dramatically with the development of CGRP-targeted therapies. Monoclonal antibodies targeting CGRP or its receptor are now well-established, and trials continue to explore optimal use. Oral CGRP receptor antagonists called gepants are being studied for both acute and preventive use. Neuromodulation devices for migraine prevention are also being evaluated in clinical trials, offering non-pharmacological options." },
+    { heading: "Acute Migraine Treatment Studies", content: "Clinical trials for acute migraine treatment continue to refine options beyond triptans. Ditans, a new class of migraine-specific medications, offer an alternative for patients who cannot take triptans. CGRP receptor antagonists or gepants are studied for rapid relief with fewer side effects. Research also explores combination therapies and the optimal timing of acute treatment for best outcomes." },
+    { heading: "Cluster Headache and Other Headache Disorders", content: "Cluster headache research includes trials of acute and preventive treatments. Oxygen therapy optimization, neuromodulation, and novel pharmacological approaches are being studied. Research addresses the unique challenges of cluster headache including the short duration and severe intensity of attacks. Trials for other headache disorders including tension-type headache and medication-overuse headache continue to evaluate treatment strategies." },
+    { heading: "Innovative Approaches in Headache Research", content: "Emerging migraine research includes psilocybin and other psychedelic compounds for cluster headache and migraine prevention. Digital health interventions, including smartphone-based behavioral therapy, are being validated for headache management. Wearable devices for real-time headache tracking and prediction are being studied. Genetic research aims to identify new therapeutic targets for migraine and related headache disorders." }
+  ],
+  ["CGRP-targeted therapies including monoclonal antibodies and gepants have transformed migraine prevention and acute treatment.", "Ditans and gepants offer new acute treatment options for patients who cannot tolerate triptans.", "Cluster headache research includes oxygen, neuromodulation, and novel pharmacological approaches.", "Innovative research explores psychedelics, digital health interventions, and wearable headache tracking devices."],
+  [
+    { q: "Are CGRP inhibitors available through clinical trials?", a: "Yes, clinical trials for CGRP inhibitors continue to study new formulations, dosing regimens, and expanded indications." },
+    { q: "Can I participate if I have chronic migraine?", a: "Many migraine trials specifically enroll participants with chronic migraine. Check the eligibility criteria for frequency requirements." },
+    { q: "What is the difference between acute and preventive migraine trials?", a: "Acute trials test treatments taken during a migraine attack for quick relief. Preventive trials test treatments taken regularly to reduce attack frequency and severity." }
+  ],
+  "migraine chronic-pain sleep-disorders depression", "4 13 24 29"
+));
+
+guides.push(g(97, "Endometriosis and Reproductive Health Clinical Trials", "endometriosis-reproductive-health-trials", "Condition-Specific",
+  "Overview of clinical trials for endometriosis, reproductive health conditions, and fertility research.",
+  "Dr. Sarah Mitchell", "2026-02-06", "7 min read",
+  [
+    { heading: "Endometriosis Research Advances", content: "Endometriosis clinical trials explore medical and surgical treatment options for this chronic condition. Hormonal therapies including GnRH antagonists and oral contraceptives continue to be studied for pain management. Research investigates non-hormonal treatments targeting inflammation, nerve growth, and angiogenesis. Surgical trials compare excision techniques, ablation methods, and postoperative adhesion prevention strategies." },
+    { heading: "Fertility and Assisted Reproduction Studies", content: "Clinical trials in reproductive health cover in vitro fertilization optimization, embryo transfer techniques, and fertility preservation. Research evaluates ovarian stimulation protocols, culture media improvements, and embryo selection technologies. Studies address fertility outcomes in women with conditions such as polycystic ovary syndrome and diminished ovarian reserve. Male fertility research includes sperm function tests and treatments for male factor infertility." },
+    { heading: "Polycystic Ovary Syndrome Research", content: "PCOS clinical trials address the triad of reproductive, metabolic, and cosmetic features. Lifestyle intervention studies examine diet and exercise strategies for weight management and symptom improvement. Pharmacological trials evaluate insulin sensitizers, ovulation induction agents, and anti-androgen medications. Research also explores the long-term health outcomes of PCOS including diabetes and cardiovascular risk." },
+    { heading: "Contraception and Family Planning Studies", content: "Clinical trials for contraception evaluate new hormonal formulations, long-acting reversible contraceptives, and non-hormonal options. Research explores male contraceptive development including hormonal gels and non-hormonal approaches. Studies examine emergency contraception effectiveness and access. Family planning research also addresses postpartum contraception timing and intrauterine device use in nulliparous women." }
+  ],
+  ["Endometriosis research explores hormonal therapies, non-hormonal treatments, and surgical technique optimization.", "Fertility trials cover IVF optimization, embryo selection, and treatments for PCOS and male factor infertility.", "PCOS research addresses lifestyle interventions, insulin sensitizers, and long-term health outcomes.", "Contraception studies evaluate new hormonal formulations, LARCs, non-hormonal options, and male contraceptive development."],
+  [
+    { q: "Can I participate in endometriosis research if I have had surgery before?", a: "Yes, many endometriosis trials enroll participants with prior surgical diagnoses. Some studies specifically investigate postoperative outcomes." },
+    { q: "Are there clinical trials for fertility preservation? ", a: "Yes, fertility preservation trials study egg freezing, embryo banking, and ovarian tissue cryopreservation for medical and elective indications." },
+    { q: "What is typically measured in PCOS clinical trials?", a: "Common outcomes include menstrual regularity, ovulation rates, hormone levels, insulin resistance measures, weight, and quality of life." }
+  ],
+  "endometriosis pcos infertility", "4 13 20 21"
+));
+
+guides.push(g(98, "Hearing Loss and Ear Disorder Clinical Trials", "hearing-loss-ear-disorder-trials", "Condition-Specific",
+  "Guide to clinical trials for hearing loss, tinnitus, and ear disorders including cochlear implants and regenerative therapies.",
+  "Dr. Emily Chen", "2026-02-02", "7 min read",
+  [
+    { heading: "Sensorineural Hearing Loss Research", content: "Clinical trials for sensorineural hearing loss explore regenerative therapies, gene therapy, and pharmaceutical interventions. Studies investigate drugs that promote hair cell regeneration in the inner ear. Gene therapy trials target specific genetic causes of hearing loss, with some early studies showing hearing improvement. Research also examines neurotrophic factors and stem cell therapies for auditory nerve regeneration." },
+    { heading: "Cochlear Implant and Hearing Device Studies", content: "Cochlear implant clinical trials evaluate new electrode designs, processing strategies, and bilateral implantation approaches. Research aims to improve outcomes in challenging listening environments including music perception and speech in noise. Hybrid electro-acoustic stimulation devices are studied for patients with residual low-frequency hearing. Hearing aid trials continue to advance signal processing algorithms and connectivity features." },
+    { heading: "Tinnitus Clinical Trials", content: "Tinnitus research covers pharmacological, behavioral, and device-based interventions. Sound therapy approaches including notched music and customized acoustic stimulation are being evaluated. Cognitive behavioral therapy trials establish evidence for psychological management of tinnitus distress. Neuromodulation techniques including transcranial magnetic stimulation and bimodal stimulation are studied for tinnitus reduction. Research also explores the relationship between hearing loss and tinnitus." },
+    { heading: "Middle Ear and Balance Disorder Studies", content: "Clinical trials for middle ear conditions include treatments for otosclerosis, cholesteatoma, and chronic otitis media. Balance disorder research covers vestibular rehabilitation, pharmacological treatments for Meniere's disease, and vestibular implant development. Studies also address superior semicircular canal dehiscence and other third window syndromes. Diagnostic innovation including video head impulse testing is being validated." }
+  ],
+  ["Hearing loss trials explore hair cell regeneration, gene therapy, and neurotrophic factors for auditory repair.", "Cochlear implant research advances electrode design, processing strategies, and bilateral implantation outcomes.", "Tinnitus studies cover sound therapy, CBT, and neuromodulation approaches for symptom reduction.", "Middle ear and balance disorder research addresses surgical techniques, vestibular rehabilitation, and new diagnostics."],
+  [
+    { q: "Are there clinical trials for sudden hearing loss?", a: "Yes, sudden sensorineural hearing loss trials study steroid therapy optimization, hyperbaric oxygen, and novel rescue treatments." },
+    { q: "Can I participate in a cochlear implant trial if I already have one implant?", a: "Some studies evaluate bilateral implantation or upgrades to newer processors. Check eligibility criteria for specific trials." },
+    { q: "What treatments are being studied for Meniere's disease?", a: "Meniere's trials include intratympanic steroid injections, gentamicin therapy, dietary modifications, and vestibular implant development." }
+  ],
+  "tinnitus menieres-disease", "4 13 23 29"
+));
+
+guides.push(g(99, "Lung Disease Clinical Trials: COPD and Pulmonary Fibrosis", "lung-disease-clinical-trials", "Condition-Specific",
+  "Overview of clinical trials for chronic lung diseases including COPD, pulmonary fibrosis, and pulmonary hypertension.",
+  "Dr. James Wilson", "2026-01-28", "8 min read",
+  [
+    { heading: "COPD Research and Innovations", content: "Chronic obstructive pulmonary disease clinical trials evaluate new bronchodilator combinations, anti-inflammatory agents, and biologic therapies. Research focuses on identifying COPD subtypes or phenotypes to personalize treatment. Studies examine early intervention in at-risk populations and strategies to reduce exacerbation frequency. Lung volume reduction techniques including endoscopic approaches are compared with traditional surgical options." },
+    { heading: "Pulmonary Fibrosis Clinical Trials", content: "Idiopathic pulmonary fibrosis research has advanced with approved antifibrotic therapies and ongoing trials of novel agents. Studies explore combination therapy approaches targeting multiple fibrotic pathways. Research investigates biomarkers for disease progression and treatment response. Clinical trials also address connective tissue disease-associated interstitial lung disease, expanding treatment options beyond IPF." },
+    { heading: "Pulmonary Hypertension Studies", content: "Pulmonary hypertension clinical trials evaluate prostacyclin analogs, endothelin receptor antagonists, PDE5 inhibitors, and novel therapeutic targets. Research explores combination therapy strategies and optimal treatment sequencing. Studies examine exercise training and rehabilitation in pulmonary hypertension. Surgical trials address balloon atrial septostomy and lung transplantation outcomes for advanced disease." },
+    { heading: "Respiratory Rehabilitation and Supportive Care", content: "Pulmonary rehabilitation trials optimize exercise training programs, self-management education, and psychosocial support for lung disease patients. Oxygen therapy research explores ambulatory oxygen, nocturnal oxygen, and long-term oxygen therapy indications. Non-invasive ventilation studies address optimal settings and timing for chronic respiratory failure. Telemonitoring and telehealth interventions are evaluated for remote management of chronic lung disease." }
+  ],
+  ["COPD research includes biologic therapies, phenotype-directed treatment, and endoscopic lung volume reduction.", "Pulmonary fibrosis trials explore novel antifibrotic agents, combination therapy, and connective tissue disease-ILD.", "Pulmonary hypertension studies evaluate prostacyclin analogs, combination therapy, and rehabilitation approaches.", "Respiratory rehabilitation and oxygen therapy research optimize supportive care for chronic lung disease."],
+  [
+    { q: "Are lung function tests always required in respiratory trials?", a: "Spirometry is standard in most lung disease trials. Additional tests include lung volumes, diffusion capacity, and six-minute walk tests." },
+    { q: "Can I participate if I use supplemental oxygen?", a: "Many respiratory trials include participants using supplemental oxygen. Some studies specifically evaluate oxygen therapy optimization." },
+    { q: "What is the duration of typical COPD clinical trials?", a: "COPD trials vary from 3 months for early-phase studies to 3-4 years for long-term safety and exacerbation reduction trials." }
+  ],
+  "copd pulmonary-fibrosis asthma", "4 13 14 84"
+));
+
+guides.push(g(100, "Sepsis and Critical Care Clinical Trials", "sepsis-critical-care-trials", "Condition-Specific",
+  "Guide to clinical trials for sepsis, critical illness, and intensive care research including early detection and treatment innovations.",
+  "Dr. Emily Chen", "2026-01-25", "8 min read",
+  [
+    { heading: "Sepsis Early Detection and Diagnosis", content: "Sepsis clinical trials focus on early identification through novel biomarkers, rapid diagnostic tests, and artificial intelligence algorithms. Research evaluates procalcitonin-guided antibiotic therapy to reduce unnecessary antibiotic exposure. Studies examine point-of-care testing for early pathogen identification and antimicrobial susceptibility. Machine learning models that integrate electronic health record data are being validated for real-time sepsis prediction." },
+    { heading: "Sepsis Treatment and Management Trials", content: "Clinical trials for sepsis treatment continue to refine fluid resuscitation strategies, vasopressor use, and adjunctive therapies. Research evaluates optimal fluid types, resuscitation targets, and timing of vasopressor initiation. Steroid therapy in septic shock remains an active area of investigation. Studies explore immune modulation therapies, vitamin C protocols, and blood purification techniques for severe sepsis." },
+    { heading: "Critical Care Outcomes and Recovery", content: "Post-intensive care syndrome research addresses the long-term physical, cognitive, and psychological consequences of critical illness. Clinical trials evaluate early mobility interventions, sedation minimization strategies, and delirium prevention approaches. Studies examine nutritional support timing and composition for critically ill patients. Research also explores communication and family engagement strategies in the ICU." },
+    { heading: "Organ Support and Advanced Technologies", content: "Clinical trials for organ support in critical care include mechanical ventilation strategies, renal replacement therapy optimization, and extracorporeal membrane oxygenation. Research evaluates lung-protective ventilation protocols, prone positioning, and neuromuscular blockade in ARDS. Studies examine optimal timing, intensity, and modality of renal replacement therapy. ECMO research covers patient selection, circuit management, and complication prevention." }
+  ],
+  ["Sepsis early detection research includes biomarkers, rapid diagnostics, and AI-based prediction models.", "Treatment trials continue to refine fluid resuscitation, vasopressors, steroids, and immune modulation approaches.", "Post-ICU recovery research addresses early mobility, sedation reduction, and delirium prevention.", "Organ support trials evaluate ventilation strategies, renal replacement therapy, and ECMO optimization."],
+  [
+    { q: "Can I participate in a sepsis trial if I have a do-not-resuscitate order?", a: "Eligibility depends on the specific study. Some critical care trials exclude patients with limitations on life-sustaining treatments." },
+    { q: "What is involved in critical care follow-up studies?", a: "Follow-up studies typically include assessments of physical function, cognitive status, quality of life, and psychological well-being at specified intervals after ICU discharge." },
+    { q: "Are there clinical trials for sepsis aftercare?", a: "Yes, post-sepsis syndrome research addresses physical rehabilitation, cognitive training, and care coordination for sepsis survivors." }
+  ],
+  "sepsis pneumonia covid-19", "4 13 15 35"
+));
+
+fs.writeFileSync('data/new-guides-batch5.json', JSON.stringify(guides, null, 2));
+console.log('Wrote batch 5 (IDs 91-100)');

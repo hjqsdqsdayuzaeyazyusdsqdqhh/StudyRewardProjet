@@ -1,0 +1,502 @@
+[
+  {
+    "id": 81,
+    "title": "Thyroid and Parathyroid Clinical Trials",
+    "slug": "thyroid-parathyroid-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Clinical trials for thyroid and parathyroid conditions including hyperthyroidism, hypothyroidism, and thyroid cancer research.",
+    "author": "Dr. Sarah Mitchell",
+    "date": "2026-04-01",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "Thyroid Disorder Research Overview",
+        "content": "Clinical trials for thyroid conditions address both benign and malignant disorders. Hypothyroidism research includes studies of new thyroid hormone formulations, combination therapies, and optimization of treatment monitoring. Hyperthyroidism trials explore improved medication protocols, radioactive iodine approaches, and surgical outcomes. Thyroid cancer research covers targeted therapies, radioactive iodine strategies, and surveillance approaches for low-risk disease."
+      },
+      {
+        "heading": "Advanced Thyroid Cancer Treatments",
+        "content": "Clinical trials for thyroid cancer have expanded significantly with the development of targeted kinase inhibitors. These drugs block specific molecular pathways involved in cancer growth and are studied for advanced and metastatic thyroid cancer. Trials also explore immunotherapy approaches and combination strategies. Radioactive iodine refractory thyroid cancer is a major research focus, with several promising agents in development."
+      },
+      {
+        "heading": "Parathyroid and Calcium Disorder Research",
+        "content": "Parathyroid clinical trials study hyperparathyroidism and hypoparathyroidism management. Research includes new calcimimetic agents, hormone replacement therapies, and surgical techniques. Clinical trials for osteoporosis secondary to parathyroid disorders explore bone health optimization. Studies also investigate the genetic basis of parathyroid conditions and personalized treatment approaches."
+      },
+      {
+        "heading": "Patient Considerations for Thyroid Studies",
+        "content": "Thyroid clinical trials often require regular blood monitoring to assess hormone levels and adjust treatments. Participants may need to maintain stable thyroid medication doses during certain study periods. Some trials involve thyroid imaging studies including ultrasound and nuclear medicine scans. Discuss with your endocrinologist whether trial participation aligns with your overall thyroid management plan."
+      }
+    ],
+    "takeaways": [
+      "Thyroid research covers hypothyroidism, hyperthyroidism, and thyroid cancer with diverse treatment approaches.",
+      "Targeted kinase inhibitors and immunotherapies are expanding treatment options for advanced thyroid cancer.",
+      "Parathyroid studies explore new medications, surgical techniques, and bone health optimization strategies.",
+      "Thyroid trials require regular blood monitoring and coordination with your endocrinologist."
+    ],
+    "faq": [
+      {
+        "q": "Can I participate in a thyroid trial while taking levothyroxine?",
+        "a": "Yes, but the study may require stable dosing for a period before enrollment. Some studies specifically study levothyroxine optimization."
+      },
+      {
+        "q": "Are there clinical trials for thyroid eye disease?",
+        "a": "Yes, thyroid eye disease research includes new medications, surgical approaches, and radiation therapy studies for this autoimmune condition."
+      },
+      {
+        "q": "What thyroid cancer trials are available for advanced disease?",
+        "a": "Several targeted therapy and immunotherapy trials are available for advanced thyroid cancer. Check ClinicalTrials.gov for the most current options."
+      }
+    ],
+    "relatedConditions": "thyroid-cancer hashimotos graves-disease",
+    "relatedGuides": "4 9 13 43"
+  },
+  {
+    "id": 82,
+    "title": "Liver Disease Clinical Trials",
+    "slug": "liver-disease-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to liver disease clinical trials including fatty liver, hepatitis, cirrhosis, and liver cancer research studies.",
+    "author": "Dr. James Wilson",
+    "date": "2026-03-28",
+    "readTime": "9 min read",
+    "sections": [
+      {
+        "heading": "Fatty Liver Disease Research",
+        "content": "Non-alcoholic fatty liver disease or NAFLD and its more advanced form NASH are major areas of clinical research. Trials explore medications targeting metabolic pathways, inflammation, and fibrosis. Lifestyle intervention studies examine the effects of diet, exercise, and weight loss on liver health. The NASH research pipeline is particularly active with several Phase 3 trials underway. Non-invasive monitoring tools like elastography are increasingly used to measure treatment effects."
+      },
+      {
+        "heading": "Hepatitis Clinical Trials",
+        "content": "Hepatitis B and C research has evolved dramatically with curative treatments now available for hepatitis C. Current hepatitis B trials focus on functional cure strategies including novel antivirals and immunomodulatory approaches. Hepatitis D research is an emerging area with new treatment options being studied. Studies also examine long-term outcomes in patients who have achieved viral suppression, including liver cancer risk reduction."
+      },
+      {
+        "heading": "Cirrhosis and Liver Failure Studies",
+        "content": "Clinical trials for cirrhosis address complication management, fibrosis reversal, and prevention of disease progression. Research covers portal hypertension treatments, hepatic encephalopathy management, and strategies to reduce hospitalization. Studies explore biomarkers for early detection of decompensation and novel therapies for acute-on-chronic liver failure. Liver regeneration research aims to reduce the need for transplantation."
+      },
+      {
+        "heading": "Liver Cancer Clinical Trials",
+        "content": "Hepatocellular carcinoma research includes trials of targeted therapies, immunotherapies, and combination approaches. Locoregional therapy studies examine optimal techniques for chemoembolization and ablation. Trials also investigate surveillance strategies for early detection in high-risk populations. Adjuvant therapy studies explore treatments to prevent recurrence after curative interventions."
+      }
+    ],
+    "takeaways": [
+      "NAFLD and NASH research is active with multiple Phase 3 trials targeting metabolic and inflammatory pathways.",
+      "Hepatitis B research focuses on functional cure strategies while hepatitis C trials have shifted to long-term outcomes.",
+      "Cirrhosis trials address complication management, fibrosis reversal, and prevention of disease progression.",
+      "Liver cancer research includes targeted therapies, immunotherapies, and optimized locoregional techniques."
+    ],
+    "faq": [
+      {
+        "q": "Are liver biopsies required in clinical trials?",
+        "a": "Many liver trials have traditionally required biopsies, but non-invasive alternatives like elastography and blood biomarkers are increasingly accepted."
+      },
+      {
+        "q": "Can I participate in a liver trial if I have cirrhosis?",
+        "a": "Some trials specifically enroll patients with cirrhosis, while others exclude advanced liver disease. Eligibility depends on the study's specific criteria."
+      },
+      {
+        "q": "What lifestyle changes are typically required in NAFLD trials?",
+        "a": "NAFLD trials often include dietary modifications, increased physical activity, and weight loss goals as part of the intervention or run-in period."
+      }
+    ],
+    "relatedConditions": "liver-disease hepatitis-b hepatitis-c",
+    "relatedGuides": "4 14 28 94"
+  },
+  {
+    "id": 83,
+    "title": "Kidney Disease Clinical Trials",
+    "slug": "kidney-disease-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Overview of kidney disease clinical trials including chronic kidney disease, dialysis, and kidney transplant research.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-03-25",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "Chronic Kidney Disease Research",
+        "content": "Chronic kidney disease clinical trials focus on slowing disease progression, managing complications, and improving outcomes. Research includes studies of SGLT2 inhibitors, which have shown promise in preserving kidney function. Trials explore novel agents targeting fibrosis, inflammation, and metabolic pathways. Blood pressure management studies continue to refine treatment targets. Anemia management research covers new erythropoiesis-stimulating agents and iron formulations."
+      },
+      {
+        "heading": "Dialysis and Renal Replacement Studies",
+        "content": "Clinical trials for dialysis patients address both hemodialysis and peritoneal dialysis optimization. Research includes new dialyzer technologies, alternative dialysis schedules, and home dialysis approaches. Studies examine vascular access outcomes, infection prevention, and cardiovascular risk reduction in dialysis patients. Trials also explore wearable and implantable artificial kidney technologies that could transform renal replacement therapy."
+      },
+      {
+        "heading": "Kidney Transplant Clinical Trials",
+        "content": "Transplant research focuses on improving graft survival and reducing immunosuppression-related complications. Studies explore novel immunosuppressive regimens, tolerance induction strategies, and rejection monitoring tools. Trials investigate antibody-mediated rejection treatments and desensitization protocols for highly sensitized patients. Living donor research includes long-term safety monitoring and surgical technique optimization."
+      },
+      {
+        "heading": "Patient Considerations for Kidney Studies",
+        "content": "Kidney clinical trials often involve frequent blood and urine testing to monitor kidney function. Participants may need to maintain stable medication regimens during the study. Some trials require dietary modifications including protein, sodium, and fluid restrictions. Discuss any planned participation with your nephrologist to ensure the study aligns with your overall care plan."
+      }
+    ],
+    "takeaways": [
+      "CKD research focuses on SGLT2 inhibitors, novel antifibrotic agents, and complication management strategies.",
+      "Dialysis trials explore new technologies, alternative schedules, and home-based approaches including artificial kidney development.",
+      "Transplant research aims to improve graft survival through novel immunosuppression and rejection monitoring.",
+      "Kidney studies require frequent lab monitoring and may include dietary modifications."
+    ],
+    "faq": [
+      {
+        "q": "Can I participate if I am on dialysis?",
+        "a": "Yes, many clinical trials specifically enroll dialysis patients. Check the eligibility criteria for studies matching your dialysis type and schedule."
+      },
+      {
+        "q": "Are there trials for early-stage kidney disease?",
+        "a": "Yes, many early-stage CKD trials focus on preventing or slowing disease progression through medications and lifestyle interventions."
+      },
+      {
+        "q": "Do kidney trials cover rare kidney diseases?",
+        "a": "Yes, clinical trials exist for rare kidney conditions including IgA nephropathy, focal segmental glomerulosclerosis, and polycystic kidney disease."
+      }
+    ],
+    "relatedConditions": "kidney-disease diabetes high-blood-pressure",
+    "relatedGuides": "4 9 14 82"
+  },
+  {
+    "id": 84,
+    "title": "Asthma Clinical Trials: New Treatments and Management",
+    "slug": "asthma-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Discover the latest asthma clinical trials including biologic therapies, inhaler technologies, and personalized management approaches.",
+    "author": "Dr. Michael Chen",
+    "date": "2026-03-22",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "Biologic Therapies for Severe Asthma",
+        "content": "Biologic drugs have revolutionized severe asthma treatment by targeting specific inflammatory pathways. Trials of anti-IL5, anti-IL4R, anti-IL13, and anti-TSLP biologics continue to expand treatment options. Research focuses on identifying biomarkers that predict which patients will respond to which biologic. Studies also explore biologic therapy reduction or withdrawal in well-controlled patients. These targeted approaches offer hope for patients with previously difficult-to-control asthma."
+      },
+      {
+        "heading": "Inhaler Technology and Drug Delivery",
+        "content": "Clinical trials continue to improve inhaler design, drug formulations, and delivery systems. Smart inhalers with digital sensors track usage and provide adherence feedback. Studies compare different inhaler types for specific patient populations. New combination therapies delivered through single inhalers are being evaluated for convenience and efficacy. Trials also explore nebulized formulations for acute asthma management."
+      },
+      {
+        "heading": "Personalized Asthma Management Research",
+        "content": "Precision medicine approaches in asthma research tailor treatment based on individual patient characteristics. Trials stratify participants by biomarker profiles, genetics, and clinical phenotypes. Studies examine trigger-specific management strategies including allergen immunotherapy and air quality interventions. Digital health tools including smartphone apps and remote monitoring are being validated for asthma self-management."
+      },
+      {
+        "heading": "Asthma Prevention and Early Intervention",
+        "content": "Prevention trials explore strategies to reduce asthma development in high-risk children, including dietary interventions and allergen avoidance. Early intervention studies test whether prompt treatment of preschool wheezing can alter the natural history of asthma. Research also examines the role of the microbiome in asthma development and the potential for microbiome-modifying interventions."
+      }
+    ],
+    "takeaways": [
+      "Biologic therapies targeting specific inflammatory pathways offer new options for severe asthma management.",
+      "Smart inhalers and improved delivery systems are enhancing treatment adherence and effectiveness.",
+      "Personalized approaches use biomarkers, genetics, and digital tools to tailor asthma treatment.",
+      "Prevention and early intervention trials explore strategies to reduce asthma development in at-risk children."
+    ],
+    "faq": [
+      {
+        "q": "Are asthma biologics available in clinical trials?",
+        "a": "Yes, numerous clinical trials are testing existing and new biologic therapies for moderate to severe asthma. Check eligibility criteria for specific studies."
+      },
+      {
+        "q": "Can I participate if I use daily controller medications?",
+        "a": "Yes, most asthma trials require participants to be on stable controller medications. Some studies specifically evaluate add-on therapies."
+      },
+      {
+        "q": "What lung function tests are typically performed in asthma trials?",
+        "a": "Spirometry is standard. Many trials also include exhaled nitric oxide, bronchial challenge tests, and symptom questionnaires."
+      }
+    ],
+    "relatedConditions": "asthma seasonal-allergies eczema",
+    "relatedGuides": "4 13 15 80"
+  },
+  {
+    "id": 85,
+    "title": "Arthritis Clinical Trials: Rheumatoid and Psoriatic Arthritis",
+    "slug": "arthritis-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to arthritis clinical trials including rheumatoid arthritis, psoriatic arthritis, and emerging treatment approaches.",
+    "author": "Dr. James Wilson",
+    "date": "2026-03-19",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "Rheumatoid Arthritis Research Advances",
+        "content": "Rheumatoid arthritis clinical trials continue to evolve with new treatment options beyond traditional DMARDs and TNF inhibitors. Current research explores JAK inhibitors, BTK inhibitors, and other targeted small molecules. Studies investigate treat-to-target strategies and the optimal timing of biologic therapy initiation. Combination therapy trials examine whether pairing different mechanisms of action improves outcomes. Remission induction and maintenance strategies are also active research areas."
+      },
+      {
+        "heading": "Psoriatic Arthritis Clinical Trials",
+        "content": "Psoriatic arthritis research covers both skin and joint manifestations of the disease. Trials of IL-17, IL-23, and JAK inhibitors have expanded treatment options significantly. Studies examine whether treating skin disease early can prevent the development of psoriatic arthritis. Research also focuses on identifying predictors of treatment response to guide therapy selection. Axial involvement in psoriatic arthritis is a growing area of investigation."
+      },
+      {
+        "heading": "Non-Pharmacologic Approaches",
+        "content": "Clinical trials also study non-drug interventions for arthritis management. Exercise programs, physical therapy approaches, and dietary interventions are evaluated for their ability to reduce pain and improve function. Acupuncture, mind-body therapies, and other complementary approaches are studied as adjuncts to standard treatment. Weight loss interventions are particularly relevant for patients with osteoarthritis and overweight."
+      },
+      {
+        "heading": "Emerging Treatment Targets",
+        "content": "Researchers are exploring novel therapeutic targets including nerve growth factor inhibition for pain management, senolytic drugs that target aging cells contributing to osteoarthritis, and regenerative approaches using stem cells. Cartilage repair and joint preservation studies are advancing for osteoarthritis. Personalized medicine approaches using genetic and biomarker profiling aim to match patients with the most effective treatments."
+      }
+    ],
+    "takeaways": [
+      "Rheumatoid arthritis research includes JAK inhibitors, treat-to-target strategies, and remission optimization approaches.",
+      "Psoriatic arthritis trials cover IL-17, IL-23, and JAK inhibitors with focus on both skin and joint outcomes.",
+      "Non-pharmacologic research examines exercise, diet, and complementary therapies for arthritis management.",
+      "Emerging targets include nerve growth factor inhibitors, senolytic drugs, and regenerative approaches."
+    ],
+    "faq": [
+      {
+        "q": "Do I need to stop my current arthritis medications to join a trial?",
+        "a": "Some trials require medication washout periods, while others allow continued use of stable doses of certain medications. Check each study's protocol."
+      },
+      {
+        "q": "Are there clinical trials for osteoarthritis?",
+        "a": "Yes, osteoarthritis trials study pain management, cartilage repair, joint preservation, and emerging treatments like senolytic drugs."
+      },
+      {
+        "q": "What outcomes are measured in arthritis trials?",
+        "a": "Common outcomes include pain scores, joint counts, functional assessments, quality of life measures, and radiographic progression."
+      }
+    ],
+    "relatedConditions": "rheumatoid-arthritis osteoarthritis psoriasis",
+    "relatedGuides": "4 13 14 48"
+  },
+  {
+    "id": 86,
+    "title": "Osteoporosis and Bone Health Clinical Trials",
+    "slug": "osteoporosis-bone-health-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Overview of osteoporosis clinical trials including new medications, fracture prevention, and bone density research.",
+    "author": "Dr. James Wilson",
+    "date": "2026-03-16",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "Current Osteoporosis Treatment Research",
+        "content": "Osteoporosis clinical trials evaluate both antiresorptive and anabolic therapies. Bisphosphonate trials continue with new formulations and dosing schedules. Denosumab research explores optimal treatment duration and transition strategies. Anabolic agents including teriparatide and romosozumab are studied for severe osteoporosis and combination approaches. Sequential therapy trials examine the best order and timing of different treatment types."
+      },
+      {
+        "heading": "Fracture Prevention Studies",
+        "content": "Fracture prevention is the primary goal of osteoporosis treatment. Clinical trials measure vertebral and non-vertebral fracture rates as key outcomes. Studies investigate optimal treatment thresholds based on bone density, FRAX scores, and fracture history. Research explores strategies to prevent hip fractures specifically, which have the greatest impact on morbidity and mortality."
+      },
+      {
+        "heading": "Bone Health in Special Populations",
+        "content": "Clinical trials address bone health in specific populations including postmenopausal women, men with osteoporosis, and patients on long-term glucocorticoid therapy. Studies examine osteoporosis management in patients with chronic kidney disease and other comorbidities. Research also focuses on bone health in cancer survivors, particularly those receiving hormone therapy for breast or prostate cancer."
+      },
+      {
+        "heading": "Emerging Bone Health Research",
+        "content": "Novel approaches to osteoporosis treatment include new anabolic agents, cathepsin K inhibitors, and agents targeting the bone remodeling process. Combination anabolic and antiresorptive therapy is being explored for maximum bone density gains. Nutritional and exercise interventions are studied for bone health optimization across the lifespan. Fracture healing trials examine interventions to accelerate and improve bone repair."
+      }
+    ],
+    "takeaways": [
+      "Osteoporosis research includes bisphosphonates, denosumab, and anabolic agents with focus on optimal treatment sequencing.",
+      "Fracture prevention trials measure vertebral and non-vertebral fracture rates as primary outcomes.",
+      "Special population studies address osteoporosis in men, glucocorticoid users, and cancer survivors.",
+      "Emerging research explores new anabolic agents, combination therapy, and fracture healing interventions."
+    ],
+    "faq": [
+      {
+        "q": "How long do osteoporosis clinical trials last?",
+        "a": "Osteoporosis trials typically last 2 to 3 years to demonstrate fracture reduction benefits, with extension studies continuing longer."
+      },
+      {
+        "q": "Are there trials for osteopenia or low bone mass?",
+        "a": "Yes, some studies enroll participants with osteopenia to evaluate early intervention strategies for preventing progression to osteoporosis."
+      },
+      {
+        "q": "What tests are used to measure bone health in trials?",
+        "a": "DXA scans are standard. Many trials also use quantitative CT, bone turnover markers, and fracture risk assessment tools."
+      }
+    ],
+    "relatedConditions": "osteoporosis rheumatoid-arthritis kidney-disease",
+    "relatedGuides": "4 14 20 45"
+  },
+  {
+    "id": 87,
+    "title": "Eye Health and Vision Clinical Trials",
+    "slug": "eye-health-vision-clinical-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to clinical trials for eye conditions including macular degeneration, glaucoma, diabetic retinopathy, and cataract research.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-03-13",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "Age-Related Macular Degeneration Research",
+        "content": "AMD clinical trials cover both dry and wet forms of the disease. Wet AMD research continues with new anti-VEGF agents offering longer dosing intervals and improved outcomes. Dry AMD trials have advanced with complement inhibitors and other emerging therapies showing promise. Studies explore combination approaches targeting multiple disease pathways. Geographic atrophy, the advanced form of dry AMD, has seen encouraging trial results with new treatments."
+      },
+      {
+        "heading": "Glaucoma Clinical Trials",
+        "content": "Glaucoma research focuses on intraocular pressure reduction through new medication classes, laser techniques, and surgical innovations. Neuroprotection trials aim to preserve optic nerve function beyond pressure control. Minimally invasive glaucoma surgery or MIGS devices are being evaluated for safety and efficacy. Studies also examine adherence strategies and monitoring technologies including home tonometry."
+      },
+      {
+        "heading": "Diabetic Retinopathy Studies",
+        "content": "Clinical trials for diabetic retinopathy explore early intervention to prevent vision loss. Anti-VEGF therapy studies continue with refined treatment protocols and longer-acting agents. Research examines optimal screening intervals using artificial intelligence and telemedicine approaches. Studies also investigate systemic risk factor management including intensive glucose and blood pressure control for eye health."
+      },
+      {
+        "heading": "Cataract and Refractive Surgery Research",
+        "content": "Cataract trials study new intraocular lens technologies including multifocal, toric, and extended depth of focus lenses. Surgical technique comparisons evaluate femtosecond laser-assisted versus traditional cataract surgery. Refractive surgery research covers advances in LASIK, PRK, and lens-based procedures. Studies also explore treatments for posterior capsule opacification and other post-surgical complications."
+      }
+    ],
+    "takeaways": [
+      "AMD research includes longer-acting anti-VEGF agents for wet AMD and emerging complement inhibitors for dry AMD.",
+      "Glaucoma trials explore new medications, MIGS devices, and neuroprotection strategies beyond pressure control.",
+      "Diabetic retinopathy studies focus on early intervention, longer-acting therapies, and AI-based screening.",
+      "Cataract research evaluates new IOL technologies and surgical technique comparisons."
+    ],
+    "faq": [
+      {
+        "q": "Are eye injection trials painful?",
+        "a": "Eye injections are performed under topical anesthesia and most patients report minimal discomfort. The research team takes steps to ensure comfort."
+      },
+      {
+        "q": "Can I participate if I wear glasses or contacts?",
+        "a": "Yes, most eye trials allow participants who use corrective lenses. Some studies may require stable vision for accurate measurements."
+      },
+      {
+        "q": "What vision tests are performed in eye trials?",
+        "a": "Common tests include visual acuity, visual field testing, optical coherence tomography, and fundus photography."
+      }
+    ],
+    "relatedConditions": "macular-degeneration glaucoma diabetic-retinopathy",
+    "relatedGuides": "4 13 25 32"
+  },
+  {
+    "id": 88,
+    "title": "HIV and Infectious Disease Clinical Trials",
+    "slug": "hiv-infectious-disease-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Overview of clinical trials for HIV, emerging infectious diseases, and antimicrobial resistance research.",
+    "author": "Dr. Emily Chen",
+    "date": "2026-03-10",
+    "readTime": "9 min read",
+    "sections": [
+      {
+        "heading": "HIV Treatment and Prevention Research",
+        "content": "HIV clinical trials continue to advance treatment and prevention options. Long-acting injectable antiretroviral therapy is a major focus, offering alternatives to daily oral medication. Cure research explores latency reversal agents, immune-based therapies, and gene editing approaches. Pre-exposure prophylaxis or PrEP trials evaluate new formulations including long-acting injectables and implantable devices. Studies also address HIV-related comorbidities and aging with HIV."
+      },
+      {
+        "heading": "Emerging Infectious Disease Studies",
+        "content": "The COVID-19 pandemic demonstrated the critical importance of clinical trials for emerging infections. Rapid vaccine development platforms including mRNA and viral vector technologies continue to be refined. Therapeutic trials for emerging viral infections test antivirals, immune modulators, and antibody-based treatments. Pandemic preparedness research establishes trial infrastructure that can be rapidly activated for future outbreaks."
+      },
+      {
+        "heading": "Antimicrobial Resistance Research",
+        "content": "Clinical trials combatting antimicrobial resistance explore new antibiotic classes, combination therapies, and alternative approaches. Bacteriophage therapy studies treat drug-resistant infections. Research evaluates rapid diagnostic tests to guide targeted antibiotic use. Stewardship trials examine strategies to preserve existing antibiotic effectiveness while improving patient outcomes."
+      },
+      {
+        "heading": "Tuberculosis and Neglected Disease Trials",
+        "content": "TB clinical trials investigate shorter treatment regimens for drug-sensitive and drug-resistant tuberculosis. New diagnostic approaches including molecular testing and imaging are being validated. Research also addresses TB prevention through improved vaccines and prophylactic regimens. Neglected tropical disease trials cover conditions including malaria, dengue, leishmaniasis, and Chagas disease."
+      }
+    ],
+    "takeaways": [
+      "HIV research focuses on long-acting therapies, cure strategies, and improved prevention options including injectable PrEP.",
+      "Emerging infectious disease trials have been accelerated by mRNA and viral vector vaccine platform technologies.",
+      "Antimicrobial resistance research explores new antibiotics, bacteriophage therapy, and stewardship strategies.",
+      "TB trials investigate shorter treatment regimens, better diagnostics, and improved prevention approaches."
+    ],
+    "faq": [
+      {
+        "q": "Can I participate in an HIV trial if I am undetectable?",
+        "a": "Yes, many HIV trials enroll participants with suppressed viral loads. Some studies specifically require undetectable status for eligibility."
+      },
+      {
+        "q": "What safety measures are in place for infectious disease trials?",
+        "a": "Infectious disease trials follow strict infection control protocols and often include regular monitoring for disease progression and treatment side effects."
+      },
+      {
+        "q": "Are there clinical trials for long COVID?",
+        "a": "Yes, long COVID clinical trials are growing rapidly, studying treatments for persistent symptoms including fatigue, cognitive dysfunction, and respiratory issues."
+      }
+    ],
+    "relatedConditions": "hiv covid-19 tuberculosis hepatitis-b",
+    "relatedGuides": "4 13 15 35"
+  },
+  {
+    "id": 89,
+    "title": "Urinary Tract and Bladder Clinical Trials",
+    "slug": "urinary-tract-bladder-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Guide to clinical trials for urinary tract conditions including bladder cancer, UTIs, incontinence, and interstitial cystitis.",
+    "author": "Dr. James Wilson",
+    "date": "2026-03-07",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "heading": "Bladder Cancer Research",
+        "content": "Bladder cancer clinical trials cover the full spectrum from non-muscle invasive to metastatic disease. Immunotherapy trials including BCG combinations and checkpoint inhibitors are active for early-stage disease. Studies of antibody-drug conjugates and targeted therapies are advancing treatment for advanced bladder cancer. Research also explores novel intravesical therapies, photodynamic therapy, and risk-adapted surveillance strategies."
+      },
+      {
+        "heading": "Urinary Tract Infection Studies",
+        "content": "UTI clinical trials address both uncomplicated and complicated infections. Research on recurrent UTIs includes vaccine development, probiotic approaches, and non-antibiotic prophylactic strategies. Studies of novel antibiotics target drug-resistant uropathogens. Post-menopausal UTI trials explore hormonal and microbiome-based interventions. Catheter-associated UTI research focuses on prevention through device innovation."
+      },
+      {
+        "heading": "Incontinence and Overactive Bladder Research",
+        "content": "Clinical trials for urinary incontinence include behavioral, pharmacological, and surgical interventions. Overactive bladder studies evaluate new anticholinergic medications, beta-3 agonists, and neuromodulation approaches. Stress incontinence research examines sling procedures, bulking agents, and pelvic floor training. Mixed incontinence trials address the challenge of treating both urge and stress components."
+      },
+      {
+        "heading": "Interstitial Cystitis and Pelvic Pain Studies",
+        "content": "Interstitial cystitis or bladder pain syndrome clinical trials explore treatments including oral medications, bladder instillations, and neuromodulation. Research investigates the role of diet, stress, and pelvic floor dysfunction in symptom management. Studies of novel therapies including platelet-rich plasma and stem cell treatments are emerging. Multidisciplinary treatment approaches for chronic pelvic pain are also being evaluated."
+      }
+    ],
+    "takeaways": [
+      "Bladder cancer research includes immunotherapy, antibody-drug conjugates, and novel intravesical therapy approaches.",
+      "UTI trials explore vaccines, probiotics, and non-antibiotic strategies for recurrent infection prevention.",
+      "Incontinence research covers pharmacological, behavioral, and surgical interventions for both urge and stress types.",
+      "Interstitial cystitis studies examine oral, intravesical, and neuromodulation treatments."
+    ],
+    "faq": [
+      {
+        "q": "Are there clinical trials for bedwetting in children?",
+        "a": "Yes, pediatric enuresis trials study behavioral interventions, medications, and bedwetting alarm devices."
+      },
+      {
+        "q": "Can I participate in a bladder trial if I have a history of UTIs?",
+        "a": "Eligibility depends on the specific study. Some trials require a history of recurrent UTIs, while others exclude recent infections."
+      },
+      {
+        "q": "What tests are typically done in urology trials?",
+        "a": "Common tests include urinalysis, urine culture, urodynamics, cystoscopy, and imaging studies like ultrasound or CT."
+      }
+    ],
+    "relatedConditions": "bladder-cancer uti interstitial-cystitis",
+    "relatedGuides": "4 13 14 20"
+  },
+  {
+    "id": 90,
+    "title": "Stroke Recovery and Rehabilitation Clinical Trials",
+    "slug": "stroke-recovery-rehabilitation-trials",
+    "category": "Condition-Specific",
+    "excerpt": "Clinical trials for stroke recovery including rehabilitation approaches, neuroprotection, and post-stroke complication management.",
+    "author": "Dr. Michael Chen",
+    "date": "2026-03-04",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "heading": "Acute Stroke Treatment Trials",
+        "content": "Acute stroke clinical trials focus on improving outcomes through better reperfusion strategies. Research expands the time window for thrombolysis and mechanical thrombectomy through advanced imaging selection. Neuroprotective agents are studied to minimize brain damage during and after stroke. Trials also investigate optimal blood pressure management, glucose control, and other supportive care measures in the acute setting."
+      },
+      {
+        "heading": "Rehabilitation and Recovery Research",
+        "content": "Stroke rehabilitation trials examine intensive therapy protocols, robotic devices, and virtual reality approaches. Constraint-induced movement therapy studies continue to refine protocols for upper extremity recovery. Research explores the optimal timing, intensity, and duration of rehabilitation interventions. Aphasia therapy trials investigate speech and language interventions, including technology-assisted approaches."
+      },
+      {
+        "heading": "Post-Stroke Complication Studies",
+        "content": "Clinical trials address common post-stroke complications including spasticity, depression, cognitive impairment, and fatigue. Pharmacological and non-pharmacological interventions are studied for each complication. Secondary prevention trials evaluate antithrombotic strategies, risk factor management, and lifestyle modifications. Research also explores interventions for post-stroke pain syndromes including central post-stroke pain."
+      },
+      {
+        "heading": "Emerging Technologies in Stroke Research",
+        "content": "Innovative technologies are transforming stroke clinical trials. Brain-computer interfaces are studied for motor recovery in severe paralysis. Transcranial magnetic stimulation and transcranial direct current stimulation are evaluated as adjuncts to rehabilitation. Wearable sensors monitor real-world arm use and activity levels. Telerehabilitation platforms expand access to specialized stroke care."
+      }
+    ],
+    "takeaways": [
+      "Acute stroke research expands treatment windows and explores neuroprotective agents to minimize brain damage.",
+      "Rehabilitation trials examine robotic devices, virtual reality, and optimal timing and intensity of therapy.",
+      "Post-stroke complication studies address spasticity, depression, cognitive impairment, and pain management.",
+      "Emerging technologies including brain-computer interfaces and telerehabilitation are advancing stroke recovery research."
+    ],
+    "faq": [
+      {
+        "q": "How soon after a stroke can I join a clinical trial?",
+        "a": "Some acute trials enroll within hours of stroke onset, while rehabilitation trials typically begin weeks or months after the stroke."
+      },
+      {
+        "q": "Can I participate if I have residual disability from a previous stroke?",
+        "a": "Many stroke trials specifically enroll participants with residual deficits. Eligibility depends on the study's specific goals and criteria."
+      },
+      {
+        "q": "Are there trials for post-stroke communication difficulties?",
+        "a": "Yes, aphasia clinical trials study speech therapy approaches, brain stimulation, and technology-assisted communication interventions."
+      }
+    ],
+    "relatedConditions": "stroke heart-disease high-blood-pressure diabetes",
+    "relatedGuides": "4 14 25 29"
+  }
+]

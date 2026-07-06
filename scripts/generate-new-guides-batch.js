@@ -1,0 +1,233 @@
+const fs = require('fs');
+const path = require('path');
+
+function makeGuide(id, title, slug, category, excerpt, author, date, readTime, sections, takeaways, faq, relatedConditions, relatedGuides) {
+  return { id, title, slug, category, excerpt, author, date, readTime, sections, takeaways, faq, relatedConditions, relatedGuides };
+}
+
+const guides = [];
+
+// 51
+guides.push(makeGuide(51,
+  "How to Search ClinicalTrials.gov Like a Pro",
+  "how-to-search-clinicaltrials-gov",
+  "Getting Started",
+  "Master ClinicalTrials.gov with expert search tips, filters, and strategies to find the right studies faster.",
+  "James Rodriguez", "2026-07-01", "7 min read",
+  [
+    { heading: "Understanding the ClinicalTrials.gov Database", content: "ClinicalTrials.gov is the world's largest registry of clinical studies, maintained by the U.S. National Library of Medicine. It contains over 450,000 studies from more than 220 countries. The database includes interventional trials, observational studies, and expanded access programs. Each study record provides detailed information about the purpose, design, eligibility criteria, locations, and contact information. Understanding how to navigate this resource can help you find research opportunities that match your specific health situation." },
+    { heading: "Basic Search Strategies That Work", content: "Start with your condition name in plain language, such as 'type 2 diabetes' or 'breast cancer.' Use quotation marks for exact phrases to narrow results. Combine terms with AND to require multiple conditions, or use OR to include synonyms. For example, 'heart failure AND exercise' finds studies about exercise in heart failure patients. The advanced search page offers additional fields including age groups, study phase, and intervention type." },
+    { heading: "Using Filters to Narrow Results", content: "After running a search, use the filters on the left sidebar to refine your results. Key filters include recruitment status (recruiting, not yet recruiting, active), study type (interventional, observational), phase (I, II, III, IV), and age group. The location filter lets you search by country, state, or city. You can also filter by funder type: NIH, industry, or other. Combining multiple filters dramatically reduces results to only the most relevant studies." },
+    { heading: "Saving Searches and Setting Alerts", content: "Create a free account on ClinicalTrials.gov to save searches and set up email alerts. When new studies matching your criteria are added, you will receive automatic notifications. Saved searches can be modified, combined, or shared with your healthcare team. This feature is especially useful for conditions with rapidly evolving research landscapes, ensuring you never miss a new opportunity." }
+  ],
+  ["ClinicalTrials.gov contains over 450,000 studies searchable by condition, location, and status.", "Use quotation marks, AND/OR operators, and filters to narrow results efficiently.", "Create a free account to save searches and receive email alerts when new studies match your criteria.", "Always verify study status and contact the research team directly for the most current information."],
+  [
+    { q: "Is ClinicalTrials.gov free to use?", a: "Yes, ClinicalTrials.gov is completely free and publicly accessible. There is no charge for searching, viewing study records, or creating an account." },
+    { q: "How often is ClinicalTrials.gov updated?", a: "Study records are updated regularly as sponsors submit new information. Most records are updated at least every six months, and many are updated more frequently." },
+    { q: "Can I trust the information on ClinicalTrials.gov?", a: "Yes, the database is maintained by the U.S. National Library of Medicine and study sponsors are required by law to submit accurate information. However, always verify details directly with the research team." },
+    { q: "What if I cannot find studies for my condition?", a: "Try using broader terms, check for observational studies, or search for related conditions. Consider expanding your location range or checking back regularly as new studies are added frequently." }
+  ],
+  "", "1 17 33 36"
+));
+
+// 52
+guides.push(makeGuide(52,
+  "Clinical Trial Glossary: Key Terms Explained",
+  "clinical-trial-glossary",
+  "Getting Started",
+  "A plain-language glossary of essential clinical trial terminology every participant should understand before enrolling.",
+  "James Rodriguez", "2026-06-28", "8 min read",
+  [
+    { heading: "Common Clinical Trial Terms You Will Encounter", content: "When exploring clinical trials, you will encounter specialized terminology. Understanding key terms helps you make informed decisions. An 'intervention' is the treatment being studied, which could be a drug, device, procedure, or behavioral change. 'Eligibility criteria' are the medical and demographic factors that determine who can participate. 'Informed consent' is the process of learning about a study's risks and benefits before deciding to join." },
+    { heading: "Study Design Terminology", content: "A 'randomized' trial means participants are assigned to groups by chance, like flipping a coin. 'Double-blind' means neither you nor the research team knows which treatment you receive. 'Placebo' is an inactive substance used for comparison. 'Crossover' design means participants switch between treatment groups at specified points. 'Open-label' means everyone knows which treatment is being given. Understanding these terms helps you know what to expect." },
+    { heading: "Safety and Oversight Terms", content: "An 'Institutional Review Board' or IRB is an independent ethics committee that reviews and monitors the study. 'Adverse event' refers to any negative health occurrence during the trial. 'Data Safety Monitoring Board' or DSMB is an independent group that reviews safety data throughout the study. 'Protocol' is the detailed plan describing every aspect of the trial. These oversight mechanisms exist to protect participant safety." },
+    { heading: "Results and Outcome Terminology", content: "A 'primary endpoint' is the main outcome the study measures to determine if the treatment works. 'Secondary endpoints' are additional outcomes measured for supporting evidence. 'Statistical significance' indicates that results are unlikely to be due to chance. 'Efficacy' measures how well a treatment works under ideal conditions, while 'effectiveness' measures how it works in real-world settings." }
+  ],
+  ["Key design terms include randomized, double-blind, placebo, crossover, and open-label, each describing how the study is structured.", "Safety oversight terms like IRB, adverse event, DSMB, and protocol describe protections built into every trial.", "Outcome terms such as primary endpoint, statistical significance, efficacy, and effectiveness help you understand study results.", "Knowing this terminology empowers you to ask better questions and make informed participation decisions."],
+  [
+    { q: "What is the difference between efficacy and effectiveness?", a: "Efficacy measures how well a treatment works in controlled clinical trial conditions. Effectiveness measures how it performs in real-world, everyday settings with typical patients." },
+    { q: "What does IRB approval mean for a clinical trial?", a: "IRB approval means an independent ethics committee has reviewed the study protocol and determined it meets ethical standards for protecting participant rights and welfare." },
+    { q: "Why is randomization important in clinical trials?", a: "Randomization reduces bias by ensuring that participant characteristics are evenly distributed across treatment groups, making results more reliable and scientifically valid." }
+  ],
+  "", "1 17 26 33"
+));
+
+// 53
+guides.push(makeGuide(53,
+  "First Steps After Finding a Clinical Trial",
+  "first-steps-after-finding-clinical-trial",
+  "Getting Started",
+  "A practical guide to what to do after you find a promising clinical trial, from initial contact to screening scheduling.",
+  "Lisa Thompson", "2026-06-25", "6 min read",
+  [
+    { heading: "Confirming Study Details Before Contacting", content: "Before reaching out to a research team, verify that the study is still recruiting. Check the 'recruitment status' on ClinicalTrials.gov. Review the eligibility criteria carefully to see if you meet the basic requirements. Note the study location and estimate travel time and costs. Prepare a list of your current medications, diagnoses, and previous treatments to discuss during the initial call." },
+    { heading: "Making the First Contact", content: "Each study record includes contact information for the research coordinator or principal investigator. Call or email using the provided contact details. Introduce yourself and mention which study you are inquiring about. Be prepared to provide basic information about your age, condition, and location. The coordinator will ask preliminary screening questions to determine if you may be eligible before scheduling a formal screening visit." },
+    { heading: "Preparing for the Screening Call", content: "When the research team calls you for pre-screening, have your medical history summary ready. Write down questions you want to ask about the study schedule, compensation, travel requirements, and potential risks. Take notes during the call so you can review the information later. Ask about the timeline for the screening visit and what documentation you should bring." },
+    { heading: "Evaluating Whether the Trial Is Right for You", content: "After the initial contact, take time to evaluate whether the trial fits your personal situation. Consider the time commitment, visit frequency, and travel requirements. Discuss participation with your primary care doctor. Review the informed consent document carefully if provided. Remember that you can decline to participate at any time, even after the screening process begins." }
+  ],
+  ["Verify recruitment status and eligibility criteria before contacting the research team.", "Prepare medical history and questions before your initial call or email to the study coordinator.", "Use the screening call to evaluate whether the trial logistics fit your lifestyle and commitments.", "You can decline participation at any point, including after learning more during the screening process."],
+  [
+    { q: "How quickly should I contact a study after finding it?", a: "Contact the study team as soon as you find a trial of interest. Studies can close enrollment quickly once enough participants are recruited." },
+    { q: "What if I do not hear back from the research team?", a: "Follow up after one week with a polite email or phone call. If you still do not receive a response, the study may have closed enrollment or the team may be unavailable." },
+    { q: "Can I apply to multiple clinical trials at once?", a: "Yes, you can contact multiple study teams simultaneously. However, you can only enroll in one interventional trial at a time due to safety and data integrity concerns." }
+  ],
+  "", "1 8 34 36"
+));
+
+// 54
+guides.push(makeGuide(54,
+  "Understanding Clinical Trial Phases at a Glance",
+  "clinical-trial-phases-overview",
+  "Getting Started",
+  "A quick-reference guide to clinical trial phases from Phase 0 through Phase 4 and what each phase means for participants.",
+  "Dr. Sarah Mitchell", "2026-06-22", "6 min read",
+  [
+    { heading: "Phase 0: Micro-Dosing Studies", content: "Phase 0 trials are exploratory studies involving very small doses of a new drug in a limited number of participants, typically 10 to 15 people. The goal is not to test effectiveness but to understand how the drug behaves in the human body. These studies help researchers decide whether to proceed with full Phase 1 development. Participants receive minimal exposure and the studies pose very low risk." },
+    { heading: "Phase 1: Safety and Dosage Finding", content: "Phase 1 trials are the first human studies for a new treatment, involving 20 to 100 participants. Researchers determine safe dosage ranges, identify side effects, and study how the body processes the drug. These studies often involve healthy volunteers, though some cancer Phase 1 trials include patient participants. Close monitoring is a hallmark of Phase 1 research." },
+    { heading: "Phase 2: Efficacy and Side Effect Profiling", content: "Phase 2 trials expand to several hundred participants who have the condition being studied. Researchers evaluate whether the treatment works and continue monitoring safety. These studies often compare the new treatment against a placebo or standard treatment. Successful Phase 2 results are needed before proceeding to larger Phase 3 trials." },
+    { heading: "Phase 3 and 4: Confirmation and Long-Term Monitoring", content: "Phase 3 trials involve thousands of participants and confirm effectiveness, monitor side effects, and compare with existing treatments. These are often the longest and most expensive phase. Phase 4 studies occur after FDA approval and gather long-term safety and effectiveness data in real-world populations, sometimes identifying rare side effects not detected in earlier phases." }
+  ],
+  ["Phase 0 and Phase 1 focus on safety and dosing with small participant numbers and close monitoring.", "Phase 2 evaluates whether the treatment works in several hundred people with the target condition.", "Phase 3 confirms effectiveness in thousands of participants and is required for FDA approval.", "Phase 4 monitors long-term safety and real-world effectiveness after a treatment is approved."],
+  [
+    { q: "What percentage of treatments succeed from Phase 1 to approval?", a: "Approximately 10 to 14 percent of treatments that enter Phase 1 testing ultimately receive FDA approval. Success rates vary by therapeutic area." },
+    { q: "Can I participate in multiple phases of the same treatment?", a: "Generally no, as each phase enrolls different participants. However, some expanded access programs allow continued access after a trial ends." },
+    { q: "Are Phase 1 trials more dangerous than later phases?", a: "Phase 1 trials have more unknowns about side effects, but they involve very careful monitoring and typically start with very low doses to minimize risk." }
+  ],
+  "", "1 31 47 50"
+));
+
+// 55
+guides.push(makeGuide(55,
+  "Building a Relationship with Your Clinical Trial Coordinator",
+  "relationship-with-trial-coordinator",
+  "Patient Experience",
+  "How to establish effective communication with your clinical trial coordinator for a smoother study experience.",
+  "Lisa Thompson", "2026-06-19", "5 min read",
+  [
+    { heading: "The Role of the Clinical Trial Coordinator", content: "The clinical trial coordinator is your primary point of contact throughout the study. They manage study visits, coordinate with the research team, collect data, and ensure protocol compliance. Coordinators are often registered nurses or clinical research professionals with specialized training. They are there to answer your questions, address concerns, and guide you through every step of the research process." },
+    { heading: "Establishing Good Communication Early", content: "From your first interaction, establish clear communication preferences with your coordinator. Ask about the best way to reach them by phone, email, or patient portal. Confirm their typical response time and what to do in urgent situations. Share any concerns about visit schedules, travel, or health changes openly. Good communication early prevents misunderstandings later." },
+    { heading: "What to Share with Your Coordinator", content: "Report all health changes, new medications, and unexpected symptoms to your coordinator promptly. Inform them about visits to other doctors or emergency room visits. Share any difficulties with the treatment schedule or side effects. The coordinator needs complete information to ensure your safety and maintain study data integrity. Withholding information can compromise both your safety and the study results." },
+    { heading: "Working Together Through Challenges", content: "If you experience scheduling conflicts, travel difficulties, or side effects, discuss them with your coordinator as soon as possible. Many studies can accommodate reasonable schedule adjustments. Coordinators can help connect you with resources for travel assistance, symptom management, or emotional support. Remember that the coordinator and research team are invested in your well-being throughout the study." }
+  ],
+  ["Your clinical trial coordinator is your primary contact and advocate throughout the research study.", "Establish clear communication preferences and response time expectations from the beginning.", "Report all health changes, medications, and concerns promptly to ensure your safety and data quality.", "Coordinators can help address scheduling, travel, and side effect challenges that arise during the study."],
+  [
+    { q: "Can I change coordinators if I do not get along with mine?", a: "You can request to speak with another team member if communication is difficult. Most research teams are flexible and want participants to feel comfortable." },
+    { q: "What if my coordinator does not respond to my messages?", a: "Follow up with a phone call if email goes unanswered. If concerns persist, ask to speak with the principal investigator or patient advocate." },
+    { q: "Is the coordinator available after hours?", a: "Most coordinators work regular business hours. Ask about after-hours coverage for urgent concerns during your enrollment process." }
+  ],
+  "", "8 10 34 37"
+));
+
+// 56
+guides.push(makeGuide(56,
+  "Clinical Trial Daily Life: What Changes to Expect",
+  "clinical-trial-daily-life",
+  "Patient Experience",
+  "How clinical trial participation affects your daily routine, from medication schedules to lifestyle adjustments and visit planning.",
+  "Lisa Thompson", "2026-06-16", "7 min read",
+  [
+    { heading: "Medication and Treatment Schedules", content: "Depending on the study, you may need to take medications at specific times, sometimes with food or on an empty stomach. Some treatments require injections, infusions, or topical applications that follow strict schedules. The research team will provide clear instructions and may ask you to keep a medication diary. Using pill organizers, phone alarms, and reminder apps can help you stay on track." },
+    { heading: "Study Visit Frequency and Planning", content: "Clinical trial visits vary from weekly to monthly depending on the phase and type of study. Each visit typically includes vital signs, blood draws, questionnaires, and medication checks. Plan your schedule around these visits, which may last from 30 minutes to several hours. Ask about visit windows that allow flexibility, such as plus or minus three days from the scheduled date." },
+    { heading: "Lifestyle and Dietary Considerations", content: "Many studies require dietary restrictions, such as avoiding certain foods, alcohol, or caffeine. You may need to maintain a consistent activity level or avoid specific activities during the study. Some trials ask participants to track diet, exercise, or sleep patterns. Discuss these requirements during enrollment to ensure you can comply with lifestyle modifications." },
+    { heading: "Managing Work and Family During the Study", content: "Plan ahead for study visits by communicating with your employer about appointment times. Some studies offer early morning or evening visits to accommodate work schedules. Arrange childcare or eldercare in advance for study visit days. Keep a calendar of all study activities and share it with family members who may need to help with logistics." }
+  ],
+  ["Medication and treatment schedules require careful adherence; use reminders and diaries to stay on track.", "Study visits vary in frequency and duration; plan your schedule around visit windows for flexibility.", "Dietary and lifestyle modifications may be required; understand these fully before enrolling.", "Communicate with your employer and family about study commitments to manage daily life effectively."],
+  [
+    { q: "Can I travel while participating in a clinical trial?", a: "Travel may be possible but requires coordinator approval. Some studies allow short breaks or can coordinate with other research sites for continued participation." },
+    { q: "What if I miss a dose of the study medication?", a: "Contact your coordinator immediately. They will advise you on whether to take the missed dose or skip it. Never double up on medication without instruction." },
+    { q: "Can I continue my regular exercise routine?", a: "Discuss your exercise habits with the research team. Most routine exercise is fine, but some studies may require activity restrictions or monitoring." }
+  ],
+  "", "8 34 37 46"
+));
+
+// 57
+guides.push(makeGuide(57,
+  "How to Talk to Family About Clinical Trial Participation",
+  "talk-to-family-about-clinical-trial",
+  "Patient Experience",
+  "Guidance on discussing your clinical trial decision with family members, addressing concerns, and building a support network.",
+  "Lisa Thompson", "2026-06-13", "6 min read",
+  [
+    { heading: "Preparing for Family Conversations", content: "Before talking to family, make sure you understand the study details well enough to explain them. Review the purpose, procedures, risks, and benefits of the trial. Anticipate common questions about safety, time commitment, and why you are considering participation. Prepare written materials from the study team to share with family members who want more detailed information." },
+    { heading: "Addressing Common Family Concerns", content: "Family members may worry about your safety, side effects, or receiving a placebo. Explain the safety monitoring systems in place, including IRB oversight and Data Safety Monitoring Boards. Share that you can withdraw at any time if you are uncomfortable. Discuss how the study team monitors participants closely, often more frequently than standard medical care." },
+    { heading: "Enlisting Family Support", content: "Identify specific ways family members can support you during the study, such as driving to appointments, helping with medication reminders, or providing emotional support. Ask family members to accompany you to an initial study visit so they can meet the research team and see the facilities. Having a support person familiar with the study can help reduce stress for both you and your family." },
+    { heading: "Respecting Different Opinions", content: "Not all family members may immediately support your decision to participate. Listen to their concerns without becoming defensive. Share your personal reasons for considering the trial, such as access to new treatments or contributing to research. Ultimately, the decision to participate is yours alone. Family members who initially express concerns often become more supportive once they see your commitment." }
+  ],
+  ["Learn the study details well enough to explain them clearly to concerned family members.", "Address safety concerns by explaining oversight systems like IRB review and Data Safety Monitoring Boards.", "Enlist family support for practical needs like transportation and emotional encouragement during the study.", "Respect differing opinions while making it clear the participation decision is ultimately yours."],
+  [
+    { q: "Should I bring a family member to the informed consent meeting?", a: "Yes, bringing a trusted family member or friend to the consent meeting is highly recommended. They can help you process information and ask questions you may not think of." },
+    { q: "What if my doctor recommends against participation?", a: "Discuss your doctor's specific concerns with the research team. Many concerns can be addressed through careful coordination between your doctor and the study team." },
+    { q: "How do I handle family members who are strongly opposed?", a: "Share educational materials about clinical trial safety and oversight. Suggest they speak with your coordinator directly to get their questions answered by an expert." }
+  ],
+  "", "8 10 34 49"
+));
+
+// 58
+guides.push(makeGuide(58,
+  "Emotional Preparation for Clinical Trial Participation",
+  "emotional-preparation-clinical-trial",
+  "Patient Experience",
+  "Strategies for managing the emotional aspects of clinical trial participation, including uncertainty, hope, and resilience.",
+  "Dr. Sarah Mitchell", "2026-06-10", "7 min read",
+  [
+    { heading: "Understanding the Emotional Journey", content: "Clinical trial participation involves a range of emotions from hope and excitement to anxiety and uncertainty. It is normal to feel hopeful about potential benefits while also worrying about unknown risks. The screening process itself can create anticipation and stress. Acknowledge these feelings as a natural part of the research journey. Being emotionally prepared helps you navigate the ups and downs more effectively." },
+    { heading: "Coping with Uncertainty", content: "Clinical trials involve inherent uncertainty about treatment outcomes. Focus on what you can control: following the study protocol, communicating openly with your team, and maintaining healthy routines. Practice mindfulness or relaxation techniques to manage anxiety about unknown results. Set realistic expectations about potential outcomes while remaining open to whatever the study reveals." },
+    { heading: "Building Emotional Resilience", content: "Connect with other clinical trial participants through support groups or online communities. Share experiences and coping strategies with people who understand what you are going through. Maintain your regular support network of friends, family, and healthcare providers. Consider speaking with a counselor or therapist who can help you process the emotional aspects of research participation." },
+    { heading: "Preparing for Any Outcome", content: "Clinical trials may or may not produce the results you hope for personally. Discuss with your research team what will happen after the trial ends, including options for continued treatment if applicable. Have a plan for how you will process the results, whether positive, negative, or inconclusive. Remember that even if the treatment does not work for you personally, your participation advances medical knowledge for others." }
+  ],
+  ["Acknowledge the full range of emotions that come with clinical trial participation as normal and valid.", "Focus on what you can control and practice mindfulness techniques to manage uncertainty.", "Build resilience through support groups, maintaining social connections, and professional counseling if needed.", "Prepare for any outcome and remember that all participation advances medical knowledge regardless of personal results."],
+  [
+    { q: "Is it normal to feel anxious before starting a clinical trial?", a: "Yes, anxiety is a very common and normal reaction. The research team is experienced with helping participants manage these feelings." },
+    { q: "What if I feel overwhelmed during the study?", a: "Contact your coordinator who can connect you with support resources. Many studies offer counseling services or can adjust visit schedules to reduce burden." },
+    { q: "How do I handle disappointment if the treatment does not work?", a: "Lean on your support network and remember your contribution is valuable regardless of the outcome. Discuss next steps with your healthcare provider." }
+  ],
+  "", "5 8 10 24"
+));
+
+// 59
+guides.push(makeGuide(59,
+  "Clinical Trial Nutrition and Lifestyle Considerations",
+  "clinical-trial-nutrition-lifestyle",
+  "Patient Experience",
+  "How clinical trial participation may affect your diet, exercise, and lifestyle habits, with tips for staying compliant and healthy.",
+  "Dr. Michael Chen", "2026-06-07", "6 min read",
+  [
+    { heading: "Dietary Restrictions and Requirements", content: "Many clinical trials include dietary guidelines that participants must follow. These may include avoiding certain foods that could interact with the study medication, following a specific diet plan, or maintaining consistent eating patterns. Grapefruit and grapefruit juice are commonly restricted because they affect how many medications are metabolized. Alcohol restrictions are also common. Ask your coordinator for a complete list of dietary requirements during enrollment." },
+    { heading: "Exercise and Physical Activity Guidelines", content: "Depending on the study, you may be asked to maintain your current activity level, follow an exercise program, or avoid certain physical activities. Some trials measure physical activity as part of the study outcomes and may provide activity trackers. Always discuss your exercise routine with the research team before making changes. Sudden increases or decreases in activity can affect study results, particularly in trials measuring cardiovascular or metabolic outcomes." },
+    { heading: "Supplements and Over-the-Counter Medications", content: "Many clinical trials restrict the use of dietary supplements, herbal remedies, and over-the-counter medications because they can interfere with study results. Provide a complete list of all supplements and OTC medications you take to the research team during screening. Do not start any new supplements during the study without approval from your coordinator. Common restrictions include St. John's Wort, melatonin, and high-dose vitamins." },
+    { heading: "Sleep and Stress Management During the Study", content: "Clinical trials may affect your sleep patterns due to visit schedules, medication timing, or treatment side effects. Maintain consistent sleep schedules when possible and discuss any sleep difficulties with your coordinator. Stress management techniques such as deep breathing, meditation, or gentle yoga can help you cope with the demands of study participation. Some studies actually include stress reduction interventions and provide resources for participants." }
+  ],
+  ["Dietary restrictions vary by study; always get a complete list of permitted and prohibited foods from your coordinator.", "Maintain consistent exercise habits and discuss any planned changes with the research team.", "Report all supplements and over-the-counter medications; do not start new ones without approval.", "Prioritize sleep and stress management to support your overall well-being during study participation."],
+  [
+    { q: "Can I take my regular prescription medications during a trial?", a: "Your regular medications will be reviewed during screening. Some may need to be adjusted or temporarily stopped. Never stop prescribed medications without discussing with both your doctor and the study team." },
+    { q: "What if I accidentally eat a restricted food?", a: "Inform your coordinator as soon as possible. A single incident is usually not a problem, but it is important to report it for accurate data recording." },
+    { q: "Can I follow a special diet like keto or vegan during the study?", a: "Discuss your diet with the research team during screening. Some diets may be compatible, while others could interfere with study outcomes." }
+  ],
+  "", "8 24 34 56"
+));
+
+// 60
+guides.push(makeGuide(60,
+  "After the Clinical Trial: Follow-Up and Next Steps",
+  "after-clinical-trial-follow-up",
+  "Patient Experience",
+  "What happens after your clinical trial ends, including follow-up visits, results sharing, and transitioning back to regular care.",
+  "Lisa Thompson", "2026-06-04", "6 min read",
+  [
+    { heading: "End-of-Study Procedures", content: "When your clinical trial participation concludes, you will have an end-of-study visit. This visit typically includes a physical exam, lab work, and a final review of your health status. The research team will discuss any ongoing care needs and provide a summary of your participation. You may be asked to complete final questionnaires or return any study equipment. Make sure you understand what follow-up care, if any, the study team will provide." },
+    { heading: "Transitioning Back to Regular Medical Care", content: "Your primary care doctor needs to know what happened during the trial, including any treatments received and their effects. Ask the research team for a summary of your participation to share with your doctor. Discuss any ongoing side effects or health changes that require monitoring. Return to your regular medication regimen if you were taking study medication, following your doctor's guidance." },
+    { heading: "Accessing Study Results", content: "Clinical trial results are typically posted on ClinicalTrials.gov within one year of completion. You can search for your study using the NCT number provided during enrollment. Some research teams also share summary results directly with participants. Ask your coordinator when and how you can expect to receive results. Understanding the outcomes helps you and your doctor make informed future treatment decisions." },
+    { heading: "Considering Future Research Opportunities", content: "Many participants find their clinical trial experience rewarding and choose to participate in additional studies. Some research teams may contact you about future studies for which you may be eligible. You can also search for new trials on ClinicalTrials.gov or StudyReward using your updated health knowledge. Your experience as a research participant makes you a valuable contributor to future medical advances." }
+  ],
+  ["The end-of-study visit includes final health assessments and a summary of your participation.", "Share a study summary with your primary care doctor and address any ongoing health needs.", "Results are posted on ClinicalTrials.gov and may also be shared directly by the research team.", "Your clinical trial experience can open doors to future research participation opportunities."],
+  [
+    { q: "Will I continue to receive the study treatment after the trial ends?", a: "Some studies offer extended access programs. Ask your coordinator about this possibility before the study ends so arrangements can be made." },
+    { q: "What if I have side effects after the study ends?", a: "Report any ongoing side effects to the research team. They are responsible for monitoring and addressing study-related health issues even after participation ends." },
+    { q: "How will I know if the treatment I received was real or placebo?", a: "Many studies offer to reveal your treatment assignment after the trial is complete. Ask your coordinator about unblinding procedures during your end-of-study visit." }
+  ],
+  "", "8 10 34 38"
+));
+
+// Write batch 1 (51-60)
+fs.writeFileSync('data/new-guides-batch1.json', JSON.stringify(guides, null, 2));
+console.log(`Wrote ${guides.length} guides (IDs 51-${50 + guides.length}) to data/new-guides-batch1.json`);
