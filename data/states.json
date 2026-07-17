@@ -48,5 +48,6 @@
   { "name": "Washington", "abbr": "WA", "slug": "washington" },
   { "name": "West Virginia", "abbr": "WV", "slug": "west-virginia" },
   { "name": "Wisconsin", "abbr": "WI", "slug": "wisconsin" },
-  { "name": "Wyoming", "abbr": "WY", "slug": "wyoming" }
+  { "name": "Wyoming", "abbr": "WY", "slug": "wyoming" },
+  { "name": "District of Columbia", "abbr": "DC", "slug": "district-of-columbia" }
 ]

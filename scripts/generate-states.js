@@ -64,12 +64,12 @@ states.forEach(st => {
   // Build head
   const head = headTemplate
     .replace(/<title>.*?<\/title>/, '<title>Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward</title>')
-    .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '. Browse medical research studies with compensation in ' + escapeHTML(name) + ' and discover clinical research opportunities near you.">')
-    .replace(/<link rel="canonical"[^>]*>/, '<link rel="canonical" href="https://studyreward.online/states/' + slug + '">')
-    .replace(/<link rel="alternate"[^>]*>/, '<link rel="alternate" hreflang="en" href="https://studyreward.online/states/' + slug + '">')
-    .replace(/<meta property="og:url"[^>]*>/, '<meta property="og:url" content="https://studyreward.online/states/' + slug + '">')
+    .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '. Browse studies with compensation and discover research opportunities near you.">')
+    .replace(/<link rel="canonical"[^>]*>/, '<link rel="canonical" href="https://studyreward.online/states/' + slug + '.html">')
+    .replace(/<link rel="alternate"[^>]*>/, '<link rel="alternate" hreflang="en" href="https://studyreward.online/states/' + slug + '.html">')
+    .replace(/<meta property="og:url"[^>]*>/, '<meta property="og:url" content="https://studyreward.online/states/' + slug + '.html">')
     .replace(/<meta property="og:title"[^>]*>/, '<meta property="og:title" content="Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward">')
-    .replace(/<meta property="og:description"[^>]*>/, '<meta property="og:description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '.">')
+    .replace(/<meta property="og:description"[^>]*>/, '<meta property="og:description" content="Browse active paid clinical trials in ' + escapeHTML(name) + '. Find research studies with compensation near you.">')
     .replace(/<meta name="twitter:title"[^>]*>/, '<meta name="twitter:title" content="Paid Clinical Trials in ' + escapeHTML(name) + ' (2026) | StudyReward">')
     .replace(/<meta name="twitter:description"[^>]*>/, '<meta name="twitter:description" content="Find paid clinical trials recruiting in ' + escapeHTML(name) + '.">')
     .replace(/href="(?!(?:https?:\/\/|\/\/|\.\.\/|#))([^"]+)"/g, 'href="../$1"')
@@ -106,13 +106,13 @@ states.forEach(st => {
 
   // JSON-LD schemas
   const jsonld = '<script type="application/ld+json">' +
-    JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trials in " + name,"description":"Find paid clinical trials in " + name + ". Browse medical research studies recruiting in " + name + ".","url":"https://studyreward.online/states/" + slug}) +
+    JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"Clinical Trials in " + name,"description":"Find paid clinical trials in " + name + ". Browse medical research studies recruiting in " + name + ".","url":"https://studyreward.online/states/" + slug + ".html"}) +
     '</script>' +
     '<script type="application/ld+json">' +
     JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://studyreward.online/"},
       {"@type":"ListItem","position":2,"name":"States","item":"https://studyreward.online/states.html"},
-      {"@type":"ListItem","position":3,"name":name,"item":"https://studyreward.online/states/" + slug}
+      {"@type":"ListItem","position":3,"name":name,"item":"https://studyreward.online/states/" + slug + ".html"}
     ]}) +
     '</script>';
 

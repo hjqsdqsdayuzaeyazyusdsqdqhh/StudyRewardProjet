@@ -18,6 +18,14 @@ function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+const nameToSlug = {};
+conditions.forEach(c => { nameToSlug[c.name.toLowerCase()] = c.slug; });
+// Also map common variants
+conditions.forEach(c => {
+  const normalized = c.name.toLowerCase().replace(/['\u2019]/g, '').trim();
+  if (!nameToSlug[normalized]) nameToSlug[normalized] = c.slug;
+});
+
 const outDir = path.join(__dirname, '..', 'conditions');
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
@@ -26,10 +34,10 @@ conditions.forEach(cond => {
   const slug = cond.slug;
   const icon = cond.icon || '🔬';
   const title = 'Paid ' + name + ' Clinical Trials (2026)';
-  const metaDesc = 'Browse recruiting ' + name.toLowerCase() + ' clinical trials across the United States. Find eligibility information, locations and research opportunities.';
+  const metaDesc = 'Browse recruiting ' + name.toLowerCase() + ' clinical trials. Find eligibility, locations and research opportunities.';
 
   const relatedCondHtml = (cond.relatedConditions || []).map(r => {
-    const rs = slugify(r);
+    const rs = nameToSlug[r.toLowerCase()] || slugify(r);
     return '<a href="../conditions/' + rs + '.html" class="condition-card">' +
       '<h4>' + escapeHTML(r) + '</h4>' +
       '<div class="cond-link">View Studies &rarr;</div></a>';
@@ -64,13 +72,13 @@ conditions.forEach(cond => {
     '<title>' + title + '</title>\n' +
     '<meta name="description" content="' + metaDesc + '">\n' +
     '<meta name="robots" content="index, follow">\n' +
-    '<link rel="canonical" href="https://studyreward.online/conditions/' + slug + '">\n' +
-    '<link rel="alternate" hreflang="en" href="https://studyreward.online/conditions/' + slug + '">\n' +
+    '<link rel="canonical" href="https://studyreward.online/conditions/' + slug + '.html">\n' +
+    '<link rel="alternate" hreflang="en" href="https://studyreward.online/conditions/' + slug + '.html">\n' +
     '<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">\n' +
     '<link rel="apple-touch-icon" href="../assets/apple-touch-icon.svg">\n\n' +
 
     '<meta property="og:type" content="website">\n' +
-    '<meta property="og:url" content="https://studyreward.online/conditions/' + slug + '">\n' +
+    '<meta property="og:url" content="https://studyreward.online/conditions/' + slug + '.html">\n' +
     '<meta property="og:title" content="' + title + '">\n' +
     '<meta property="og:description" content="' + metaDesc + '">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n' +
@@ -98,7 +106,7 @@ conditions.forEach(cond => {
     '<link rel="dns-prefetch" href="https://clinicaltrials.gov">\n\n' +
 
     '<script type="application/ld+json">' +
-    JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":metaDesc,"url":"https://studyreward.online/conditions/" + slug}) +
+    JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":metaDesc,"url":"https://studyreward.online/conditions/" + slug + ".html"}) +
     '</script>\n' +
     '<script type="application/ld+json">' +
     JSON.stringify({"@context":"https://schema.org","@type":"MedicalCondition","name":name,"description":cond.description,"symptoms":cond.symptoms,"riskFactor":cond.riskFactors,"treatment":cond.treatment}) +
@@ -106,8 +114,8 @@ conditions.forEach(cond => {
     '<script type="application/ld+json">' +
     JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://studyreward.online/"},
-      {"@type":"ListItem","position":2,"name":"Conditions","item":"https://studyreward.online/conditions"},
-      {"@type":"ListItem","position":3,"name":name,"item":"https://studyreward.online/conditions/" + slug}
+      {"@type":"ListItem","position":2,"name":"Conditions","item":"https://studyreward.online/conditions.html"},
+      {"@type":"ListItem","position":3,"name":name,"item":"https://studyreward.online/conditions/" + slug + ".html"}
     ]}) +
     '</script>\n' +
     '<script type="application/ld+json">' +

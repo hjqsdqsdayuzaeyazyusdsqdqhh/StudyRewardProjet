@@ -33,8 +33,8 @@ cities.forEach(city => {
   ).join('') : '';
 
   const title = 'Paid Clinical Trials in ' + escapeHTML(name) + ', ' + escapeHTML(state) + ' (2026)';
-  const metaDesc = 'Find paid clinical trials recruiting in ' + escapeHTML(name) + ', ' + escapeHTML(state) + '. Browse medical studies, compensation opportunities and research programs in ' + escapeHTML(name) + '.';
-  const canonical = 'https://studyreward.online/cities/' + slug;
+  const metaDesc = 'Find paid clinical trials in ' + escapeHTML(name) + ', ' + escapeHTML(state) + '. Browse medical studies with compensation and research opportunities near you.';
+  const canonical = 'https://studyreward.online/cities/' + slug + '.html';
 
   const page = '<!DOCTYPE html>\n<html lang="en-US">\n<head>\n' +
     '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
@@ -81,7 +81,7 @@ cities.forEach(city => {
     JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://studyreward.online/"},
       {"@type":"ListItem","position":2,"name":"States","item":"https://studyreward.online/states.html"},
-      {"@type":"ListItem","position":3,"name":state,"item":"https://studyreward.online/states/" + stSlug},
+      {"@type":"ListItem","position":3,"name":state,"item":"https://studyreward.online/states/" + stSlug + ".html"},
       {"@type":"ListItem","position":4,"name":name,"item":canonical}
     ]}) +
     '</script>\n' +

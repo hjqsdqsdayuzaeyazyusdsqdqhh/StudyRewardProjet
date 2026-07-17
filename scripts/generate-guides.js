@@ -133,7 +133,7 @@ function renderBreadcrumb(items) {
 function generateGuidePage(guide) {
   const title = `${escape(guide.title)} | StudyReward`;
   const desc = escape(guide.excerpt.slice(0, 160));
-  const canonical = `${SITE}/guides/${guide.slug}`;
+  const canonical = `${SITE}/guides/${guide.slug}.html`;
   const catSlug = slugify(guide.category);
 
   // Build TOC
@@ -364,7 +364,7 @@ ${renderBreadcrumb([
 
 ${renderFooter()}
 
-<script src="../js/guide.js"></script>
+<script src="../js/guide.js" defer></script>
 </body>
 </html>`;
 }
@@ -405,12 +405,12 @@ Object.keys(categories).forEach(catName => {
 <title>${title}</title>
 <meta name="description" content="${desc}">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="${SITE}/guides/categories/${catSlug}">
-<link rel="alternate" hreflang="en" href="${SITE}/guides/categories/${catSlug}">
+<link rel="canonical" href="${SITE}/guides/categories/${catSlug}.html">
+<link rel="alternate" hreflang="en" href="${SITE}/guides/categories/${catSlug}.html">
 <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="${SITE}/guides/categories/${catSlug}">
+<meta property="og:url" content="${SITE}/guides/categories/${catSlug}.html">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
 <meta property="og:image" content="${SITE}/og-image.svg">
@@ -431,6 +431,8 @@ Object.keys(categories).forEach(catName => {
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"https://studyreward.online","logo":"https://studyreward.online/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"StudyReward","url":"https://studyreward.online","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://studyreward.online/clinical-trials.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"${title}","description":"${desc}","url":"${SITE}/guides/categories/${catSlug}.html"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${SITE}/"},{"@type":"ListItem","position":2,"name":"Guides","item":"${SITE}/guides.html"},{"@type":"ListItem","position":3,"name":"${escape(catName)} Guides","item":"${SITE}/guides/categories/${catSlug}.html"}]}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://www.clarity.ms">
 <link rel="dns-prefetch" href="https://clinicaltrials.gov">
