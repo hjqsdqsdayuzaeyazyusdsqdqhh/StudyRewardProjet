@@ -54,7 +54,7 @@ const stateFiles = pagesIn('states');
 const stateUrls = stateFiles.map(f => {
   const slug = f.replace('.html', '');
   const lastmod = fileModTime(path.join('states', f));
-  return url(`states/${slug}`, lastmod, 'weekly', '0.7');
+  return url(`states/${slug}.html`, lastmod, 'weekly', '0.7');
 });
 
 // === City pages ===
@@ -62,7 +62,7 @@ const cityFiles = pagesIn('cities');
 const cityUrls = cityFiles.map(f => {
   const slug = f.replace('.html', '');
   const lastmod = fileModTime(path.join('cities', f));
-  return url(`cities/${slug}`, lastmod, 'weekly', '0.7');
+  return url(`cities/${slug}.html`, lastmod, 'weekly', '0.7');
 });
 
 // === Condition pages ===
@@ -70,7 +70,7 @@ const conditionFiles = pagesIn('conditions');
 const conditionUrls = conditionFiles.map(f => {
   const slug = f.replace('.html', '');
   const lastmod = fileModTime(path.join('conditions', f));
-  return url(`conditions/${slug}`, lastmod, 'weekly', '0.7');
+  return url(`conditions/${slug}.html`, lastmod, 'weekly', '0.7');
 });
 
 // === Guide pages ===
@@ -78,7 +78,7 @@ const guideFiles = pagesIn('guides').filter(f => !f.includes('/') && f !== 'cate
 const guideUrls = guideFiles.map(f => {
   const slug = f.replace('.html', '');
   const lastmod = fileModTime(path.join('guides', f));
-  return url(`guides/${slug}`, lastmod, 'weekly', '0.7');
+  return url(`guides/${slug}.html`, lastmod, 'weekly', '0.7');
 });
 
 // === Guide category pages ===
@@ -86,7 +86,7 @@ const guideCatFiles = pagesIn(path.join('guides', 'categories'));
 const guideCatUrls = guideCatFiles.map(f => {
   const slug = f.replace('.html', '');
   const lastmod = fileModTime(path.join('guides', 'categories', f));
-  return url(`guides/categories/${slug}`, lastmod, 'weekly', '0.6');
+  return url(`guides/categories/${slug}.html`, lastmod, 'weekly', '0.6');
 });
 
 // === Generate split sitemaps ===
