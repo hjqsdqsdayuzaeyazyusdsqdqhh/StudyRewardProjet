@@ -206,17 +206,10 @@ function generateGuidePage(guide) {
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="StudyReward">
 
-<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');<\/script>
 
-<!-- Clarity (replace with your Clarity ID) -->
-<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');<\/script>
 
 <script type="application/ld+json">${JSON.stringify(orgLD)}</script>
 <script type="application/ld+json">${JSON.stringify(siteLD)}</script>
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://www.clarity.ms">
 <link rel="dns-prefetch" href="https://clinicaltrials.gov">
 
 <script type="application/ld+json">${JSON.stringify(articleLD)}</script>
@@ -422,19 +415,12 @@ Object.keys(categories).forEach(catName => {
 <meta name="twitter:description" content="${desc}">
 <meta name="twitter:image" content="${SITE}/og-image.svg">
 
-<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');<\/script>
 
-<!-- Clarity (replace with your Clarity ID) -->
-<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');<\/script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"https://studyreward.online","logo":"https://studyreward.online/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"StudyReward","url":"https://studyreward.online","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://studyreward.online/clinical-trials.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"${title}","description":"${desc}","url":"${SITE}/guides/categories/${catSlug}.html"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${SITE}/"},{"@type":"ListItem","position":2,"name":"Guides","item":"${SITE}/guides.html"},{"@type":"ListItem","position":3,"name":"${escape(catName)} Guides","item":"${SITE}/guides/categories/${catSlug}.html"}]}</script>
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://www.clarity.ms">
 <link rel="dns-prefetch" href="https://clinicaltrials.gov">
 
 <link rel="stylesheet" href="../../css/style.css">

@@ -24,7 +24,7 @@ function escape(str) {
 function nz(v, fallback='') { return (v && v !== 'N/A') ? v : fallback; }
 
 function renderError(title, msg) {
-  return `<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${escape(title)} | StudyReward</title><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"><link rel="stylesheet" href="../css/style.css"><!-- Google Analytics (replace G-XXXXXXXXXX) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');<\/script><script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');<\/script></head><body><a href="#main" class="skip-link">Skip to main content</a>
+  return `<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>${escape(title)} | StudyReward</title><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"><link rel="stylesheet" href="../css/style.css"></head><body><a href="#main" class="skip-link">Skip to main content</a>
 <header class="header"><div class="container"><a href="../index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a><nav class="nav" role="navigation" aria-label="Main"><a href="../index.html">Home</a><a href="../clinical-trials.html">Trials</a><a href="../states.html">States</a><a href="../cities.html">Cities</a><a href="../conditions.html">Conditions</a><a href="../guides.html">Guides</a></nav><button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
 <main id="main"><div class="container page-404"><div class="code">!</div><h1>${escape(title)}</h1><p>${escape(msg || 'The requested page could not be loaded.')}</p><a href="../index.html" class="btn btn-primary">Go Home</a></div></main>
 <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="logo"><span class="logo-icon">SR</span>StudyReward</a><p>Helping you find paid clinical trials across the United States.</p></div></div><div class="footer-bottom"><span>&copy; 2026 StudyReward. All rights reserved.</span></div></div></footer></body></html>`;
@@ -285,16 +285,6 @@ export default async function handler(req, res) {
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="StudyReward">
 <meta name="twitter:image" content="${SITE}/og-image.svg">
-
-<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"><\/script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');<\/script>
-
-<!-- Clarity (replace with your Clarity ID) -->
-<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','YOUR_CLARITY_ID');<\/script>
-
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://www.clarity.ms">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"StudyReward","url":"${SITE}","logo":"${SITE}/assets/favicon.svg","description":"Find paid clinical trials near you and earn rewards while advancing medical research."}
