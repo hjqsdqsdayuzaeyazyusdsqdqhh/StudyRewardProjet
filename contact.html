@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | StudyReward</title>
-  <meta name="description" content="Get in touch with the StudyReward team. Have questions about clinical trials? We are here to help.">
+  <title>Contact StudyReward | Clinical Trial Information &amp; Support</title>
+  <meta name="description" content="Contact StudyReward with questions about clinical trial listings, website content, study information, or technical issues.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://studyreward.online/contact.html">
   <link rel="alternate" hreflang="en" href="https://studyreward.online/contact.html">
@@ -13,11 +13,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://studyreward.online/contact.html">
-  <meta property="og:title" content="Contact Us | StudyReward">
-  <meta property="og:description" content="Get in touch with the StudyReward team.">
+  <meta property="og:title" content="Contact StudyReward | Clinical Trial Information &amp; Support">
+  <meta property="og:description" content="Contact StudyReward with questions about clinical trial listings, website content, study information, or technical issues.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact Us | StudyReward">
-  <meta name="twitter:description" content="Get in touch with the StudyReward team.">
+  <meta name="twitter:title" content="Contact StudyReward | Clinical Trial Information &amp; Support">
+  <meta name="twitter:description" content="Contact StudyReward with questions about clinical trial listings, website content, study information, or technical issues.">
   <meta name="twitter:image" content="https://studyreward.online/og-image.svg">
   <meta property="og:image" content="https://studyreward.online/og-image.svg">
   <meta property="og:image:width" content="1200">
@@ -110,8 +110,8 @@
 
   <section class="page-header" id="main-content">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p>Have a question or need help? We would love to hear from you.</p>
+      <h1>Contact StudyReward</h1>
+      <p>Have a question about clinical trials, study listings, eligibility, or using StudyReward? Contact our team and we'll do our best to help.</p>
     </div>
   </section>
 
@@ -119,45 +119,86 @@
     <div class="container">
       <div class="contact-grid">
         <div>
-          <form class="contact-form" role="form" aria-label="Contact form">
+          <h2 class="section-title" style="font-size:1.25rem;margin-bottom:16px">Send a Message</h2>
+          <form class="contact-form" role="form" aria-label="Contact form" novalidate>
             <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="Your name" required>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required aria-describedby="name-error" data-error="Please enter your name.">
+              <div class="form-error" id="name-error" role="alert" style="display:none;color:#dc2626;font-size:.78rem;margin-top:4px"></div>
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="your@email.com" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="your@email.com" required aria-describedby="email-error" data-error="Please enter your email address.">
+              <div class="form-error" id="email-error" role="alert" style="display:none;color:#dc2626;font-size:.78rem;margin-top:4px"></div>
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <select id="subject">
-                <option>General Inquiry</option>
-                <option>Study Information</option>
-                <option>Technical Support</option>
-                <option>Partnership Opportunity</option>
-                <option>Other</option>
+              <select id="subject" name="subject" required aria-describedby="subject-error" data-error="Please choose a subject.">
+                <option value="" selected disabled>Please choose a subject</option>
+                <option value="study">Question About a Study</option>
+                <option value="general">General Website Question</option>
+                <option value="listing">Study Listing Correction</option>
+                <option value="technical">Broken Link or Technical Issue</option>
+                <option value="other">Other</option>
               </select>
+              <div class="form-error" id="subject-error" role="alert" style="display:none;color:#dc2626;font-size:.78rem;margin-top:4px"></div>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" placeholder="How can we help you?" required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required aria-describedby="message-error" data-error="Please enter your message."></textarea>
+              <div class="form-error" id="message-error" role="alert" style="display:none;color:#dc2626;font-size:.78rem;margin-top:4px"></div>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note" style="margin-top:16px;padding:12px 14px;background:var(--gray-50);border-left:3px solid var(--accent);font-size:.78rem;color:var(--gray-500);line-height:1.6">StudyReward is an informational platform. We are not a clinical research site, medical provider, or clinical trial sponsor. For questions about a specific study, please contact the study team using the contact information provided on the official study listing.</p>
           </form>
         </div>
         <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p>Our team is available Monday through Friday, 9 AM to 6 PM EST. We typically respond within 24 hours.</p>
+          <h3>Contact Information</h3>
+          <p>Prefer to reach us directly? Use the details below or send us a message through the form.</p>
           <div class="contact-detail">
             <div class="cd-icon">&#9993;</div>
-            <div><div class="cd-label">Email</div><div class="cd-value">info@studyreward.online</div></div>
+            <div><div class="cd-label">Email</div><div class="cd-value"><a href="mailto:info@studyreward.online">info@studyreward.online</a></div></div>
           </div>
           <div class="contact-detail">
-            <div class="cd-icon">&#128205;</div>
-            <div><div class="cd-label">Address</div><div class="cd-value">123 Research Drive, Suite 200<br>Boston, MA 02110</div></div>
+            <div class="cd-icon">&#128197;</div>
+            <div><div class="cd-label">Response Time</div><div class="cd-value">We typically respond within 24&#8211;48 hours.</div></div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--gray-100)">
+    <div class="container">
+      <h2 class="section-title">Questions About a Study</h2>
+      <p class="section-subtitle" style="margin-bottom:16px">Getting answers from the people who know your study best</p>
+      <p style="color:var(--gray-600);font-size:.92rem;line-height:1.8">Questions about eligibility, appointments, compensation, medical requirements, or enrollment should be directed to the study's official research team.</p>
+      <p style="color:var(--gray-600);font-size:.92rem;line-height:1.8;margin-top:12px">StudyReward does not contact research teams on your behalf. Please use the contact information provided on the official study listing, such as the study record on ClinicalTrials.gov (searchable by the study's NCT number), to reach the research team directly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">General Website Questions</h2>
+      <p class="section-subtitle" style="margin-bottom:16px">We're here to help with anything related to the StudyReward website</p>
+      <p style="color:var(--gray-600);font-size:.92rem;line-height:1.8">For issues related to clinical trial listings, website content, broken links, or general questions about using StudyReward, email us at <a href="mailto:info@studyreward.online">info@studyreward.online</a> or use the form above.</p>
+      <p style="color:var(--gray-600);font-size:.92rem;line-height:1.8;margin-top:12px">You may also find these pages helpful:</p>
+      <ul style="margin-bottom:14px;padding-left:22px;color:var(--gray-600);line-height:1.7;font-size:.92rem">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clinical-trials.html">Clinical Trials</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="conditions.html">Conditions</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Use</a></li>
+        <li><a href="terms-of-service.html">Disclaimer</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section medical-disclaimer">
+    <div class="container">
+      <h2 style="font-size:1rem;font-weight:700;color:var(--gray-700);margin-bottom:8px">Important Disclaimer</h2>
+      <p>StudyReward does not provide medical advice. Information on this website is for general informational purposes and should not replace advice from a qualified healthcare professional.</p>
     </div>
   </section>
 
@@ -208,6 +249,73 @@
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script>
+  (function () {
+    'use strict';
+    var form = document.querySelector('.contact-form');
+    if (!form) return;
+    var fields = form.querySelectorAll('input, select, textarea');
+    var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function showError(field, message) {
+      field.setAttribute('aria-invalid', 'true');
+      var err = document.getElementById(field.getAttribute('aria-describedby'));
+      if (err) {
+        err.textContent = message;
+        err.style.display = 'block';
+      }
+    }
+
+    function clearError(field) {
+      field.removeAttribute('aria-invalid');
+      var err = document.getElementById(field.getAttribute('aria-describedby'));
+      if (err) {
+        err.textContent = '';
+        err.style.display = 'none';
+      }
+    }
+
+    [].forEach.call(fields, function (f) {
+      f.addEventListener('input', function () {
+        if ((f.value || '').trim()) clearError(f);
+      });
+      f.addEventListener('change', function () {
+        if ((f.value || '').trim()) clearError(f);
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      var firstInvalid = null;
+      [].forEach.call(fields, function (f) {
+        var val = (f.value || '').trim();
+        var msg = '';
+        if (!val) {
+          msg = f.getAttribute('data-error') || 'This field is required.';
+        } else if (f.type === 'email' && !emailRe.test(val)) {
+          msg = 'Please enter a valid email address.';
+        }
+        if (msg) {
+          showError(f, msg);
+          if (!firstInvalid) firstInvalid = f;
+        } else {
+          clearError(f);
+        }
+      });
+      if (firstInvalid) {
+        firstInvalid.focus();
+        return;
+      }
+      var btn = form.querySelector('button[type="submit"]');
+      var orig = btn.textContent;
+      btn.textContent = 'Message Sent!';
+      form.reset();
+      setTimeout(function () { btn.textContent = orig; }, 3000);
+    });
+  })();
+  </script>
 
   <script src="js/main.js" defer></script>
 </body>
